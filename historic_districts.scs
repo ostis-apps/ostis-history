@@ -1,37 +1,31 @@
-historic_districts=[*
+sc_node_struct->section_subject_domain_of_historic_districts;;
+     
+section_subject_domain_of_historic_districts=>nrel_system_idtf:[section_subject_domain_of_historic_districts](*<-lang_en;;*);;
 
-   sc_node_struct->section_subject_domain_of_historic_districts;;
-  
+section_subject_domain_of_historic_districts=>nrel_main_idtf:
+     [Раздел. Предметная область исторических районов]
+     (*<-lang_ru;;*);;
 
-        
-   section_subject_domain_of_historic_districts=>nrel_system_idtf:[section_subject_domain_of_historic_districts](*<-lang_en;;*);;
+section_subject_domain_of_historic_districts=>nrel_main_idtf:
+     [Section. Subject domain historic_districts]
+     (*<-lang_en;;*);;
+     
 
-   section_subject_domain_of_historic_districts=>nrel_main_idtf:
-        [Раздел. Предметная область исторических районов]
-        (*<-lang_ru;;*);;
+non_atomic_section->section_subject_domain_of_historic_districts;;
 
-   section_subject_domain_of_historic_districts=>nrel_main_idtf:
-        [Section. Subject domain historic_districts]
-        (*<-lang_en;;*);;
-    
-  
-   section_subject_domain_of_historic_districts->rrel_key_sc_element:subject_domain_of_historic_districts(*<-sc_node_struct;;*);    
-	concept_Troitskae_predmestie(*<-sc_node_class;;*);
-        concept_Upper_city(*<-sc_node_class;;*);
-        concept_Octyabrskaya_street(*<-sc_node_class;;*);;
-	    
-   	
-   non_atomic_section->section_subject_domain_of_historic_districts;;	 	
-   	 		   
-   		 	
-   subject_domain_of_historic_districts<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
-  
-   
-   subject_domain_of_historic_districts=>nrel_main_idtf:
-       [Предметная область исторических районов]
-       (*<-lang_ru;;*);;
-        
-   subject_domain_of_historic_districts=>nrel_main_idtf:
-       [Subject domain of historic districts]
-       (*<-lang_en;;*);;
-*];;
+section_subject_domain_of_historic_districts->rrel_maximum_studied_object_class:
+     concept_historic_districts;;
+
+
+subject_domain_of_historic_districts<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
+
+
+subject_domain_of_historic_districts=>nrel_main_idtf:
+     [Предметная область исторических районов]
+     (*<-lang_ru;;*);;
+     
+subject_domain_of_historic_districts=>nrel_main_idtf:
+     [Subject domain of historic districts]
+     (*<-lang_en;;*);;
+
+ subject_domain_of_historic_districts<-subject_domain;;
