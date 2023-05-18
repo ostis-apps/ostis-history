@@ -1,0 +1,17 @@
+pioneer=[*
+
+   sc_node_class->concept_pioneer_cinema;;
+  
+        
+   concept_pioneer_cinema=>nrel_system_idtf:[concept_pioneer_cinema](*<-lang_en;;*);;
+
+
+   
+   concept_pioneer_cinema=>nrel_main_idtf:
+       [Кинотеатр Пионер]
+       (*<-lang_ru;;*);;
+        
+   concept_pioneer_cinema=>nrel_main_idtf:
+       [Pioneer cinema]
+       (*<-lang_en;;*);;
+*];;

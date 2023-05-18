@@ -1,0 +1,26 @@
+clubs=[*
+
+   sc_node_struct->section_subject_domain_of_clubs;;
+ 
+        
+   section_subject_domain_of_clubs=>nrel_system_idtf:[section_subject_domain_of_clubs](*<-lang_en;;*);;
+
+   section_subject_domain_of_clubs=>nrel_main_idtf:
+        [Раздел.Предметная область клубов]
+        (*<-lang_ru;;*);;
+
+   section_subject_domain_of_clubs=>nrel_main_idtf:
+        [Section.Subject domain of clubs]
+        (*<-lang_en;;*);;
+    
+   non_atomic_section->section_subject_domain_of_clubs;;	 	
+   		 		   
+   
+   subject_domain_of_clubs=>nrel_main_idtf:
+       [Предметная область клубов]
+       (*<-lang_ru;;*);;
+        
+   subject_domain_of_clubs=>nrel_main_idtf:
+       [Subject domain of clubs]
+       (*<-lang_en;;*);;
+*];;
