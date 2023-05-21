@@ -1,17 +1,17 @@
-troitskae=[*
 
-   sc_node_class->concept_Troitskae_predmestie;;
-  
-        
-   concept_Troitskae_predmestie=>nrel_system_idtf:[concept_Troitskae_predmestie](*<-lang_en;;*);;
 
-	
-   
-   concept_Troitskae_predmestie=>nrel_main_idtf:
-       [Троицкае предместье]
-       (*<-lang_ru;;*);;
-        
-   concept_Troitskae_predmestie=>nrel_main_idtf:
-       [Troitskae_predmestie]
-       (*<-lang_en;;*);;
-*];;
+concept_historic_districts->concept_Troitskae_predmestie;;
+
+    
+concept_Troitskae_predmestie=>nrel_system_idtf:[concept_Troitskae_predmestie](*<-lang_en;;*);;
+
+
+
+concept_Troitskae_predmestie=>nrel_main_idtf:
+    [Троицкае предместье]
+    (*<-lang_ru;;*);;
+    
+concept_Troitskae_predmestie=>nrel_main_idtf:
+    [Troitskae_predmestie]
+    (*<-lang_en;;*);;
+

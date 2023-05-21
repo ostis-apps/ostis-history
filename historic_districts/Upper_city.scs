@@ -1,17 +1,17 @@
-upper_city=[*
 
-   sc_node_class->concept_Upper_city;;
-  
-        
-   concept_Upper_city=>nrel_system_idtf:[concept_Upper_city](*<-lang_en;;*);;
 
-	
-   
-   concept_Upper_city=>nrel_main_idtf:
-       [Верхний город]
-       (*<-lang_ru;;*);;
-        
-   concept_Upper_city=>nrel_main_idtf:
-       [Upper city]
-       (*<-lang_en;;*);;
-*];;
+concept_historic_districts>concept_Upper_city;;
+
+    
+concept_Upper_city=>nrel_system_idtf:[concept_Upper_city](*<-lang_en;;*);;
+
+
+
+concept_Upper_city=>nrel_main_idtf:
+    [Верхний город]
+    (*<-lang_ru;;*);;
+    
+concept_Upper_city=>nrel_main_idtf:
+    [Upper city]
+    (*<-lang_en;;*);;
+

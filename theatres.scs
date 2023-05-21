@@ -1,72 +1,62 @@
-theatres=[*
 
-   sc_node_struct->section_subject_domain_of_theatres;;
-  
-   subject_domain_of_theatres=>nrel_private_subject_domain:subject_domain_of_types_of_theatres(*<-sc_node_struct;;*);
-        subject_domain_of_Big_theatre_of_Belarus(*<-sc_node_struct;;*);
-        subject_domain_of_Yanka_Kupala_theatre(*<-sc_node_struct;;*);
-        subject_domain_of_Maxim_Gorky_theatre(*<-sc_node_struct;;*);
-        subject_domain_of_Belarusian_theatre_of_young_watcher(*<-sc_node_struct;;*);
-        subject_domain_of_Belarusian_theatre_of_dolls(*<-sc_node_struct;;*);
-        subject_domain_of_Belarusian_youth_theatre(*<-sc_node_struct;;*);
-        subject_domain_of_Belarusian_academic_musical_theatre(*<-sc_node_struct;;*);;
-        
-   section_subject_domain_of_theatres=>nrel_system_idtf:[section_subject_domain_of_theatres](*<-lang_en;;*);;
 
-   section_subject_domain_of_theatres=>nrel_main_idtf:
-        [Раздел. Предметная область театров]
-        (*<-lang_ru;;*);;
+sc_node_struct->section_subject_domain_of_theatres;;
 
-   section_subject_domain_of_theatres=>nrel_main_idtf:
-        [Section. Subject domain of theatres]
-        (*<-lang_en;;*);;
-    
-   section_subject_domain_of_theatres<=nrel_section_decomposition:
-   {
-        section_subject_domain_of_Big_theatre_of_Belarus(*<-sc_node_struct;;*);
-        section_subject_domain_of_Yanka_Kupalas_theatre(*<-sc_node_struct;;*);
-        section_subject_domain_of_Maxim_Gorkys_theatre(*<-sc_node_struct;;*);
-        section_subject_domain_of_Belarusian_theatre_of_young_watcher(*<-sc_node_struct;;*);
-        section_subject_domain_of_Belarusian_theatre_of_dolls(*<-sc_node_struct;;*);
-        section_subject_domain_of_Belarusian_youth_theatre(*<-sc_node_struct;;*);
-        section_subject_domain_of_Belarusian_academic_musical_theatre(*<-sc_node_struct;;*)
-   };; 
-    
-   concept_theatre<-rrel_maximum_studied_object_class:subject_domain_of_theatres;;
-   concept_plays<-rrel_not_maximum_studied_object_class:subject_domain_of_theatres;;
-   concept_actors<-rrel_not_maximum_studied_object_class:subject_domain_of_theatres;;
-   section_subject_domain_of_theatres->rrel_key_sc_element:subject_domain_of_theatres(*<-sc_node_struct;;*);    
-	    concept_actors(*<-sc_node_class;;*);
-	    concept_plays(*<-sc_node_class;;*);
-	    concept_directirs(*<-sc_node_class;;*);
-	    concept_opera(*<-sc_node_class;;*);
-	    cocnept_comedy(*<-sc_node_class;;*);
-	    concept_ballet(*<-sc_node_class;;*);
-	    concept_tickets(*<-sc_node_class;;*); 
-	    concept_decorations(*<-sc_node_class;;*);
-	    concept_orchestra(*<-sc_node_class;;*);
-	    nrel_cost_of_ticket(*<-sc_node_relation;;*);
-	    nrel_number_of_places(*<-sc_node_relation;;*);
-	    nrel_range_of_octaves(*<-sc_node_relation;;*);
-	    nrel_number_year_of_founding(*<-sc_node_relation;;*);;
-	    
-   subject_domain_of_theatres=>rrel_explored_relation:subject_domain_of_types_of_theatres(*<-sc_node_struct;;*);
-   	nrel_cost_of_ticket(*<-sc_node_relation;;*);
-   	nrel_range_of_octaves(*<-sc_node_relation;;*);
-   	nrel_number_year_of_founding(*<-sc_node_relation;;*);;
-   	
-   	
-   non_atomic_section->section_subject_domain_of_theatres;;	 	
-   		 		   
-   		 	
-   subject_domain_of_theatres<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
-  
-   
-   subject_domain_of_theatres=>nrel_main_idtf:
-       [Предметная область театров]
-       (*<-lang_ru;;*);;
-        
-   subject_domain_of_theatres=>nrel_main_idtf:
-       [Subject domain of theatres]
-       (*<-lang_en;;*);;
-*];;
+subject_domain_of_theatres=>nrel_private_subject_domain:subject_domain_of_types_of_theatres(*<-sc_node_struct;;*);
+     subject_domain_of_Big_theatre_of_Belarus(*<-sc_node_struct;;*);
+     subject_domain_of_Yanka_Kupala_theatre(*<-sc_node_struct;;*);
+     subject_domain_of_Maxim_Gorky_theatre(*<-sc_node_struct;;*);
+     subject_domain_of_Belarusian_theatre_of_young_watcher(*<-sc_node_struct;;*);
+     subject_domain_of_Belarusian_theatre_of_dolls(*<-sc_node_struct;;*);
+     subject_domain_of_Belarusian_youth_theatre(*<-sc_node_struct;;*);
+     subject_domain_of_Belarusian_academic_musical_theatre(*<-sc_node_struct;;*);;
+     
+section_subject_domain_of_theatres=>nrel_system_idtf:[section_subject_domain_of_theatres](*<-lang_en;;*);;
+
+section_subject_domain_of_theatres=>nrel_main_idtf:
+     [Раздел. Предметная область театров]
+     (*<-lang_ru;;*);;
+
+section_subject_domain_of_theatres=>nrel_main_idtf:
+     [Section. Subject domain of theatres]
+     (*<-lang_en;;*);;
+
+
+
+concept_theatres<-rrel_maximum_studied_object_class:subject_domain_of_theatres;;
+
+section_subject_domain_of_theatres->rrel_key_sc_element:subject_domain_of_theatres;    
+     concept_actors;
+     concept_plays;
+     concept_directirs;
+     concept_opera;
+     concept_comedy;
+     concept_ballet;
+     concept_tickets; 
+     concept_decorations;
+     concept_orchestra;
+     nrel_cost_of_ticket;
+     nrel_number_of_places;
+     nrel_range_of_octaves;
+     nrel_number_year_of_founding;;
+     
+subject_domain_of_theatres=>rrel_explored_relation:subject_domain_of_types_of_theatres;
+nrel_cost_of_ticket;
+nrel_range_of_octaves;
+nrel_number_year_of_founding;;
+
+
+non_atomic_section->section_subject_domain_of_theatres;;	 	
+                    
+          
+subject_domain_of_theatres<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
+
+
+subject_domain_of_theatres=>nrel_main_idtf:
+     [Предметная область театров]
+     (*<-lang_ru;;*);;
+     
+subject_domain_of_theatres=>nrel_main_idtf:
+     [Subject domain of theatres]
+     (*<-lang_en;;*);;
+
