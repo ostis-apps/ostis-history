@@ -1,0 +1,32 @@
+nrel_coordinates
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[координаты*] (* <- lang_ru;; *);
+	[coordinates*] (* <- lang_en;; *);;
+
+definition -> definition_of_coordinates (*
+	-> rrel_key_sc_element: nrel_coordinates;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Координаты - это числовые значения или точки, которые используются для определения местоположения объекта или места на поверхности Земли или в пространстве.] (* <- lang_ru;; *);;
+		-> [Coordinates are numerical values or points that are used to determine the location of an object or place on the Earth's surface or in space.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (координаты)] (* <- lang_ru;; *);
+		[Def. (coordinates)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_coordinates;
+		concept_numerical_values;
+		concept_points;
+		concept_location;
+		concept_object;
+		concept_place;
+		concept_earths_surface;
+		concept_space;
+		nrel_used_to_determine;
+		nrel_on;
+		nrel_in
+	};;
+*);;
