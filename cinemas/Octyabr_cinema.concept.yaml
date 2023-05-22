@@ -1,0 +1,17 @@
+
+
+# sc_node_class->concept_octyabr_cinema;;
+
+    
+# concept_octyabr_cinema=>nrel_system_idtf:[concept_octyabr_cinema](*<-lang_en;;*);;
+
+
+
+# concept_octyabr_cinema=>nrel_main_idtf:
+#     [Кинотеатр Октябрь]
+#     (*<-lang_ru;;*);;
+    
+# concept_octyabr_cinema=>nrel_main_idtf:
+#     [Octyabr cinema]
+#     (*<-lang_en;;*);;
+
