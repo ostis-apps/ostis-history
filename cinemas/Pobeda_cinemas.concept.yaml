@@ -1,17 +1,2 @@
-
-
-# sc_node_class->concept_pobeda_cinema;;
-
-    
-# concept_pobeda_cinema=>nrel_system_idtf:[concept_pobeda_cinema](*<-lang_en;;*);;
-
-
-
-# concept_pobeda_cinema=>nrel_main_idtf:
-#     [Кинотеатр Победа]
-#     (*<-lang_ru;;*);;
-    
-# concept_pobeda_cinema=>nrel_main_idtf:
-#     [Pobeda cinema]
-#     (*<-lang_en;;*);;
-
+ru: кинотеатр Победа
+en: Pobeda cinemas

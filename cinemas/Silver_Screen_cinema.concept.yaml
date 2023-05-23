@@ -1,17 +1,2 @@
-
-
-# sc_node_class->concept_silver_screen_cinema;;
-
-    
-# concept_silver_screen_cinema=>nrel_system_idtf:[concept_silver_screen_cinema](*<-lang_en;;*);;
-
-
-
-# concept_silver_screen_cinema=>nrel_main_idtf:
-#     [Кинотеатр Silver Screen]
-#     (*<-lang_ru;;*);;
-    
-# concept_silver_screen_cinema=>nrel_main_idtf:
-#     [Silver screen cinema]
-#     (*<-lang_en;;*);;
-
+ru: кинотетр Silver Screen | кинотеатр Сильвер Скрин
+en: Silver Screen cinema
