@@ -1,0 +1,30 @@
+nrel_museum_type
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[тип музея*] (* <- lang_ru;; *);
+	[type of museum*] (* <- lang_en;; *);;
+
+definition -> definition_of_museum_type (*
+	-> rrel_key_sc_element: nrel_museum_type;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тип музея - это классификация, используемая для группировки музеев на основе их основных характеристик и направленности.] (* <- lang_ru;; *);;
+		-> [Museum type is a classification used to group museums based on their main characteristics and focus.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (тип музея)] (* <- lang_ru;; *);
+		[Def. (type of museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_museum_type;
+		concept_classification;
+		concept_museums;
+		concept_characteristics;
+		concept_focus;
+		nrel_used_to_group;
+		nrel_based_on;
+		nrel_main_characteristics;
+		nrel_main_focus
+	};;
+*);;

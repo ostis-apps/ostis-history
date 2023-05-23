@@ -1,0 +1,30 @@
+nrel_ticket_price
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[стоимость билета*] (* <- lang_ru;; *);
+	[ticket price*] (* <- lang_en;; *);;
+
+definition -> definition_of_ticket_price (*
+	-> rrel_key_sc_element: nrel_ticket_price;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Стоимость билета - это цена, которую посетитель должен заплатить для получения доступа к музею или его экспозиции.] (* <- lang_ru;; *);;
+		-> [The cost of a ticket is the price a visitor must pay to gain access to a museum or its exhibit.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (стоимость билета)] (* <- lang_ru;; *);
+		[Def. (ticket price)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_ticket_price;
+		concept_cost;
+		concept_ticket;
+		concept_price;
+		concept_visitor;
+		concept_access;
+		concept_museum;
+		concept_exhibit;
+		nrel_pay_to_gain_access
+	};;
+*);;

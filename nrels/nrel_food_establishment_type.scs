@@ -1,0 +1,33 @@
+nrel_food_establishment_type
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[тип заведения питания*] (* <- lang_ru;; *);
+	[type of food establishment*] (* <- lang_en;; *);;
+
+definition -> definition_of_food_establishment_type (*
+	-> rrel_key_sc_element: nrel_food_establishment_type;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тип заведения питания - это классификация, используемая для определения основной формы или концепции питания, предлагаемой в ресторане, кафе, баре или другом подобном учреждении.] (* <- lang_ru;; *);;
+		-> [Food establishment type is a classification used to determine the basic form or concept of food offered in a restaurant, café, bar, or other similar establishment.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (тип заведения питания)] (* <- lang_ru;; *);
+		[Def. (type of food establishment)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_food_establishment_type;
+		concept_classification;
+		concept_basic_form;
+		concept_concept;
+		concept_food;
+		concept_restaurant;
+		concept_cafe;
+		concept_bar;
+		concept_establishment;
+		nrel_used_to_determine;
+		nrel_offered_in;
+		nrel_similar_establishment
+	};;
+*);;

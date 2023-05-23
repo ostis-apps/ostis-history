@@ -1,0 +1,34 @@
+nrel_age_restictions
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[возрастные ограничения*] (* <- lang_ru;; *);
+	[age restictions*] (* <- lang_en;; *);;
+
+definition -> definition_of_age_restictions (*
+	-> rrel_key_sc_element: nrel_age_restictions;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Возрастные ограничения - это правила или ограничения, установленные учреждениями, которые определяют минимальный или максимальный возраст посетителей, допущенных к определенным мероприятиям, выставкам или программам.] (* <- lang_ru;; *);;
+		-> [Age restrictions are rules or restrictions imposed by institutions that determine the minimum or maximum age of visitors allowed to attend certain events, exhibits, or programs.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (возрастные ограничения)] (* <- lang_ru;; *);
+		[Def. (age restictions)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_age_restictions;
+		concept_rules;
+		concept_restrictions;
+		concept_institutions;
+		concept_minimum_age;
+		concept_maximum_age;
+		concept_visitors;
+		concept_events;
+		concept_exhibits;
+		concept_programs;
+		nrel_imposed_by;
+		nrel_determine;
+		nrel_allowed_to_attend
+	};;
+*);;

@@ -1,0 +1,29 @@
+nrel_capacity
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[вместимость*] (* <- lang_ru;; *);
+	[capacity*] (* <- lang_en;; *);;
+
+definition -> definition_of_capacity (*
+	-> rrel_key_sc_element: nrel_capacity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вместимость - это понятие, которое описывает максимальное количество людей, которое может вместить помещение, сооружение или объект.] (* <- lang_ru;; *);;
+		-> [Capacity is a concept that describes the maximum number of people that a room, structure, or facility can hold.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (вместимость)] (* <- lang_ru;; *);
+		[Def. (capacity)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_capacity;
+		concept_describes;
+		concept_maximum_number;
+		concept_people;
+		concept_room;
+		concept_structure;
+		concept_facility;
+		nrel_can_hold
+	};;
+*);;

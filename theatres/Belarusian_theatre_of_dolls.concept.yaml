@@ -1,0 +1,41 @@
+# belarusian_theatre_of_dolls
+# <- concept_food_establishment;
+# => nrel_main_idtf:
+# 	["Белорусский театр кукол"] (* <- lang_ru;; *);
+# 	[Belarusian theatre of dolls] (* <- lang_en;; *);
+
+# <- rrel_key_sc_element: ...
+# (*
+#  <- illustration;;
+#  => nrel_main_idtf:
+#   	["Белорусский театр кукол"] (* <- lang_ru;; *);
+# 	[Belarusian theatre of dolls] (* <- lang_en;; *);;
+#  <= nrel_sc_text_translation: ...
+#  (*
+#   -> rrel_example: "file://img/belarusian_theatre_of_dolls.png"
+#   (*
+#    => nrel_format: format_png;;
+#   *);;
+#  *);;
+# *);;
+
+# definition -> definition_of_belarusian_theatre_of_dolls (*
+# 	-> rrel_key_sc_element: belarusian_theatre_of_dolls;;
+
+# 	<= nrel_sc_text_translation: ... (*
+# 		-> [Белорусский театр кукол - это старейший(основан в 1938) и самый уважаемый театр кукол в Беларуси.] (* <- lang_ru;; *);;
+# 		-> [Belarusian theatre of dools is the oldest(founded in 1938) and the most respectable theatre of dolls in Belarus.] (* <- lang_en;; *);;
+# 	*);;
+
+# 	=> nrel_main_idtf:
+# 		[Опр. (Белорусский театр кукол)] (* <- lang_ru;; *);
+# 		[Def. (Arbat restaurant)] (* <- lang_en;; *);;
+
+# 	=> nrel_using_constants: {
+# 		concept_theatres;
+# 		belarusian_theatre_of_dolls;
+# 		minsk;
+# 		belarus;
+#         concept_for_kids
+# 	};;
+# *);;
