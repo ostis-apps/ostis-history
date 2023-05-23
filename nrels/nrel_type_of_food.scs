@@ -1,0 +1,29 @@
+nrel_type_of_food
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[тип еды*] (* <- lang_ru;; *);
+	[type of food*] (* <- lang_en;; *);;
+
+definition -> definition_of_type_of_food (*
+	-> rrel_key_sc_element: nrel_type_of_food;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тип еды - это классификация, которая определяет основной стиль или кухню, предлагаемую в заведении питания.] (* <- lang_ru;; *);;
+		-> [Food type is a classification that defines the basic style or cuisine offered in a food establishment.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (тип еды)] (* <- lang_ru;; *);
+		[Def. (type of food)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_type_of_food;
+		concept_classification;
+		concept_style;
+		concept_cuisine;
+		concept_offered;
+		concept_food_establishment;
+		nrel_defines;
+		nrel_offered_in
+	};;
+*);;

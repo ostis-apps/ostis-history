@@ -1,0 +1,27 @@
+nrel_average_bill
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[средний чек*] (* <- lang_ru;; *);
+	[average bill*] (* <- lang_en;; *);;
+
+definition -> definition_of_average_bill (*
+	-> rrel_key_sc_element: nrel_average_bill;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Средний чек - это средняя сумма, которую клиент тратит при посещении заведения питания.] (* <- lang_ru;; *);;
+		-> [The average bill is the average amount a customer spends when visiting a food establishment.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (средний чек)] (* <- lang_ru;; *);
+		[Def. (average bill)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_average_bill;
+		concept_average_amount;
+		concept_customer;
+		concept_spends;
+		concept_food_establishment;
+		nrel_when_visiting
+	};;
+*);;
