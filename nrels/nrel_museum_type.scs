@@ -1,8 +1,8 @@
 nrel_museum_type
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[тип музея*] (* <- lang_ru;; *);
-	[type of museum*] (* <- lang_en;; *);;
+	[тип музея] (* <- lang_ru;; *);
+	[type of museum] (* <- lang_en;; *);;
 
 definition -> definition_of_museum_type (*
 	-> rrel_key_sc_element: nrel_museum_type;;

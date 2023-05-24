@@ -1,8 +1,8 @@
 nrel_average_bill
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[средний чек*] (* <- lang_ru;; *);
-	[average bill*] (* <- lang_en;; *);;
+	[средний чек] (* <- lang_ru;; *);
+	[average bill] (* <- lang_en;; *);;
 
 definition -> definition_of_average_bill (*
 	-> rrel_key_sc_element: nrel_average_bill;;

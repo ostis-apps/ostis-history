@@ -1,5 +1,5 @@
 octyabrskaya_street
-<- concept_movie_theatre;
+<- concept_historic_district;
 => nrel_main_idtf:
 	[Улица Октябрьская] (* <- lang_ru;; *);
 	[Octyabrskya street] (* <- lang_en;; *);

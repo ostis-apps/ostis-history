@@ -1,1 +1,60 @@
-en: Yanka Kupala theatre
+yanka_kupala_theater
+<- concept_theater;
+=> nrel_main_idtf:
+	[Театр имени Янки Купалы] (* <- lang_ru;; *);
+	[Yanka Kupala theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Театр имени Янки Купалы] (* <- lang_ru;; *);
+	[Yanka Kupala theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/yanka_kupala_theater.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_yanka_kupala_theater (*
+	-> rrel_key_sc_element: yanka_kupala_theater;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Театр имени Янки Купалы - старейший театр Беларуси, основанный в 1890 году. Весь репертуар театра играется на белорусском языке.] (* <- lang_ru;; *);;
+		-> [Yanka Kupala theater the oldest theater in Belarus, founded in 1890. The entire repertoire of the theater is played in Belarusian.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Театр имени Янки Купалы)] (* <- lang_ru;; *);
+		[Def. (Yanka Kupala theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_theater;
+        concept_perfomance;
+		yanka_kupala_theater;
+		minsk;
+		belarus;
+        concept_belarusian_language;
+        concept_costumes;
+        concept_director;
+        concept_actors;
+		concept_soviet_architecture;
+		concept_medium_cost;
+        concept_orchestra;
+		concept_belarusian_culture;
+        concept_scene;
+		nrel_offers;
+		nrel_provides;
+		nrel_perform;
+		nrel_play
+	};;
+*);;
+
+yanka_kupala_theater
+	=> nrel_capacity: 2000;
+    => nrel_number_of_halls : 1;
+	=> nrel_ticket_price: 25;
+	=> nrel_coordinates: 53.90083215119081_27.562696940304214;;

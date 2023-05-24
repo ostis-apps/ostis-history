@@ -9,18 +9,18 @@ elementum_bar
  <- illustration;;
  => nrel_main_idtf:
   	[Бар Elementum] (* <- lang_ru;; *);
-	  [Elementum bar] (* <- lang_en;; *);;
+	[Elementum bar] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
-  -> rrel_example: "file://imgeElementum_bar.png"
+  -> rrel_example: "file://img/elementum_bar.png"
   (*
    => nrel_format: format_png;;
   *);;
  *);;
 *);;
 
-definition -> definition_ofeElementum_bar (*
-	-> rrel_key_sc_element:eElementum_bar;;
+definition -> definition_of_elementum_bar (*
+	-> rrel_key_sc_element:elementum_bar;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Elementum bar - современный бар-кальянная недалеко от кинотетра Победа на Немиге.] (* <- lang_ru;; *);;
@@ -33,7 +33,7 @@ definition -> definition_ofeElementum_bar (*
 
 	=> nrel_using_constants: {
 		concept_food_establishment;
-	eElementum_bar;
+		Elementum_bar;
 		minsk;
 		belarus;
 		concept_bar;
@@ -59,7 +59,7 @@ definition -> definition_ofeElementum_bar (*
 		nrel_creating
 	};;
 *);;
-eElementum_bar
+elementum_bar
 	=> nrel_food_establishment_type: bar;
 	=> nrel_age_restictions: 15_plus;	
 	=> nrel_capacity: 40;

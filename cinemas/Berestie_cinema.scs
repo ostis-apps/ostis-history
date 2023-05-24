@@ -1,15 +1,15 @@
 berestie_cinema
-<- concept_movie_theatre;
+<- concept_movie_theater;
 => nrel_main_idtf:
 	[Кинотеатр "Берестье"] (* <- lang_ru;; *);
-	[Berestie movie theatre] (* <- lang_en;; *);
+	[Berestie movie theater] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
   	[Кинотеатр "Берестье"] (* <- lang_ru;; *);
-	[Berestie movie theatre] (* <- lang_en;; *);;
+	[Berestie movie theater] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
   -> rrel_example: "file://img/berestie_cinema.png"
@@ -24,15 +24,15 @@ definition -> definition_of_berestie_cinema (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> ["Берестье" - основанный в 1989 году кинотеатр с 2 залами, один из которых повышенной комфортности. Находится на Петровщине.] (* <- lang_ru;; *);;
-		-> [Berestie is a movie theatre founded in 1989 with 2 halls, one of which is superior. Located in Petrovschina.] (* <- lang_en;; *);;
+		-> [Berestie is a movie theater founded in 1989 with 2 halls, one of which is superior. Located in Petrovschina.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
 		[Опр. (Кинотеатр "Берестье")] (* <- lang_ru;; *);
-		[Def. (berestie movie theatre)] (* <- lang_en;; *);;
+		[Def. (berestie movie theater)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_movie_theatre;
+		concept_movie_theater;
 		berestie_cinema;
         concept_high_comfort;
         concept_fresh_air;
@@ -54,6 +54,6 @@ definition -> definition_of_berestie_cinema (*
 berestie_cinema
 	=> nrel_capacity: 450;
     => nrel_3D: yes;
-	=> nrel_average_cost: 25;
+	=> nrel_ticket_price: 25;
     => nrel_number_of_halls : 2;
 	=> nrel_coordinates: 53.86424315499448_27.483160797974552;;

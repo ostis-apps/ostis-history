@@ -1,5 +1,5 @@
 troitskae_predmiestie
-<- concept_movie_theatre;
+<- concept_historic_district;
 => nrel_main_idtf:
 	[Троицкое предместье] (* <- lang_ru;; *);
 	[Troitskae predmiestie] (* <- lang_en;; *);

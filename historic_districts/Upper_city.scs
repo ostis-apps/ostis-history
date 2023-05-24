@@ -1,5 +1,5 @@
 upper_city
-<- concept_movie_theatre;
+<- concept_historic_district;
 => nrel_main_idtf:
 	[Верхний город] (* <- lang_ru;; *);
 	[Upper city] (* <- lang_en;; *);

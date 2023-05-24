@@ -1,0 +1,59 @@
+belarusian_theater_of_young_watcher
+<- concept_theater;
+=> nrel_main_idtf:
+	[Белорусский театр юного зрителя] (* <- lang_ru;; *);
+	[Belarusian theater of young watcher] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Белорусский театр юного зрителя] (* <- lang_ru;; *);
+	[Belarusian theater of young watcher] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/belarusian_theater_of_young_watcher.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_belarusian_theater_of_young_watcher (*
+	-> rrel_key_sc_element: belarusian_theater_of_young_watcher;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Белорусский театр юного зрителя - в репертуаре театра находится 29 разножанровых спектаклей. Из них 15 для детей дошкольного и младшего школьного возраста, остальные для подростков и взрослых.] (* <- lang_ru;; *);;
+		-> [Belarusian theater of young watcher's repertoire includes 29 performances of various genres. Of these, 15 are for children of preschool and primary school age, the rest are for teenagers and adults.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Белорусский театр юного зрителя)] (* <- lang_ru;; *);
+		[Def. (Belarusian theater of young watcher)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_theater;
+        concept_perfomance;
+		belarusian_theater_of_young_watcher;
+		minsk;
+		belarus;
+        concept_kids;
+        concept_costumes;
+        concept_director;
+        concept_actors;
+        concept_orchestra;
+		concept_soviet_architecture;
+		concept_cheap_cost;
+        concept_scene;
+		nrel_offers;
+		nrel_provides;
+		nrel_perform;
+		nrel_play
+	};;
+*);;
+
+belarusian_theater_of_young_watcher
+	=> nrel_capacity: 2000;
+    => nrel_number_of_halls : 1;
+	=> nrel_ticket_price: 20;
+	=> nrel_coordinates: 53.898430050172166_27.564149844772935;;

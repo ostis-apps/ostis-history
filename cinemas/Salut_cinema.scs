@@ -1,15 +1,15 @@
 salut_cinema
-<- concept_movie_theatre;
+<- concept_movie_theater;
 => nrel_main_idtf:
 	[Кинотеатр "Салют"] (* <- lang_ru;; *);
-	[Salut movie theatre] (* <- lang_en;; *);
+	[Salut movie theater] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
   	[Кинотеатр "Салют"] (* <- lang_ru;; *);
-	[Salut movie theatre] (* <- lang_en;; *);;
+	[Salut movie theater] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
   -> rrel_example: "file://img/salut_cinema.png"
@@ -32,7 +32,7 @@ definition -> definition_of_salut_cinema (*
 		[Def. (Salut cinema)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_movie_theatre;
+		concept_movie_theater;
 		salut_cinema;
         concept_good_image_quality;
 		minsk;
@@ -51,6 +51,6 @@ definition -> definition_of_salut_cinema (*
 salut_cinema
 	=> nrel_capacity: 600;
     => nrel_3D: no;
-	=> nrel_average_cost: 20;
+	=> nrel_ticket_price: 20;
     => nrel_number_of_halls : 3;
 	=> nrel_coordinates: 53.855430238244004_27.610242455646283;;

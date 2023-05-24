@@ -63,6 +63,6 @@ dictator_bar
 	=> nrel_average_bill: 20_to_30;
 	=> nrel_coordinates: 53.891118750090826_27.57135908263156;
 	=> nrel_type_of_food: 
-		no_food;;
+		no_food;
 	=> nrel_type_of_drink: 
 		coctail;;

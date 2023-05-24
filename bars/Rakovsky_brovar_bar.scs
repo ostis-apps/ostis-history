@@ -29,7 +29,7 @@ definition -> definition_of_rakovsky_brovar_bar (*
 
 	=> nrel_main_idtf:
 		[Опр. (Бар "Раковский бровар")] (* <- lang_ru;; *);
-		[Def. (rakovsky_brovar bar)] (* <- lang_en;; *);;
+		[Def. (Rakovsky brovar bar)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_food_establishment;

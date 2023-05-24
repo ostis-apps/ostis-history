@@ -1,15 +1,15 @@
 pioneer_cinema
-<- concept_movie_theatre;
+<- concept_movie_theater;
 => nrel_main_idtf:
 	[Кинотеатр "Пионер"] (* <- lang_ru;; *);
-	[Pioneer movie theatre] (* <- lang_en;; *);
+	[Pioneer movie theater] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
   	[Кинотеатр "Пионер"] (* <- lang_ru;; *);
-	[Pioneer movie theatre] (* <- lang_en;; *);;
+	[Pioneer movie theater] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
   -> rrel_example: "file://img/pioneer_cinema.png"
@@ -24,20 +24,20 @@ definition -> definition_of_pioneer_cinema (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> ["Пионер" - один из первый кинотеатров в Беларуси. Основан в 2008, расположен в одном зданиий с Белорусским театром кукол.] (* <- lang_ru;; *);;
-		-> [Pioneer is one of the first cinemas in Belarus. Founded in 2008, located in the same building as the Belarusian Theatre of Dolls.] (* <- lang_en;; *);;
+		-> [Pioneer is one of the first cinemas in Belarus. Founded in 2008, located in the same building as the Belarusian theater of Dolls.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
 		[Опр. (Кинотеатр "Пионер")] (* <- lang_ru;; *);
-		[Def. (Pioneer  movie theatre)] (* <- lang_en;; *);;
+		[Def. (Pioneer  movie theater)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_movie_theatre;
+		concept_movie_theater;
 		pioneer_cinema;
         concept_low_comfort;
         concept_listopad;
         concept_good_image_quality;
-		belarusian_theatre_of_dolls;
+		belarusian_theater_of_dolls;
 		minsk;
 		pioneer;
         concept_multiplexor;
@@ -54,6 +54,6 @@ definition -> definition_of_pioneer_cinema (*
 pioneer_cinema
 	=> nrel_capacity: 400;
     => nrel_3D: yes;
-	=> nrel_average_cost: 15;
+	=> nrel_ticket_price: 15;
     => nrel_number_of_halls : 1;
 	=> nrel_coordinates: 53.89961830165724_27.563179336639543;;

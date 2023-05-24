@@ -12,15 +12,15 @@ lidbeer_bar
 	  [Lidbeer bar] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
-  -> rrel_example: "file://imglLidbeer_bar.png"
+  -> rrel_example: "file://img/lidbeer_bar.png"
   (*
    => nrel_format: format_png;;
   *);;
  *);;
 *);;
 
-definition -> definition_oflLidbeer_bar (*
-	-> rrel_key_sc_element:lLidbeer_bar;;
+definition -> definition_of_lidbeer_bar (*
+	-> rrel_key_sc_element:lidbeer_bar;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Lidbeer bar - бар на проспекте Дзержинского с демократичными ценами и отличным крафтовым пивом.] (* <- lang_ru;; *);;
@@ -33,7 +33,7 @@ definition -> definition_oflLidbeer_bar (*
 
 	=> nrel_using_constants: {
 		concept_food_establishment;
-	lLidbeer_bar;
+	Lidbeer_bar;
 		minsk;
 		belarus;
 		concept_bar;
@@ -58,7 +58,7 @@ definition -> definition_oflLidbeer_bar (*
 		nrel_creating
 	};;
 *);;
-lLidbeer_bar
+lidbeer_bar
 	=> nrel_food_establishment_type: bar;
 	=> nrel_age_restictions: 15_plus;	
 	=> nrel_capacity: 100;

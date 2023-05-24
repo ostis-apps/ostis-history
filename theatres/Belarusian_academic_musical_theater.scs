@@ -1,0 +1,59 @@
+belarusian_academic_musical_theater
+<- concept_theater;
+=> nrel_main_idtf:
+	[Белорусский государственный академический музыкальный театр] (* <- lang_ru;; *);
+	[Belarusian state academic musical theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Белорусский государственный академический музыкальный театр] (* <- lang_ru;; *);
+	[Belarusian state academic musical theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/belarusian_academic_musical_theater.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_belarusian_academic_musical_theater (*
+	-> rrel_key_sc_element: belarusian_academic_musical_theater;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Белорусский государственный академический музыкальный театр - один из двух музыкальных театров Беларуси, основан в 1970 году и ставит в основном оперу и балет.] (* <- lang_ru;; *);;
+		-> [Belarusian state academic musical theater, founded in 1970, is one of two Belarusian musical theaters. Its repertoire includes opera and ballet.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Белорусский государственный академический музыкальный театр)] (* <- lang_ru;; *);
+		[Def. (Belarusian state academic musical theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_theater;
+    concept_perfomance;
+		belarusian_academic_musical_theater;
+		minsk;
+		belarus;
+    concept_opera;
+    concept_ballet;
+    concept_director;
+    concept_actors;
+    concept_orchestra;
+		concept_soviet_architecture;
+		concept_cheap_cost;
+    concept_scene;
+		nrel_offers;
+		nrel_provides;
+		nrel_perform;
+		nrel_play
+	};;
+*);;
+
+belarusian_academic_musical_theater
+	=> nrel_capacity: 2000;
+    => nrel_number_of_halls : 1;
+	=> nrel_ticket_price: 30;
+	=> nrel_coordinates: 53.896042446418_27.539835142156342;;

@@ -1,15 +1,15 @@
 belarus_cinema
-<- concept_movie_theatre;
+<- concept_movie_theater;
 => nrel_main_idtf:
 	[Кинотеатр "Беларусь"] (* <- lang_ru;; *);
-	[Belarus movie theatre] (* <- lang_en;; *);
+	[Belarus movie theater] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
   	[Кинотеатр "Беларусь"] (* <- lang_ru;; *);
-	[Belarus movie theatre] (* <- lang_en;; *);;
+	[Belarus movie theater] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
   -> rrel_example: "file://img/belarus_cinema.png"
@@ -29,10 +29,10 @@ definition -> definition_of_belarus_cinema (*
 
 	=> nrel_main_idtf:
 		[Опр. (Кинотеатр "Беларусь")] (* <- lang_ru;; *);
-		[Def. (Belarus  movie theatre)] (* <- lang_en;; *);;
+		[Def. (Belarus  movie theater)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_movie_theatre;
+		concept_movie_theater;
 		belarus_cinema;
         concept_high_comfort;
         concept_fresh_air;
@@ -53,6 +53,6 @@ definition -> definition_of_belarus_cinema (*
 belarus_cinema
 	=> nrel_capacity: 700;
     => nrel_3D: yes;
-	=> nrel_average_cost: 30;
+	=> nrel_ticket_price: 25;
     => nrel_number_of_halls : 5;
 	=> nrel_coordinates: 53.90550684049567_27.54245674841501;;

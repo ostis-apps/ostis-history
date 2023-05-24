@@ -1,20 +1,20 @@
-concept_movie_theatre
+concept_movie_theater
 <- sc_node_class;
 => nrel_main_idtf:
 	[Кинотеатр] (* <- lang_ru;; *);
-	[Movie_theatre] (* <- lang_en;; *);;
+	[Movie theater] (* <- lang_en;; *);;
 
-definition -> definition_of_movie_theatre (*
-	-> rrel_key_sc_element: concept_movie_theatre;;
+definition -> definition_of_movie_theater (*
+	-> rrel_key_sc_element: concept_movie_theater;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Кинотеатр - общественное здание или его часть с оборудованием для публичной демонстрации фильмов.] (* <- lang_ru;; *);;
-		-> [Movie theatre is public building or part of it with equipment for the public display of films.] (* <- lang_en;; *);;
+		-> [Movie theater is public building or part of it with equipment for the public display of films.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
 		[Опр. (Кинотеатр)] (* <- lang_ru;; *);
-		[Def. (Movie theatre)] (* <- lang_en;; *);;
+		[Def. (Movie theater)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_organization;
@@ -23,7 +23,7 @@ definition -> definition_of_movie_theatre (*
         concept_display;
 		concept_3D;
         concept_viewer;
-		concept_movie_theatre;
+		concept_movie_theater;
 		concept_popcorn;
 		concept_screen;
 		nrel_watch;
@@ -31,8 +31,8 @@ definition -> definition_of_movie_theatre (*
 	};;
 *);;
 
-statement -> statement_of_movie_theatre (*
-	-> rrel_key_sc_element: concept_movie_theatre;;
+statement -> statement_of_movie_theater (*
+	-> rrel_key_sc_element: concept_movie_theater;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Кинотеатры являются излюбленным местом для молодых пар, семей с маленькими детьми и свиданий благодаря относительно дешевизне и низкому порогу восприятия.] (* <- lang_ru;; *);;
@@ -41,13 +41,13 @@ statement -> statement_of_movie_theatre (*
 
 	=> nrel_main_idtf:
 		[Утв. (О кинотеатре)] (* <- lang_ru;; *);
-		[Stat. (About movie theatre)] (* <- lang_en;; *);;
+		[Stat. (About movie theater)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_organization;
 		concept_entartaiment;
 		concept_cinema;
-		concept_movie_theatre;
+		concept_movie_theater;
 		concept_popcorn;
 		concept_film;
 		concept_family;

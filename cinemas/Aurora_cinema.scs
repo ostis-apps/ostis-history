@@ -1,15 +1,15 @@
 aurora_cinema
-<- concept_movie_theatre;
+<- concept_movie_theater;
 => nrel_main_idtf:
 	[Кинотеатр "Аврора"] (* <- lang_ru;; *);
-	[Aurora movie theatre] (* <- lang_en;; *);
+	[Aurora movie theater] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
   	[Кинотеатр "Аврора"] (* <- lang_ru;; *);
-	[Aurora movie theatre] (* <- lang_en;; *);;
+	[Aurora movie theater] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
   -> rrel_example: "file://img/aurora_cinema.png"
@@ -29,10 +29,10 @@ definition -> definition_of_aurora_cinema (*
 
 	=> nrel_main_idtf:
 		[Опр. (Кинотеатр "Аврора")] (* <- lang_ru;; *);
-		[Def. (Aurora movie theatre)] (* <- lang_en;; *);;
+		[Def. (Aurora movie theater)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_movie_theatre;
+		concept_movie_theater;
 		aurora_cinema;
 		minsk;
 		belarus;
@@ -51,5 +51,5 @@ aurora_cinema
 	=> nrel_capacity: 1000;
     => nrel_3D: no;
     => nrel_number_of_halls : 3;
-	=> nrel_average_cost: 20;
+	=> nrel_ticket_price: 15;
 	=> nrel_coordinates: 53.90889462547645_27.49262334725116;;

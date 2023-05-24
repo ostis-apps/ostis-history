@@ -1,0 +1,61 @@
+big_theater_of_belarus
+<- concept_theater;
+=> nrel_main_idtf:
+	[Большой театр Беларуси] (* <- lang_ru;; *);
+	[Big theater of Belarus] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Большой театр Беларуси] (* <- lang_ru;; *);
+	[Big theater of Belarus] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/big_theater_of_belarus.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_big_theater_of_belarus (*
+	-> rrel_key_sc_element: big_theater_of_belarus;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Большой театр Беларуси - единственный оперный театр Белоруссии и крупнейший театр страны, расположенный в Минске. Основан в 1933.] (* <- lang_ru;; *);;
+		-> [Big theater of Belarus is the only opera house in Belarus and the largest theater in the country, located in Minsk. Founded in 1933.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Большой театр Беларуси)] (* <- lang_ru;; *);
+		[Def. (Big theater of Belarus)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_theater;
+        concept_perfomance;
+		big_theater_of_belarus;
+		minsk;
+		belarus;
+        concept_ballet;
+        concept_opera;
+        concept_costumes;
+        concept_director;
+        concept_actors;
+        concept_orchestra;
+		concept_soviet_architecture;
+		concept_high_cost;
+        concept_orchestra;
+        concept_scene;
+		nrel_offers;
+		nrel_provides;
+		nrel_perform;
+		nrel_play
+	};;
+*);;
+
+big_theater_of_belarus
+	=> nrel_capacity: 4000;
+    => nrel_number_of_halls : 1;
+	=> nrel_ticket_price: 40;
+	=> nrel_coordinates: 53.910399369828056_27.56158967099312;;

@@ -1,15 +1,15 @@
 silver_screen_cinema
-<- concept_movie_theatre;
+<- concept_movie_theater;
 => nrel_main_idtf:
 	[Кинотеатр "Silver Screen"] (* <- lang_ru;; *);
-	[Silver screen movie theatre] (* <- lang_en;; *);
+	[Silver screen movie theater] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
   	[Кинотеатр "Silver Screen"] (* <- lang_ru;; *);
-	[Silver screen movie theatre] (* <- lang_en;; *);;
+	[Silver screen movie theater] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
   -> rrel_example: "file://img/silver_screen_cinema.png"
@@ -33,7 +33,7 @@ definition -> definition_of_silver_screen_cinema (*
 
 	=> nrel_using_constants: {
 		concept_shopping_mall_castle;
-		concept_movie_theatre;
+		concept_movie_theater;
 		silver_screen_cinema;
         concept_high_comfort;
         concept_fresh_air;
@@ -56,6 +56,6 @@ definition -> definition_of_silver_screen_cinema (*
 silver_screen_cinema
 	=> nrel_capacity: 300;
     => nrel_3D: yes;
-	=> nrel_average_cost: 40;
+	=> nrel_ticket_price: 40;
     => nrel_number_of_halls : 2;
 	=> nrel_coordinates: 53.93804719490919_27.487757055650153;;
