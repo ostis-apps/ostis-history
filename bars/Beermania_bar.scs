@@ -1,0 +1,89 @@
+  beermania_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар Beermania] (* <- lang_ru;; *);
+	[Beermania bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар Beermania] (* <- lang_ru;; *);
+	  [Beermania bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/beermania_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_beermania_bar (*
+	-> rrel_key_sc_element: beermania_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Beermania bar - бар на Немиге с дешёвым алкоголем и умеренными отзывами. Известен большими толпами малолеток и отсутсвием безналичной оплаты.] (* <- lang_ru;; *);;
+		-> [Beermania bar - bar near Nemiga with cheap alcohol and a lot of under-age customers. Don't have support of paycard.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар Beermania)] (* <- lang_ru;; *);
+		[Def. (Beermania bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		beermania_bar;
+		minsk;
+		belarus;
+		concept_only_cash;
+		concept_cheap_beer;
+		concept_pupils;
+		concept_bar;
+		concept_modern_atmosphere;
+		concept_eclectic_menu;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_hearty_breakfast_options;
+		concept_delicious_sandwiches;
+		concept_salads;
+		concept_music;
+		concept_cheap_alcohol;
+		concept_specialty_coffee;
+		concept_espresso_based_drinks;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_delicious_burgers;
+		concept_pastries;
+		concept_interior_design;
+		concept_rustic_and_contemporary_elements;
+		concept_comfortable_and_inviting_ambiance;
+		concept_casual_gathering;
+		concept_place_for_watch_football;
+		concept_flavorful_meal;
+		concept_vibrant_dining_experience;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+beermania_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 10_plus;	
+	=> nrel_capacity: 80;
+	=> nrel_average_bill: 5_to_10;
+	=> nrel_coordinates: 53.898061202577615_27.545109224959816;
+	=> nrel_type_of_food: 
+		fast_food;
+		sandwich;
+		pizza;
+	=> nrel_type_of_drink: 
+		coffee;
+    	wine;
+    	liquor;
+    	coctail;
+    	vodka;
+    	beer;
+		tea;;

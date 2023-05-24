@@ -1,7 +1,82 @@
-ru: Бар Backdoor | Бар Бэкдор | Бэкдор
-en: Backdoor bar
+  backdoor_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар Backdoor] (* <- lang_ru;; *);
+	[Backdoor bar] (* <- lang_en;; *);
 
-definition:
-  ru: Backdoor bar - бар на Октябрьской с сочными и вкусными бургерами, приглашающий как любителей вкусно поесть, так и любителей повеселиться
-  en: Backdoor bar - bar along Octyabrskaya street with juicy and yammy burgers that invites both fans of hanging out and yammy food
-  
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар Backdoor] (* <- lang_ru;; *);
+	  [Backdoor bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/backdoor_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_backdoor_bar (*
+	-> rrel_key_sc_element: backdoor_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Backdoor bar - бар на Октябрьской с сочными и вкусными бургерами, приглашающий как любителей вкусно поесть, так и любителей повеселиться.] (* <- lang_ru;; *);;
+		-> [Backdoor bar - bar along Octyabrskaya street with juicy and yammy burgers that invites both fans of hanging out and yammy food.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар Backdoor)] (* <- lang_ru;; *);
+		[Def. (Backdoor bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		backdoor_bar;
+		minsk;
+		belarus;
+		concept_bar;
+		concept_modern_atmosphere;
+		concept_eclectic_menu;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_hearty_breakfast_options;
+		concept_delicious_sandwiches;
+		concept_salads;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_delicious_burgers;
+		concept_pastries;
+		concept_interior_design;
+		concept_rustic_and_contemporary_elements;
+		concept_comfortable_and_inviting_ambiance;
+		concept_casual_gathering;
+		concept_place_for_watch_football;
+		concept_flavorful_meal;
+		concept_vibrant_dining_experience;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+backdoor_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 15_plus;	
+	=> nrel_capacity: plus;
+	=> nrel_average_bill: 10_to_20;
+	=> nrel_coordinates: 53.88962455940514_27.57098276137696;
+	=> nrel_type_of_food: 
+		fast_food;
+		sandwich;
+    burgers;
+	=> nrel_type_of_drink: 
+		coffee;
+    wine;
+    liquor;
+    coctail;
+    vodka;
+    beer;
+		tea;;

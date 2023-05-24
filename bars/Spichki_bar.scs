@@ -1,2 +1,75 @@
-ru: бар Spichki | бар Спички | Спички
-en: Spichki bar | Spichki | spichki
+spichki_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар "Спички"] (* <- lang_ru;; *);
+	[Spichki bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар "Спички"] (* <- lang_ru;; *);
+	[Spichki bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/spichki_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_spichki_bar (*
+	-> rrel_key_sc_element: spichki_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Спички - заведение на Октябрьской, известное вкусными и разнообразными настойками и качественным обслуживанием.] (* <- lang_ru;; *);;
+		-> [Spichki is establishment on Oktyabrskaya, famous for its delicious and varied tinctures and quality service.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар "Спички")] (* <- lang_ru;; *);
+		[Def. (Spichki bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		spichki_bar;
+		minsk;
+		belarus;
+		concept_bar;
+		octyabrskaya_street;
+		concept_modern_atmosphere;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_craft_beer;
+        concept_fast_serving;
+        concept_tincture;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_interior_design;
+		concept_comfortable_and_inviting_ambiance;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+spichki_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 60;
+	=> nrel_average_bill: 20_to_30;
+	=> nrel_coordinates: 53.90672414371426_27.480545638624065;
+	=> nrel_type_of_food: 
+        burgers;
+        bread;
+        sandwich;
+	=> nrel_type_of_drink: 
+		coffee;
+        whiskey;
+        coctail;
+        tincture;
+        vodka;
+        beer;
+		tea;;

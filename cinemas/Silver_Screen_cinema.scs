@@ -1,2 +1,61 @@
-ru: кинотетр Silver Screen | кинотеатр Сильвер Скрин
-en: Silver Screen cinema
+silver_screen_cinema
+<- concept_movie_theatre;
+=> nrel_main_idtf:
+	[Кинотеатр "Silver Screen"] (* <- lang_ru;; *);
+	[Silver screen movie theatre] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кинотеатр "Silver Screen"] (* <- lang_ru;; *);
+	[Silver screen movie theatre] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/silver_screen_cinema.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_silver_screen_cinema (*
+	-> rrel_key_sc_element: silver_screen_cinema;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> ["Silver Screen" - кинотеатр, представляющий собой два зала высокой комфортнотности в ТЦ Замок. Основан в 2011.] (* <- lang_ru;; *);;
+		-> [Silver screen is cinema, which consists of two high-comfort halls in the Zamok shopping center. Founded in 2011.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кинотеатр "Silver Screen")] (* <- lang_ru;; *);
+		[Def. (Silver screen cinema)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_shopping_mall_castle;
+		concept_movie_theatre;
+		silver_screen_cinema;
+        concept_high_comfort;
+        concept_fresh_air;
+        concept_good_image_quality;
+		minsk;
+		concept_imax;
+		concept_4k;
+		silver_screen;
+        concept_multiplexor;
+		concept_contemporary_architecture;
+		concept_high_cost;
+        concept_cinema;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+silver_screen_cinema
+	=> nrel_capacity: 300;
+    => nrel_3D: yes;
+	=> nrel_average_cost: 40;
+    => nrel_number_of_halls : 2;
+	=> nrel_coordinates: 53.93804719490919_27.487757055650153;;
