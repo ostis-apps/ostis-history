@@ -1,0 +1,64 @@
+national_history_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Национальный музей истории Беларуси] (* <- lang_ru;; *);
+	[National History Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Национальный музей истории Беларуси] (* <- lang_ru;; *);
+	[National History Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/national_history_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_national_art_museum (*
+	-> rrel_key_sc_element: national_art_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Национальный музей истории Беларуси - это главный исторический музей Беларуси, расположенный в Минске. Он был основан в 1957 году и в настоящее время является крупнейшим музеем страны, посвященным истории Беларуси. В музее представлены экспонаты из разных эпох, от каменного века до наших дней, а также многочисленные археологические находки, картины и иконы, редкие книги и документы, оружие и мебель.] (* <- lang_ru;; *);;
+		-> [National History Museum is the main historical museum of Belarus, located in Minsk. It was founded in 1957 and is currently the largest museum in the country dedicated to the history of Belarus. The museum exhibits artifacts from different eras, from the Stone Age to the present day, as well as numerous archaeological finds, paintings and icons, rare books and documents, weapons and furniture.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Национальный музей истории Беларуси)] (* <- lang_ru;; *);
+		[Def. (National History Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		national_history_museum;
+		concept_location;
+		minsk;
+		belarus;
+		concept_foundation;
+		concept_artifacts;
+		concept_eras;
+		concept_stone_age;
+		concept_present_day;
+		concept_archaeological_finds;
+		concept_paintings;
+		concept_icons;
+		concept_rare_books;
+		concept_documents;
+		concept_weapons;
+		concept_furniture;
+		nrel_located_in;
+		nrel_founded_by;
+		nrel_exhibits;
+		nrel_includes
+	};;
+*);;
+
+national_history_museum
+	=> nrel_museum_type: history_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: 2_to_7;
+	=> nrel_coordinates: 53.896817_27.555356;
+	=> nrel_age_restictions: 0_plus;;

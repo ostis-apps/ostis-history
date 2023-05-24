@@ -1,0 +1,91 @@
+stories_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "Stories"] (* <- lang_ru;; *);
+	[Stories cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "Stories"] (* <- lang_ru;; *);
+	[Stories cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/stories_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_stories_cafe (*
+	-> rrel_key_sc_element: stories_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "Stories" - это очаровательное и уютное заведение, расположенное в Минске, Беларусь. Кафе предлагает уникальный и электичный опыт питания, акцентируя внимание на рассказах через еду. Меню Кафе "Stories" включает разнообразные блюда, вдохновленные различными кулинарными традициями, сочетая вкусы и техники для создания запоминающихся и вкусных блюд. От сытных завтраков до привлекательных выборов для обеда и ужина, здесь найдется что-то для удовлетворения любого вкуса. Кафе гордится использованием местных ингредиентов, обеспечивая свежесть и поддерживая местных производителей. Вместе с восхитительной едой, Кафе "Stories" предлагает выбор специальных кофе, чаев и других напитков, которые дополнят ваш прием пищи. Интерьер кафе продуманно оформлен, с уютными зонами для отдыха и теплой атмосферой, приглашающей гостей расслабиться и насладиться своим кулинарным опытом. Будь то поиск тихого места для чтения книги, встречи с друзьями или наслаждение вкусной едой, Кафе "Stories" создает гостеприимную атмосферу и предлагает изысканную кухню для всех, кто посещает его.] (* <- lang_ru;; *);;
+		-> [Stories cafe is a charming and cozy café located in Minsk, Belarus. The café offers a unique and eclectic dining experience with a focus on storytelling through food. The menu at Stories cafe features a variety of dishes inspired by different culinary traditions, combining flavors and techniques to create memorable and delicious meals. From hearty breakfast options to mouthwatering lunch and dinner choices, there is something to satisfy every palate. The café takes pride in using locally sourced ingredients, ensuring freshness and supporting local producers. Alongside the delectable food, Stories cafe offers a selection of specialty coffees, teas, and other beverages to complement your meal. The interior of the café is thoughtfully designed, with cozy seating areas and a warm atmosphere that invites guests to relax and enjoy their dining experience. Whether you're looking for a quiet spot to read a book, meet friends for a chat, or enjoy a tasty meal, Stories cafe provides a welcoming ambiance and delicious cuisine for all to enjoy.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "Stories")] (* <- lang_ru;; *);
+		[Def. (Stories cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		stories_cafe;
+		minsk;
+		belarus;
+		concept_charming_and_cozy_cafe;
+		concept_unique_and_eclectic_dining_experience;
+		concept_storytelling_through_food;
+		concept_menu;
+		concept_inspired_by_different_culinary_traditions;
+		concept_memorable_and_delicious_meals;
+		concept_hearty_breakfast_options;
+		concept_mouthwatering_lunch_and_dinner_choices;
+		concept_satisfy_every_palate;
+		concept_locally_sourced_ingredients;
+		concept_freshness;
+		concept_supporting_local_producers;
+		concept_specialty_coffees;
+		concept_teas;
+		concept_beverages;
+		concept_interior_design;
+		concept_cozy_seating_areas;
+		concept_warm_atmosphere;
+		concept_relaxation;
+		concept_dining_experience;
+		concept_quiet_spot;
+		concept_book_reading;
+		concept_friends_gathering;
+		concept_tasty_meal;
+		concept_welcoming_ambiance;
+		concept_delicious_cuisine;
+		concept_enjoyment;
+		nrel_offers;
+		nrel_features;
+		nrel_uses;
+		nrel_complements;
+		nrel_provides;
+		nrel_invites_to;
+		nrel_enjoy
+	};;
+*);;
+
+stories_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 30_plus;
+	=> nrel_average_bill: 5_to_10;
+	=> nrel_coordinates: 53.900999_27.552772;
+	=> nrel_type_of_food: 
+		italian;
+		french;
+		european;
+		vegan;
+		breakfast;
+		brunch;
+	=> nrel_type_of_drink: 
+		coffee;
+		tea;;

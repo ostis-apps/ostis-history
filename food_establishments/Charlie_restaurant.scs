@@ -1,0 +1,85 @@
+charlie_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Charlie"] (* <- lang_ru;; *);
+	[Charlie restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Charlie"] (* <- lang_ru;; *);
+	[Charlie restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/charlie_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_charlie_restaurant (*
+	-> rrel_key_sc_element: charlie_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Charlie" - популярное заведение общественного питания, расположенное в Минске, Беларусь. Известный своей уютной атмосферой и изысканной кухней, ресторан предлагает разнообразное меню блюд, приготовленных с заботой и используя высококачественные ингредиенты. Будь то для неформального обеда, уютного ужина или праздничного мероприятия, ресторан "Charlie" создает теплую и гостеприимную атмосферу, чтобы гости могли насладиться своими кулинарными впечатлениями. С внимательным обслуживанием и акцентом на кулинарное совершенство, ресторан "Charlie" стремится создать незабываемые моменты для своих посетителей.] (* <- lang_ru;; *);;
+		-> [Charlie restaurant is a popular dining establishment located in Minsk, Belarus. Known for its inviting ambiance and delectable cuisine, the restaurant offers a diverse menu of dishes crafted with care and using high-quality ingredients. Whether it's for a casual lunch, an intimate dinner, or a celebratory occasion, Charlie restaurant provides a warm and welcoming atmosphere for guests to enjoy their dining experience. With attentive service and a focus on culinary excellence, Charlie restaurant strives to create memorable moments for its patrons.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Charlie")] (* <- lang_ru;; *);
+		[Def. (Charlie restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		charlie_restaurant;
+		minsk;
+		belarus;
+		concept_ambiance;
+		concept_cuisine;
+		concept_menu;
+		concept_dish;
+		concept_high_quality_ingredients;
+		concept_lunch;
+		concept_dinner;
+		concept_celebratory_occasion;
+		concept_atmosphere;
+		concept_guest;
+		concept_dining_experience;
+		concept_service;
+		concept_culinary_excellence;
+		concept_memorable_moments;
+		nrel_located_in;
+		nrel_known_for;
+		nrel_offers;
+		nrel_crafted_with;
+		nrel_uses;
+		nrel_provides;
+		nrel_focus_on;
+		nrel_strives_to_create
+	};;
+*);;
+
+charlie_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50;
+	=> nrel_average_bill: 40_to_90;
+	=> nrel_coordinates: 53.908579_27.571286;
+	=> nrel_type_of_food: 
+		french;
+		seafood;
+		european;
+		contemporary;
+		soups;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		wine;
+		alcohol;
+		cocktail;
+		tea;
+		champagne;;

@@ -1,0 +1,55 @@
+mini_country_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей Миниатюр "Мини-Страна"] (* <- lang_ru;; *);
+	[Mini Country Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей Миниатюр "Мини-Страна"] (* <- lang_ru;; *);
+	[Mini Country Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/mini_country_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_mini_country_museum (*
+	-> rrel_key_sc_element: mini_country_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей Миниатюр "Мини-Страна" - это музей в Минске, который представляет собой миниатюрные копии знаковых зданий и достопримечательностей из разных стран мира.] (* <- lang_ru;; *);;
+		-> [Mini Country Museum is a museum in Minsk that features miniature replicas of iconic buildings and landmarks from different countries around the world.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей Миниатюр "Мини-Страна")] (* <- lang_ru;; *);
+		[Def. (Mini Country Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		mini_country_museum;
+		concept_location;
+		minsk;
+		belarus;
+		concept_miniature_replicas;
+		concept_buildings;
+		concept_landmarks;
+		concept_countries;
+		concept_world;
+		concept_iconic;
+		nrel_features
+	};;
+*);;
+
+mini_country_museum
+	=> nrel_museum_type: architecture_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 13_to_26;
+	=> nrel_coordinates: 53.903248_27.562912;
+	=> nrel_age_restictions: 0_plus;;

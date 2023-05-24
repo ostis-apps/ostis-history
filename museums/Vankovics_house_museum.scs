@@ -1,0 +1,70 @@
+vankovics_house_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей дома Ваньковича] (* <- lang_ru;; *);
+	[Vankovich House Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей дома Ваньковича] (* <- lang_ru;; *);
+	[Vankovich House Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/vankovics_house_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_vankovics_house_museum (*
+	-> rrel_key_sc_element: vankovics_house_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей дома Ваньковича - это музей, расположенный в городе Минск, Беларусь. Музей находится в здании, которое в 19 веке принадлежало купцу-меценату Йожефу Ваньковичу. Этот дом был построен в 1818 году и является памятником архитектуры и истории. В музее представлены интерьеры жилых комнат и приемных залов, оформленных в стиле барокко и классицизма. Экспозиция музея включает в себя коллекцию предметов искусства, мебели, предметов быта и других экспонатов, связанных с историей и культурой Минска. Музей проводит экскурсии для взрослых и детей, а также организует различные образовательные программы и мероприятия.] (* <- lang_ru;; *);;
+		-> [Vankovich House Museum is a museum located in Minsk, Belarus. The museum is housed in a building that belonged to the merchant and patron of the arts József Vankovich in the 19th century. This house was built in 1818 and is a monument of architecture and history. The museum features interiors of living rooms and reception halls decorated in the Baroque and Classicism styles. The museum's exposition includes a collection of art objects, furniture, household items, and other exhibits related to the history and culture of Minsk. The museum conducts tours for adults and children, as well as organizes various educational programs and events.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей дома Ваньковича)] (* <- lang_ru;; *);
+		[Def. (Vankovich House Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		vankovics_house_museum;
+		concept_location;
+		minsk;
+		belarus;
+		concept_building;
+		concept_architecture;
+		concept_history;
+		concept_jozsef_vankovich;
+		concept_19th_century;
+		concept_decor;
+		concept_interiors;
+		concept_living_rooms;
+		concept_reception_halls;
+		concept_baroque_style;
+		concept_classicism_style;
+		concept_art_objects;
+		concept_furniture;
+		concept_household_items;
+		nrel_located_in;
+		nrel_housed_in;
+		nrel_decorated_in;
+		nrel_features;
+		nrel_includes;
+		nrel_conducts;
+		nrel_organizes;
+		nrel_related_to
+	};;
+*);;
+
+vankovics_house_museum
+	=> nrel_museum_type: home_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: 6_to_8;
+	=> nrel_coordinates: 53.904995_27.560068;
+	=> nrel_age_restictions: 0_plus;;

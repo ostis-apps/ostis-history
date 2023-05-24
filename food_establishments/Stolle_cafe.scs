@@ -1,0 +1,88 @@
+stolle_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "Stolle"] (* <- lang_ru;; *);
+	[Stolle cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "Stolle"] (* <- lang_ru;; *);
+	[Stolle cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/stolle_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_stolle_cafe (*
+	-> rrel_key_sc_element: stolle_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "Stolle" - это очаровательная пекарня и кафе, расположенная в Минске, Беларусь. Кафе славится своими традиционными русскими и европейскими пирогами, особенно известным пирогом "Столле". В меню кафе "Stolle" представлен широкий выбор сладких и соленых пирогов, каждый из которых приготовлен с использованием свежих, высококачественных ингредиентов и испечен до идеального состояния. От классических вкусов, таких как яблочный, вишневый и тыквенный, до уникальных комбинаций, таких как лосось и шпинат, здесь есть пирог на любой вкус. В дополнение к пирогам, кафе "Stolle" предлагает разнообразные другие выпечку, включая пирожные, торты и печенье. В кафе также подаются горячие и холодные напитки, включая кофе, чай и освежающие напитки. Уютная и гостеприимная атмосфера кафе "Stolle" делает его популярным местом как для местных жителей, так и для посетителей, чтобы насладиться вкусной едой или быстрым перекусом. Будь то сытный завтрак, вкусный обед или сладкое угощение, кафе "Stolle" - идеальное место для посещения.] (* <- lang_ru;; *);;
+		-> [Stolle cafe is a delightful bakery and café located in Minsk, Belarus. The café is renowned for its traditional Russian and European-style pies, particularly the famous Stolle pie. The menu at Stolle cafe features a wide selection of sweet and savory pies, each made with fresh, high-quality ingredients and baked to perfection. From classic flavors like apple, cherry, and pumpkin, to unique combinations such as salmon and spinach, there is a pie to suit every taste. In addition to pies, Stolle cafe offers a range of other bakery treats, including pastries, cakes, and cookies. The café also serves a variety of hot and cold beverages, including coffee, tea, and refreshing drinks. The cozy and welcoming atmosphere of Stolle cafe makes it a popular spot for both locals and visitors to enjoy a delicious meal or a quick snack. Whether you're looking for a hearty breakfast, a tasty lunch, or a sweet treat, Stolle cafe is the perfect destination.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "Stolle")] (* <- lang_ru;; *);
+		[Def. (Stolle cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		stolle_cafe;
+		minsk;
+		belarus;
+		concept_bakery_and_cafe;
+		concept_traditional_russian_and_european_style_pies;
+		concept_stolle_pie;
+		concept_menu;
+		concept_sweet_and_savory_pies;
+		concept_fresh_ingredients;
+		concept_baked_to_perfection;
+		concept_classic_flavors;
+		concept_unique_combinations;
+		concept_pastries;
+		concept_cakes;
+		concept_cookies;
+		concept_hot_and_cold_beverages;
+		concept_coffee;
+		concept_tea;
+		concept_refreshing_drinks;
+		concept_cozy_and_welcoming_atmosphere;
+		concept_locals_and_visitors;
+		concept_delicious_meal;
+		concept_quick_snack;
+		concept_hearty_breakfast;
+		concept_tasty_lunch;
+		concept_sweet_treat;
+		concept_popular_spot;
+		concept_enjoyment;
+		nrel_renowned_for;
+		nrel_features;
+		nrel_made_with;
+		nrel_serves;
+		nrel_makes_it_a_popular_spot_to;
+		nrel_enjoy
+	};;
+*);;
+
+stolle_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 30;
+	=> nrel_average_bill: 12_to_18;
+	=> nrel_coordinates: 53.917957_27.587361;
+	=> nrel_type_of_food: 
+		european;
+		belarusian;
+		lunch;
+		dinner;
+		brunch;
+		pies;
+	=> nrel_type_of_drink: 
+		coffee;
+		tea;;

@@ -1,0 +1,84 @@
+friends_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Friends"] (* <- lang_ru;; *);
+	[Friends restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Friends"] (* <- lang_ru;; *);
+	[Friends restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/friends_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_friends_restaurant (*
+	-> rrel_key_sc_element: friends_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Friends" - это гостеприимное заведение общественного питания, расположенное в Минске, Беларусь. Верный своему названию, ресторан создает дружелюбную и уютную атмосферу, где гости могут насладиться вкусной едой в хорошей компании. Меню в ресторане "Friends" предлагает разнообразие блюд, начиная от любимых комфортных продуктов до международных изысков, приготовленных с использованием свежих ингредиентов и ароматных специй. С теплым и уютным интерьером ресторан создает расслабленную обстановку для встреч с друзьями, семьей или коллегами. Внимательный персонал ресторана "Friends" стремится обеспечить приятный опыт обеда для всех посетителей.] (* <- lang_ru;; *);;
+		-> [Friends restaurant is a welcoming dining establishment located in Minsk, Belarus. True to its name, the restaurant aims to create a friendly and cozy atmosphere where guests can enjoy delicious food and good company. The menu at Friends restaurant offers a variety of dishes, ranging from comfort foods to international favorites, prepared with fresh ingredients and flavorsome spices. With its warm and inviting interior, the restaurant provides a relaxed setting for gatherings with friends, family, or colleagues. The attentive staff at Friends restaurant strives to ensure a pleasant dining experience for all patrons.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Friends")] (* <- lang_ru;; *);
+		[Def. (Friends restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		friends_restaurant;
+		minsk;
+		belarus;
+		concept_welcoming_ambiance;
+		concept_dining_experience;
+		concept_good_company;
+		concept_menu;
+		concept_variety_of_dishes;
+		concept_comfort_foods;
+		concept_international_favorites;
+		concept_fresh_ingredients;
+		concept_flavorsome_spices;
+		concept_warm_interior;
+		concept_inviting_interior;
+		concept_relaxed_setting;
+		concept_gatherings;
+		concept_friends;
+		concept_family;
+		concept_colleagues;
+		concept_attentive_staff;
+		concept_pleasant_dining_experience;
+		nrel_located_in;
+		nrel_aims_to_create;
+		nrel_provides;
+		nrel_offers;
+		nrel_range_from;
+		nrel_prepared_with;
+		nrel_provides_a_relaxed_setting_for;
+		nrel_strives_to_ensure
+	};;
+*);;
+
+friends_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 100_plus;
+	=> nrel_average_bill: 50_to_65;
+	=> nrel_coordinates: 53.927932_27.568004;
+	=> nrel_type_of_food: 
+		german;
+		european;
+		lunch;
+		dinner;
+		vegan;
+	=> nrel_type_of_drink: 
+		tea;
+		alcohol;
+		wine;
+		champagne;;

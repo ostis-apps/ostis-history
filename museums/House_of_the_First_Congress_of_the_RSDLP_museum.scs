@@ -1,0 +1,68 @@
+house_of_the_first_congress_of_the_rsdlp_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей дом Первого съезда РСДРП] (* <- lang_ru;; *);
+	[House of the First Congress of the RSDLP Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей дом Первого съезда РСДРП] (* <- lang_ru;; *);
+	[House of the First Congress of the RSDLP Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/house_of_the_first_congress_of_the_rsdlp_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_house_of_the_first_congress_of_the_rsdlp_museum (*
+	-> rrel_key_sc_element: house_of_the_first_congress_of_the_rsdlp_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей дом Первого съезда РСДРП - это музей, расположенный в городе Минск, Беларусь. Музей находится в здании, в котором прошел Первый съезд Российской социал-демократической рабочей партии (РСДРП) в 1898 году. Экспозиция музея посвящена истории рождения и развития российского рабочего движения, а также истории Первого съезда РСДРП. В музее представлены экспонаты, отображающие исторические события и предметы, связанные с участниками съезда. Музей проводит экскурсии для взрослых и детей, а также организует различные образовательные программы и мероприятия.] (* <- lang_ru;; *);;
+		-> [House of the First Congress of the RSDLP Museum is a museum located in Minsk, Belarus. The museum is housed in the building where the First Congress of the Russian Social Democratic Labour Party (RSDLP) took place in 1898. The museum's exposition is dedicated to the history of the birth and development of the Russian labor movement, as well as the history of the First Congress of the RSDLP. The museum features exhibits reflecting historical events and items related to the participants of the congress. The museum conducts tours for adults and children, as well as organizes various educational programs and events.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей дом Первого съезда РСДРП)] (* <- lang_ru;; *);
+		[Def. (House of the First Congress of the RSDLP Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		house_of_the_first_congress_of_the_rsdlp_museum;
+		concept_location;
+		minsk;
+		belarus;
+		concept_building;
+		concept_first_congress_of_the_rsdlp;
+		concept_russian_labor_movement;
+		concept_history;
+		concept_exposition;
+		concept_exhibits;
+		concept_participants;
+		concept_tours;
+		concept_adults;
+		concept_children;
+		concept_educational_programs;
+		concept_events;
+		nrel_located_in;
+		nrel_housed_in;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_reflects;
+		nrel_conducts;
+		nrel_organizes
+	};;
+*);;
+
+
+house_of_the_first_congress_of_the_rsdlp_museum
+	=> nrel_museum_type: home_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: 5_to_10;
+	=> nrel_coordinates: 53.907833_27.571599;
+	=> nrel_age_restictions: 0_plus;;

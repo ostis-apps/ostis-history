@@ -1,0 +1,95 @@
+ovino_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "ОВИНО"] (* <- lang_ru;; *);
+	[OVINO restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "ОВИНО"] (* <- lang_ru;; *);
+	[OVINO restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/ovino_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_ovino_restaurant (*
+	-> rrel_key_sc_element: ovino_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "ОВИНО" - это изысканное и элегантное заведение в Минске, Беларусь. Ресторан славится своей высококлассной итальянской кухней, предлагая гостям подлинный вкус Италии. Ресторан "ОВИНО" предлагает разнообразное меню с традиционными итальянскими блюдами, приготовленными из лучших ингредиентов и по самым изысканным кулинарным техникам. От домашней пасты и пиццы, испеченной в дровяной печи, до ароматного ризотто и сочных мясных блюд с гриля, каждое блюдо в ресторане "ОВИНО" создано с заботой и вниманием к деталям. Ресторан также гордится обширным винным списком, представляя широкий выбор итальянских вин, идеально дополняющих вкусы блюд. Интерьер ресторана "ОВИНО" излучает изысканность и гостеприимство, с элегантным декором и комфортабельными местами, создавая идеальную атмосферу для незабываемого кулинарного опыта. Будь вы ищете романтический ужин, встречу с друзьями или деловой обед, ресторан "ОВИНО" предлагает изысканный вкус Италии в самом сердце Минска.] (* <- lang_ru;; *);;
+		-> [OVINO restaurant is a sophisticated and elegant dining establishment located in Minsk, Belarus. The restaurant is renowned for its exceptional Italian cuisine, providing guests with an authentic taste of Italy. OVINO restaurant offers a diverse menu featuring traditional Italian dishes prepared with the finest ingredients and culinary techniques. From homemade pasta and wood-fired pizzas to flavorful risottos and succulent grilled meats, each dish at OVINO is crafted with care and attention to detail. The restaurant also boasts an extensive wine list, showcasing a wide selection of Italian wines that perfectly complement the flavors of the cuisine. The interior of OVINO restaurant exudes a refined and welcoming atmosphere, with stylish décor and comfortable seating, creating an ideal setting for a memorable dining experience. Whether you're seeking a romantic dinner, a celebration with friends, or a business lunch, OVINO restaurant provides an exquisite taste of Italy in the heart of Minsk.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "ОВИНО")] (* <- lang_ru;; *);
+		[Def. (OVINO restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		ovino_restaurant;
+		minsk;
+		belarus;
+		concept_dining_establishment;
+		concept_cuisine;
+		concept_taste_of_Italy;
+		concept_menu;
+		concept_italian_dishes;
+		concept_ingredients;
+		concept_culinary_techniques;
+		concept_pasta;
+		concept_pizzas;
+		concept_risottos;
+		concept_grilled_meats;
+		concept_dish;
+		concept_care;
+		concept_wine_list;
+		concept_italian_wines;
+		concept_flavors;
+		concept_interior;
+		concept_atmosphere;
+		concept_decor;
+		concept_seating;
+		concept_setting;
+		concept_dining_experience;
+		concept_romantic_dinner;
+		concept_celebration;
+		concept_business_lunch;
+		nrel_located_in;
+		nrel_renowned_for;
+		nrel_provides;
+		nrel_offers;
+		nrel_featuring;
+		nrel_prepared_with;
+		nrel_crafted_with;
+		nrel_boasts;
+		nrel_showcasing;
+		nrel_complement;
+		nrel_exudes;
+		nrel_creating;
+		nrel_provides
+	};;
+*);;
+
+ovino_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 25_plus;
+	=> nrel_average_bill: 5_to_50;
+	=> nrel_coordinates: 53.913825_27.580520;
+	=> nrel_type_of_food: 
+		european;
+		mediterranean;
+		vegan;
+		lunch;
+		dinner;
+	=> nrel_type_of_drink: 
+		wine;
+		alcohol;
+		champagne;;

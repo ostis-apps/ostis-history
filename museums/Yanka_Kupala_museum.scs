@@ -1,0 +1,72 @@
+yanka_kupala_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей Янки Купалы] (* <- lang_ru;; *);
+	[Yanka Kupala Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей Янки Купалы] (* <- lang_ru;; *);
+	[Yanka Kupala Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/yanka_kupala_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_yanka_kupala_museum (*
+	-> rrel_key_sc_element: yanka_kupala_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей Янки Купалы - это музей, расположенный в городе Минск, посвященный жизни и творчеству выдающегося белорусского поэта, драматурга и общественного деятеля Янки Купалы. Музей был создан в 1949 году и находится в доме, где жил и работал поэт в 1912-1913 годах. В экспозиции музея представлены различные экспонаты, связанные с жизнью и творчеством Янки Купалы, такие как его рукописи, фотографии, книги, документы и другие материалы. Кроме того, в музее есть залы, посвященные истории белорусской литературы начала XX века и культурной жизни того времени. В музее проводятся экскурсии, лекции, концерты и другие мероприятия, посвященные жизни и творчеству Янки Купалы и истории белорусской литературы. Также музей является научным центром, который занимается исследованиями в области литературы и культуры начала XX века.] (* <- lang_ru;; *);;
+		-> [Yanka Kupala Museum is a museum located in Minsk, dedicated to the life and work of the prominent Belarusian poet, playwright, and public figure Yanka Kupala. The museum was created in 1949 and is located in the house where the poet lived and worked in 1912-1913. The museum's exposition features various exhibits related to the life and work of Yanka Kupala, such as his manuscripts, photographs, books, documents, and other materials. In addition, the museum has halls dedicated to the history of Belarusian literature of the early 20th century and cultural life of that time. The museum offers guided tours, lectures, concerts, and other events dedicated to the life and work of Yanka Kupala and the history of Belarusian literature. The museum is also a scientific center that conducts research in the field of literature and culture of the early 20th century.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей Янки Купалы)] (* <- lang_ru;; *);
+		[Def. (Yanka Kupala Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		yanka_kupala_museum;
+		belarus;
+		minsk;
+		concept_belarusian_poet;
+		concept_playwright;
+		concept_public_figure;
+		concept_exhibit;
+		concept_manuscript;
+		concept_photograph;
+		concept_book;
+		concept_document;
+		concept_hall;
+		concept_Belarusian_literature;
+		concept_cultural_life;
+		concept_guided_tour;
+		concept_lecture;
+		concept_concert;
+		concept_event;
+		concept_scientific_center;
+		concept_research;
+		concept_early_20th_century;
+		nrel_located_in;
+		nrel_dedicated_to;
+		nrel_created_in;
+		nrel_features;
+		nrel_has;
+		nrel_offers;
+		nrel_conducts_research_in
+	};;
+*);;
+
+yanka_kupala_museum
+	=> nrel_museum_type: literature_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 4_to_6;
+	=> nrel_coordinates: 53.906147_27.565171;
+	=> nrel_age_restictions: 0_plus;;

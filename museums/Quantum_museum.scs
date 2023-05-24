@@ -1,0 +1,78 @@
+quantum_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей "Квантум"] (* <- lang_ru;; *);
+	[Quantum Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей "Квантум"] (* <- lang_ru;; *);
+	[Quantum Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/quantum_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_quantum_museum (*
+	-> rrel_key_sc_element: quantum_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей "Квантум" - это музей, расположенный в городе Минск, Беларусь, который посвящен квантовой физике и ее приложениям. Музей создан с целью популяризации квантовой физики и ее значимости в современном мире. В экспозиции музея представлены различные модели, демонстрирующие явления квантовой физики, а также интерактивные экспонаты, которые позволяют посетителям сами проводить эксперименты и изучать свойства квантовых систем. Также в музее можно увидеть исторические экспонаты, связанные с развитием квантовой физики, и узнать о последних достижениях в этой области науки. Музей предоставляет экскурсии для школьников и студентов, проводит научно-популярные лекции и мероприятия для широкой аудитории.] (* <- lang_ru;; *);;
+		-> [Quantum Museum is a museum located in Minsk, Belarus, dedicated to quantum physics and its applications. The museum was created with the aim of popularizing quantum physics and its importance in the modern world. The museum's exposition features various models demonstrating the phenomena of quantum physics, as well as interactive exhibits that allow visitors to conduct experiments and study the properties of quantum systems themselves. Additionally, visitors can see historical exhibits related to the development of quantum physics and learn about the latest achievements in this field of science. The museum provides tours for schoolchildren and students, as well as popular science lectures and events for a wide audience.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей "Квантум")] (* <- lang_ru;; *);
+		[Def. (Quantum Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		quantum_museum;
+		minsk;
+		belarus;
+		concept_quantum_physics;
+		concept_applications;
+		concept_popularization;
+		concept_modern_world;
+		concept_exposition;
+		concept_models;
+		concept_phenomena;
+		concept_interactive_exhibits;
+		concept_experiments;
+		concept_properties;
+		concept_quantum_systems;
+		concept_historical_exhibits;
+		concept_development;
+		concept_science;
+		concept_tours;
+		concept_schoolchildren;
+		concept_students;
+		concept_lectures;
+		concept_events;
+		concept_audience;
+		nrel_located_in;
+		nrel_dedicated_to;
+		nrel_created_for;
+		nrel_features;
+		nrel_allows;
+		nrel_conducts;
+		nrel_showcases;
+		nrel_related_to;
+		nrel_provides_tours_for;
+		nrel_provides_lectures_for;
+		nrel_organizes_events_for
+	};;
+*);;
+
+quantum_museum
+	=> nrel_museum_type: interactive_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 9_to_200;
+	=> nrel_coordinates: 53.861322_27.478904;
+	=> nrel_age_restictions: 0_plus;;

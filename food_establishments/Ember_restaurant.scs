@@ -1,0 +1,86 @@
+ember_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Ember"] (* <- lang_ru;; *);
+	[Ember restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Ember"] (* <- lang_ru;; *);
+	[Ember restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/ember_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_ember_restaurant (*
+	-> rrel_key_sc_element: ember_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Ember" - это современное заведение общественного питания, расположенное в Минске, Беларусь. Со своей стильной и современной атмосферой, ресторан предлагает уникальный кулинарный опыт для своих гостей. Меню в ресторане "Ember" тщательно подобрано и предлагает фьюжн международных вкусов и инновационные техники приготовления. Блюда готовятся из высококачественных ингредиентов, а их подача является искусством. Ресторан "Ember" стремится предоставить исключительное обслуживание и создать незабываемый кулинарный опыт, что делает его популярным выбором для гурманов и тех, кто ищет утонченное кулинарное приключение.] (* <- lang_ru;; *);;
+		-> [Ember restaurant is a contemporary dining establishment located in Minsk, Belarus. With its stylish and modern ambiance, the restaurant offers a unique culinary experience for its guests. The menu at Ember restaurant is carefully curated, featuring a fusion of international flavors and innovative cooking techniques. The dishes are prepared with high-quality ingredients, and the presentation is artfully done. Ember restaurant strives to provide exceptional service and create a memorable dining experience, making it a popular choice for food enthusiasts and those seeking a sophisticated culinary journey.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Ember")] (* <- lang_ru;; *);
+		[Def. (Ember restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		ember_restaurant;
+		minsk;
+		belarus;
+		concept_ambiance;
+		concept_culinary_experience;
+		concept_menu;
+		concept_fusion;
+		concept_international_flavors;
+		concept_cooking_techniques;
+		concept_high_quality_ingredients;
+		concept_presentation;
+		concept_service;
+		concept_memorable_dining_experience;
+		concept_popular_choice;
+		concept_food_enthusiast;
+		concept_culinary_journey;
+		nrel_located_in;
+		nrel_offers;
+		nrel_features;
+		nrel_fusion_of;
+		nrel_innovative_cooking_techniques;
+		nrel_prepared_with;
+		nrel_artfully_done;
+		nrel_strives_to_provide;
+		nrel_create;
+		nrel_sophisticated
+	};;
+*);;
+
+ember_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 5;
+	=> nrel_coordinates: 53.908274_27.547881;
+	=> nrel_type_of_food: 
+		mediterranean;
+		grill;
+		seafood;
+		vegan;
+		gluten_free;
+		breakfast;
+		lunch;
+		dinner;
+	=> nrel_type_of_drink: 
+		tea;
+		coffee;
+		champagne;
+		alcohol;
+		cocktail;
+		wine;;

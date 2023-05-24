@@ -1,0 +1,85 @@
+dolce_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "DOLCE"] (* <- lang_ru;; *);
+	[DOLCE cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "DOLCE"] (* <- lang_ru;; *);
+	[DOLCE cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/dolce_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_dolce_cafe (*
+	-> rrel_key_sc_element: dolce_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "DOLCE" - это очаровательное и уютное заведение, расположенное в Минске, Беларусь. Кафе славится своими восхитительными выпечкой, тортами и десертами, предлагая уголок для любителей сладкого. В кафе "DOLCE" предлагается широкий выбор свежеиспеченных изделий, включая традиционные фавориты и инновационные креации. От хрустящих круассанов и сливочных данишей до насыщенных шоколадных тортов и нежных чизкейков, каждое угощение в кафе "DOLCE" приготовлено из лучших ингредиентов с вниманием к деталям. Кафе также предлагает разнообразные горячие и холодные напитки, включая специальные сорта кофе, чаи и освежающие смузи, идеально дополняющие изысканные десерты. Интерьер кафе "DOLCE" элегантно оформлен, с теплой и привлекательной атмосферой, приглашающей гостей расслабиться и насладиться сладким удовольствием. Будь вы встречаетесь с друзьями на кофе и десерт, празднуете особый случай или просто балуете себя вкусным угощением, кафе "DOLCE" предлагает восхитительный опыт для любителей сладкого.] (* <- lang_ru;; *);;
+		-> [DOLCE cafe is a charming and cozy café located in Minsk, Belarus. The café is known for its delightful pastries, cakes, and desserts, providing a haven for those with a sweet tooth. DOLCE cafe offers a wide selection of freshly baked goods, ranging from traditional favorites to innovative creations. From flaky croissants and buttery danishes to rich chocolate cakes and creamy cheesecakes, every treat at DOLCE cafe is made with the finest ingredients and attention to detail. The café also serves a variety of hot and cold beverages, including specialty coffees, teas, and refreshing smoothies, perfectly complementing the indulgent desserts. The interior of DOLCE cafe is elegantly designed, with a warm and inviting atmosphere that invites guests to relax and savor their sweet indulgences. Whether you're meeting friends for a coffee and dessert, celebrating a special occasion, or simply treating yourself to a delectable treat, DOLCE cafe provides a delightful experience for dessert lovers.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "DOLCE")] (* <- lang_ru;; *);
+		[Def. (DOLCE cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		dolce_cafe;
+		minsk;
+		belarus;
+		concept_pastries;
+		concept_cakes;
+		concept_desserts;
+		concept_treats;
+		concept_flaky_croissants;
+		concept_buttery_danishes;
+		concept_chocolate_cakes;
+		concept_cheesecakes;
+		concept_ingredients;
+		concept_hot_beverages;
+		concept_cold_beverages;
+		concept_specialty_coffees;
+		concept_teas;
+		concept_smoothies;
+		concept_interior_design;
+		concept_atmosphere;
+		concept_guests;
+		concept_friends;
+		concept_special_occasion;
+		concept_experience;
+		nrel_located_in;
+		nrel_offers;
+		nrel_range_from;
+		nrel_made_with;
+		nrel_complements;
+		nrel_designed_with;
+		nrel_invites_to;
+		nrel_provides
+	};;
+*);;
+
+dolce_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 25;
+	=> nrel_average_bill: 35_to_52;
+	=> nrel_coordinates: 53.903637_27.551610;
+	=> nrel_type_of_food: 
+		french;
+		healthy;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		coffee;
+		tea;;

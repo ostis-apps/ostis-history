@@ -1,0 +1,107 @@
+grand_cafe_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Grand Cafe"] (* <- lang_ru;; *);
+	[Grand Cafe restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Grand Cafe"] (* <- lang_ru;; *);
+	[Grand Cafe restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/grand_cafe_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_grand_cafe_restaurant (*
+	-> rrel_key_sc_element: grand_cafe_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Grand Cafe" - это заведение общественного питания, которое предлагает широкий выбор блюд европейской и белорусской кухни, а также различные напитки и коктейли. Он расположен в центре города и предлагает своим посетителям уютную атмосферу и высокий уровень обслуживания. Ресторан "Grand Cafe" может быть как местом для бизнес-ланчей и ужинов, так и для проведения торжественных мероприятий.] (* <- lang_ru;; *);;
+		-> [Grand Cafe restaurant is a catering facility that offers a wide variety of European and Belarusian dishes, as well as various drinks and cocktails. It is located in the center of the city and offers its visitors a cozy atmosphere and a high level of service. Grand Cafe restaurant can be a place for business lunches and dinners, as well as for festive events.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Grand Cafe")] (* <- lang_ru;; *);
+		[Def. (Grand Cafe restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		grand_cafe_restaurant;
+		concept_catering_facility;
+		concept_european_dishes;
+		concept_belarusian_dishes;
+		concept_drinks;
+		concept_cocktails;
+		concept_center_of_the_city;
+		concept_cozy_atmosphere;
+		concept_high_level_of_service;
+		concept_business_lunches;
+		concept_business_dinners;
+		concept_festive_events;
+		nrel_offers;
+		nrel_includes;
+		nrel_located_in;
+		nrel_provides;
+		nrel_can_be_used_for
+	};;
+*);;
+
+statement -> statement_of_performances_and_events (*
+	-> rrel_key_sc_element: grand_cafe_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В ресторане "Grand Cafe" в Минске часто организуются музыкальные выступления, дегустации вин и другие мероприятия для посетителей.] (* <- lang_ru;; *);;
+		-> [Grand Cafe restaurant in Minsk often organizes musical performances, wine tastings and other events for visitors.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О проведении выступлений и мероприятий)] (* <- lang_ru;; *);
+		[Stat. (About performances and events)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		grand_cafe_restaurant;
+		minsk;
+		concept_catering_facility;
+		concept_european_dishes;
+		concept_belarusian_dishes;
+		concept_drinks;
+		concept_cocktails;
+		concept_business_lunches;
+		concept_business_dinners;
+		concept_festive_events;
+		concept_musical_performances;
+		concept_wine_tastings;
+		concept_events;
+		nrel_located_in;
+		nrel_offers;
+		nrel_organizes
+	};;
+*);;
+
+grand_cafe_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 50_to_100;
+	=> nrel_coordinates: 53.902342_27.556067;
+	=> nrel_type_of_food: 
+		european;
+		international;
+		central_european;
+		vegan;
+		gluten_free;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		juice;
+		wine;
+		champagne;
+		tea;
+		alcohol;;

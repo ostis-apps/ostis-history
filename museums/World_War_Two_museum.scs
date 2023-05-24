@@ -1,0 +1,71 @@
+world_war_two_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей истории Великой Отечественной войны] (* <- lang_ru;; *);
+	[World War Two Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Гранд Кафе] (* <- lang_ru;; *);
+	[Grand Cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/world_war_two_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_world_war_two_museum (*
+	-> rrel_key_sc_element: world_war_two_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Белорусский государственный музей истории Великой Отечественной войны — государственное учреждение культуры Республики Беларусь, первый в мире музей истории Великой Отечественной войны, крупнейшее собрание артефактов по истории Великой Отечественной войны.] (* <- lang_ru;; *);;
+		-> [Belarusian State Museum of the Great Patriotic War is the state cultural institution of the Republic of Belarus, the first museum of history of the Great Patriotic War in the world, the largest collection of artifacts on the history of the Great Patriotic War.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей истории Великой Отечественной войны)] (* <- lang_ru;; *);
+		[Def. (World War Two museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		world_war_two_museum;
+		concept_state_cultural_institution;
+		republic_of_belarus;
+		concept_history_of_the_great_patriotic_war;
+		concept_collection_of_artifacts;
+		nrel_is_a_state_cultural_institution_of;
+		nrel_is_the_first_museum_of;
+		nrel_has_the_largest_collection_of
+	};;
+*);;
+
+statement -> statement_of_number_of_museum_items_at_the_moment (*
+	-> rrel_key_sc_element: world_war_two_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В настоящее время музейное собрание насчитывает свыше 154 тысяч музейных предметов и научно-вспомогательных материалов, которые входят в состав 30 коллекций.] (* <- lang_ru;; *);;
+		-> [At present, the museum's collection consists of over 154 thousand museum objects and scientific auxiliary materials, which are included in 30 collections.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О количестве музейных предметов на данный момент)] (* <- lang_ru;; *);
+		[Stat. (About the number of museum items at the moment)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_objects;
+		concept_collection;
+		concept_materials
+	};;
+*);;
+
+world_war_two_museum
+	=> nrel_museum_type: history_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 7_to_9;
+	=> nrel_coordinates: 53.916388_27.537664;
+	=> nrel_age_restictions: 0_plus;;

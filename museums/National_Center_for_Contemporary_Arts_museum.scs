@@ -1,0 +1,64 @@
+national_center_for_contemporary_arts_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Национальный Центр Современного Искусства] (* <- lang_ru;; *);
+	[National Center for Contemporary Arts] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Национальный Центр Современного Искусства] (* <- lang_ru;; *);
+	[National Center for Contemporary Arts] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/national_center_for_contemporary_arts_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_national_center_for_contemporary_arts_museum (*
+	-> rrel_key_sc_element: national_center_for_contemporary_arts_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Национальный Центр Современного Искусства - это музей искусства, расположенный в Минске, Беларусь. Он был основан в 2002 году и представляет собой мультидисциплинарный центр, который способствует развитию и продвижению современного искусства в Беларуси. В музее представлены различные виды современного искусства, такие как живопись, скульптура, фотография, видеоискусство и перформанс. В экспозиции музея выставляются как произведения белорусских, так и зарубежных художников.] (* <- lang_ru;; *);;
+		-> [National Center for Contemporary Arts is an art museum located in Minsk, Belarus. It was founded in 2002 and is a multidisciplinary center that promotes the development and promotion of contemporary art in Belarus. The museum features various forms of contemporary art such as painting, sculpture, photography, video art, and performance. The museum's exhibition displays works by both Belarusian and international artists.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Национальный Центр Современного Искусства)] (* <- lang_ru;; *);
+		[Def. (National Center for Contemporary Arts)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		national_center_for_contemporary_arts_museum;
+		belarus;
+		minsk;
+		concept_contemporary_art;
+		concept_painting;
+		concept_sculpture;
+		concept_photography;
+		concept_video_art;
+		concept_performance;
+		concept_exhibit;
+		concept_artist;
+		nrel_located_in;
+		nrel_founded_in;
+		nrel_promotes;
+		nrel_develops;
+		nrel_features;
+		nrel_displays;
+		nrel_works_by;
+		nrel_belarusian;
+		nrel_international
+	};;
+*);;
+
+national_center_for_contemporary_arts_museum
+	=> nrel_museum_type: art_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 3_to_15;
+	=> nrel_coordinates: 53.930157_27.596575;
+	=> nrel_age_restictions: 0_plus;;

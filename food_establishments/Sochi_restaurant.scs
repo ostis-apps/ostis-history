@@ -1,0 +1,93 @@
+sochi_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Sochi"] (* <- lang_ru;; *);
+	[Sochi restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Sochi"] (* <- lang_ru;; *);
+	[Sochi restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/sochi_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_sochi_restaurant (*
+	-> rrel_key_sc_element: sochi_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Sochi" - это яркое кулинарное место, расположенное в Минске, Беларусь. Вдохновленный прибрежным городом Сочи в России, ресторан оживляет вкусы и атмосферу региона Черного моря. Меню в ресторане "Сочи" представляет разнообразие блюд русской и кавказской кухонь, включая свежие морепродукты, ароматные шашлыки и сытные рагу. Гости могут насладиться изысканными блюдами, такими как борщ, шашлык и пельмени, а также насладиться разнообразием традиционных русских десертов. Интерьер ресторана создан для создания теплой и гостеприимной атмосферы, напоминающей курортное место у моря, с элементами русского побережья. С его подлинными вкусами, живой атмосферой и внимательным обслуживанием, ресторан "Сочи" предлагает незабываемый опыт обеда, перенося гостей в яркий прибрежный регион Сочи.] (* <- lang_ru;; *);;
+		-> [Sochi restaurant is a vibrant culinary destination located in Minsk, Belarus. Inspired by the coastal city of Sochi in Russia, the restaurant brings the flavors and atmosphere of the Black Sea region to life. The menu at Sochi restaurant showcases a variety of dishes from Russian and Caucasian cuisines, featuring fresh seafood, flavorful kebabs, and hearty stews. Guests can indulge in signature dishes like borscht, shashlik, and pelmeni, while also enjoying a range of traditional Russian desserts. The interior of the restaurant is designed to create a warm and inviting atmosphere, reminiscent of a seaside resort, with elements of Russian coastal decor. With its authentic flavors, lively ambiance, and attentive service, Sochi restaurant offers a memorable dining experience that transports guests to the vibrant coastal region of Sochi.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Sochi")] (* <- lang_ru;; *);
+		[Def. (Sochi restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		sochi_restaurant;
+		minsk;
+		belarus;
+		concept_culinary_destination;
+		concept_vibrant_ambiance;
+		concept_flavors;
+		black_sea_region;
+		concept_menu;
+		concept_russian_cuisine;
+		concept_caucasian_cuisine;
+		concept_fresh_seafood;
+		concept_kebabs;
+		concept_hearty_stews;
+		concept_signature_dishes;
+		concept_borscht;
+		concept_shashlik;
+		concept_pelmeni;
+		concept_traditional_russian_desserts;
+		concept_interior_design;
+		concept_warm_atmosphere;
+		concept_inviting_atmosphere;
+		concept_seaside_resort;
+		concept_russian_coastal_decor;
+		concept_authentic_flavors;
+		concept_lively_ambiance;
+		concept_attentive_service;
+		concept_memorable_dining_experience;
+		concept_transportation;
+		nrel_located_in;
+		nrel_inspired_by;
+		nrel_brings;
+		nrel_features;
+		nrel_showcases;
+		nrel_reminiscent_of;
+		nrel_designed_to_create;
+		nrel_offers;
+		nrel_offers_a_memorable_dining_experience;
+		nrel_transports_guests_to
+	};;
+*);;
+
+sochi_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 30_plus;
+	=> nrel_average_bill: from_50;
+	=> nrel_coordinates: 53.893003_27.494094;
+	=> nrel_type_of_food: 
+		european;
+		vegan;
+		lunch;
+		dinner;
+	=> nrel_type_of_drink: 
+		alcohol;
+		vodka;
+		wine;
+		champagne;
+		coffee;;
