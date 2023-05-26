@@ -1,0 +1,59 @@
+octyabr_cinema
+<- concept_movie_theater;
+=> nrel_main_idtf:
+	[Кинотеатр "Октябрь"] (* <- lang_ru;; *);
+	[Octyabr movie theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кинотеатр "Октябрь"] (* <- lang_ru;; *);
+	[Octyabr movie theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/octyabr_cinema.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_octyabr_cinema (*
+	-> rrel_key_sc_element: octyabr_cinema;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> ["Октябрь" - кинотеатр с одним залом в форме амфитеатра, основанный в 1975 и расположенный на проспекте Независимости.] (* <- lang_ru;; *);;
+		-> [Octyabr is soviet movie theater in the form of an amphitheater, founded in 1975 and detained on one Independence Avenue.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кинотеатр "Октябрь")] (* <- lang_ru;; *);
+		[Def. (Octyabr  movie theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_movie_theater;
+		octyabr_cinema;
+        concept_high_comfort;
+        concept_fresh_air;
+        concept_good_image_quality;
+		concept_wide_screen;
+		minsk;
+		octyabr;
+        concept_multiplexor;
+		concept_soviet_architecture;
+		concept_low_cost;
+        concept_cinema;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+octyabr_cinema
+	=> nrel_capacity: 1180;
+    => nrel_3D: no;
+	=> nrel_ticket_price: 20;
+    => nrel_number_of_halls : 1;
+	=> nrel_coordinates: 53.92221137910962_27.59674799612485;;

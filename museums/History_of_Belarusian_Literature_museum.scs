@@ -1,0 +1,79 @@
+history_of_belarusian_literature_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей истории белорусской литературы] (* <- lang_ru;; *);
+	[The History of Belarusian Literature Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей истории белорусской литературы] (* <- lang_ru;; *);
+	[The History of Belarusian Literature Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/history_of_belarusian_literature_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_history_of_belarusian_literature_museum (*
+	-> rrel_key_sc_element: history_of_belarusian_literature_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей истории белорусской литературы - это музей, расположенный в городе Минск, Беларусь. Музей был создан для сохранения и продвижения белорусской литературной культуры и наследия. Музей представляет собой экспозицию, посвященную истории развития белорусской литературы с древнейших времен до наших дней. Экспозиция музея включает в себя книги, рукописи, письма, фотографии, портреты, документы, аудио- и видеоматериалы, связанные с белорусской литературой. В музее можно увидеть множество уникальных экспонатов, таких как первые издания известных произведений белорусской литературы и личные вещи известных белорусских писателей. Музей проводит экскурсии для взрослых и детей, а также организует мероприятия и выставки, связанные с белорусской литературой.] (* <- lang_ru;; *);;
+		-> [The History of Belarusian Literature Museum is a museum located in Minsk, Belarus. The museum was created to preserve and promote Belarusian literary culture and heritage. The museum features an exposition dedicated to the history of Belarusian literature from ancient times to the present day. The museum's exposition includes books, manuscripts, letters, photographs, portraits, documents, audio and video materials related to Belarusian literature. Visitors can see many unique exhibits, such as the first editions of famous works of Belarusian literature and personal belongings of well-known Belarusian writers. The museum conducts tours for adults and children, as well as organizes events and exhibitions related to Belarusian literature.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей истории белорусской литературы)] (* <- lang_ru;; *);
+		[Def. (The History of Belarusian Literature Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		history_of_belarusian_literature_museum;
+		belarus;
+		concept_literary_culture;
+		concept_heritage;
+		concept_exposition;
+		concept_history_of_belarusian_literature;
+		concept_books;
+		concept_manuscripts;
+		concept_letters;
+		concept_photographs;
+		concept_portraits;
+		concept_documents;
+		concept_audio_materials;
+		concept_video_materials;
+		concept_exhibits;
+		concept_first_editions;
+		concept_famous_works;
+		concept_personal_belongings;
+		concept_writers;
+		concept_tours;
+		concept_adults;
+		concept_children;
+		concept_events;
+		concept_exhibitions;
+		nrel_located_in;
+		nrel_created_for;
+		nrel_dedicated_to;
+		nrel_includes;
+		nrel_contains;
+		nrel_features;
+		nrel_showcases;
+		nrel_conducts;
+		nrel_organizes;
+		nrel_related_to;
+		nrel_belongs_to
+	};;
+*);;
+
+history_of_belarusian_literature_museum
+	=> nrel_museum_type: literature_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 1_to_15;
+	=> nrel_coordinates: 53.908580_27.557025;
+	=> nrel_age_restictions: 0_plus;;

@@ -1,0 +1,62 @@
+maxim_gorky_theater
+<- concept_theater;
+=> nrel_main_idtf:
+	[Театр имени М. Горького] (* <- lang_ru;; *);
+	[Maxim Gorky theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Театр имени М. Горького] (* <- lang_ru;; *);
+	[Maxim Gorky theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/maxim_gorky_theater.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_maxim_gorky_theater (*
+	-> rrel_key_sc_element: maxim_gorky_theater;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Театр имени М. Горького - театр, специализирующийся на постановках русской и мировой классики. Основан в 1930-e.] (* <- lang_ru;; *);;
+		-> [Maxim Gorky theater specializing in productions of Russian and world classics. Founded in 1930s.
+
+] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Театр имени М. Горького)] (* <- lang_ru;; *);
+		[Def. (Maxim Gorky theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_theater;
+        concept_perfomance;
+		maxim_gorky_theater;
+		minsk;
+		belarus;
+        concept_costumes;
+        concept_director;
+        concept_actors;
+        concept_orchestra;
+		concept_soviet_architecture;
+		concept_medium_cost;
+        concept_orchestra;
+		concept_russian_classics;
+        concept_scene;
+		nrel_offers;
+		nrel_provides;
+		nrel_perform;
+		nrel_play
+	};;
+*);;
+
+maxim_gorky_theater
+	=> nrel_capacity: 1000;
+    => nrel_number_of_halls : 1;
+	=> nrel_ticket_price: 25;
+	=> nrel_coordinates: 53.898383439934165_27.550719237124163;;

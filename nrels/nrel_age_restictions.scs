@@ -1,8 +1,8 @@
 nrel_age_restictions
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[возрастные ограничения*] (* <- lang_ru;; *);
-	[age restictions*] (* <- lang_en;; *);;
+	[возрастные ограничения] (* <- lang_ru;; *);
+	[age restictions] (* <- lang_en;; *);;
 
 definition -> definition_of_age_restictions (*
 	-> rrel_key_sc_element: nrel_age_restictions;;

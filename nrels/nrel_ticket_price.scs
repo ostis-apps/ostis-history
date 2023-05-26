@@ -1,8 +1,8 @@
 nrel_ticket_price
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[стоимость билета*] (* <- lang_ru;; *);
-	[ticket price*] (* <- lang_en;; *);;
+	[стоимость билета] (* <- lang_ru;; *);
+	[ticket price] (* <- lang_en;; *);;
 
 definition -> definition_of_ticket_price (*
 	-> rrel_key_sc_element: nrel_ticket_price;;

@@ -1,0 +1,66 @@
+concept_food_establishment
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Заведение питания] (* <- lang_ru;; *);
+	[Food establishment] (* <- lang_en;; *);;
+
+definition -> definition_of_food_establishment (*
+	-> rrel_key_sc_element: concept_food_establishment;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Заведение питания - это организация, предназначенная для обслуживания посетителей пищей и напитками. К заведениям питания относятся рестораны, кафе, бары, закусочные, столовые и другие подобные места.] (* <- lang_ru;; *);;
+		-> [A food establishment is an organization designed to serve food and drinks to visitors. Food establishments include restaurants, cafes, bars, snack bars, canteens, and other similar places.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Заведение питания)] (* <- lang_ru;; *);
+		[Def. (Food establishment)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		concept_organization;
+		concept_food;
+		concept_drinks;
+		concept_restaurant;
+		concept_cafe;
+		concept_bar;
+		concept_snack_bar;
+		concept_canteen;
+		nrel_serves;
+		nrel_includes;
+		nrel_designed_to;
+		nrel_similar_to
+	};;
+*);;
+
+statement -> statement_of_food_establishment (*
+	-> rrel_key_sc_element: concept_food_establishment;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Заведения питания являются важным элементом инфраструктуры городов и представляют собой места, где люди могут не только наслаждаться едой и напитками, но и проводить время в приятной обстановке.] (* <- lang_ru;; *);;
+		-> [Food establishments are an important element of city infrastructure and represent places where people can not only enjoy food and drinks, but also spend time in a pleasant atmosphere.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О заведении питания)] (* <- lang_ru;; *);
+		[Stat. (About food establishment)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		concept_city_infrastructure;
+		concept_food;
+		concept_drinks;
+		concept_restaurant;
+		concept_cafe;
+		concept_bar;
+		concept_snack_bar;
+		concept_canteen;
+		concept_atmosphere;
+		nrel_includes;
+		nrel_represents;
+		nrel_serve;
+		nrel_enjoy;
+		nrel_spend_time_in;
+		nrel_provide
+	};;
+*);;

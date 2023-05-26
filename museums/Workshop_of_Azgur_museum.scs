@@ -1,0 +1,67 @@
+workshop_of_azgur_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей мастерской Азгура] (* <- lang_ru;; *);
+	[Workshop of Azgur Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей мастерской Азгура] (* <- lang_ru;; *);
+	[Workshop of Azgur Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/workshop_of_azgur_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_workshop_of_azgur_museum (*
+	-> rrel_key_sc_element: workshop_of_azgur_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей мастерской Азгура - это музей, расположенный в городе Минск, Беларусь. Музей находится в доме, где на протяжении многих лет работал и жил известный белорусский скульптор Займан Азгур. Музей представляет собой мастерскую скульптора, которая была сохранена в первоначальном виде. В музее представлены множество работ Займана Азгура, среди которых скульптуры, рисунки и графические работы. Музей проводит экскурсии для взрослых и детей, а также предлагает различные образовательные программы и мероприятия.] (* <- lang_ru;; *);;
+		-> [Workshop of Azgur Museum is a museum located in Minsk, Belarus. The museum is housed in the home where the renowned Belarusian sculptor Zair Azgur worked and lived for many years. The museum represents the sculptor's workshop, which has been preserved in its original form. The museum features a multitude of Azgur's works, including sculptures, drawings, and graphic works. The museum conducts tours for adults and children, as well as offers various educational programs and events.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей мастерской Азгура)] (* <- lang_ru;; *);
+		[Def. (Workshop of Azgur Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		workshop_of_azgur_museum;
+		minsk;
+		belarus;
+		concept_home;
+		concept_belarusian_sculptor;
+		zair_azgur;
+		concept_workshop;
+		concept_works;
+		concept_sculptures;
+		concept_drawings;
+		concept_graphic_works;
+		concept_tours;
+		concept_adults;
+		concept_children;
+		concept_educational_programs;
+		concept_events;
+		nrel_located_in;
+		nrel_housed_in;
+		nrel_represents;
+		nrel_preserved_in;
+		nrel_features;
+		nrel_conducts;
+		nrel_offers
+	};;
+*);;
+
+workshop_of_azgur_museum
+	=> nrel_museum_type: workshop_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: not_specified;
+	=> nrel_coordinates: 53.899200_27.578407;
+	=> nrel_age_restictions: 0_plus;;

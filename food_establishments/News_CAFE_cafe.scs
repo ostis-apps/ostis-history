@@ -1,0 +1,105 @@
+news_cafe_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "News CAFE"] (* <- lang_ru;; *);
+	[News CAFE cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "News CAFE"] (* <- lang_ru;; *);
+	[News CAFE cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/news_cafe_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_news_cafe_cafe (*
+	-> rrel_key_sc_element: news_cafe_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "News CAFE" - это яркое и современное кофейное заведение, расположенное в Минске, Беларусь. Кафе черпает вдохновение из мира новостей и медиа, создавая уникальную и динамичную атмосферу для посетителей. News CAFE - это не просто место, где можно насладиться чашкой кофе, но и хаб для получения актуальных новостей и трендов. В меню кафе представлен широкий выбор напитков из кофе, включая эспрессо, макиато, капучино и особые сорта, все приготовленные из высококачественных кофейных зерен. В дополнение к кофе, News CAFE предлагает разнообразные свежеиспеченные выпечку, сэндвичи и легкие закуски, предоставляя удобный вариант для завтрака или быстрого перекуса. Интерьер кафе выполнен в современном и стильном стиле, с комфортными зонами отдыха и ярким декором, отражающим энергию оживленной редакции новостей. News CAFE пользуется популярностью среди профессионалов, студентов и ценителей кофе, которые ценят оживленную атмосферу и отличную чашку кофе.] (* <- lang_ru;; *);;
+		-> [News CAFE cafe is a vibrant and contemporary coffee house located in Minsk, Belarus. The cafe takes its inspiration from the world of news and media, creating a unique and dynamic atmosphere for customers. News CAFE is not just a place to enjoy a cup of coffee, but also a hub for staying updated on the latest news and trends. The cafe offers a wide selection of coffee beverages, including espresso, macchiato, cappuccino, and specialty blends, all made from premium coffee beans. Alongside coffee, News CAFE serves a variety of freshly baked pastries, sandwiches, and light meals, providing a convenient option for breakfast or a quick bite. The interior of the cafe is designed with modern and sleek elements, featuring comfortable seating areas and a vibrant decor that reflects the energy of a bustling newsroom. News CAFE is a popular spot for professionals, students, and coffee enthusiasts who appreciate a lively ambiance and a great cup of coffee.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "News CAFE")] (* <- lang_ru;; *);
+		[Def. (News CAFE cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		news_cafe_cafe;
+		minsk;
+		belarus;
+		concept_vibrant;
+		concept_contemporary_coffee_house;
+		concept_inspiration_from_news_and_media;
+		concept_unique_and_dynamic_atmosphere;
+		concept_customers;
+		concept_hub_for_staying_updated;
+		concept_latest_news_and_trends;
+		concept_wide_selection_of_coffee_beverages;
+		concept_espresso;
+		concept_macchiato;
+		concept_cappuccino;
+		concept_specialty_blends;
+		concept_premium_coffee_beans;
+		concept_freshly_baked_pastries;
+		concept_sandwiches;
+		concept_light_meals;
+		concept_convenient_option;
+		concept_breakfast;
+		concept_quick_bite;
+		concept_interior_design;
+		concept_modern_and_sleek_elements;
+		concept_comfortable_seating_areas;
+		concept_vibrant_decor;
+		concept_reflects_energy_of_bustling_newsroom;
+		concept_professionals;
+		concept_students;
+		concept_coffee_enthusiasts;
+		concept_lively_ambiance;
+		concept_great_cup_of_coffee;
+		nrel_located_in;
+		nrel_takes_inspiration_from;
+		nrel_creating;
+		nrel_providing;
+		nrel_offers;
+		nrel_made_from;
+		nrel_serves;
+		nrel_providing;
+		nrel_convenient_option;
+		nrel_designed_with;
+		nrel_featuring;
+		nrel_reflects;
+		nrel_popular_spot_for
+	};;
+*);;
+
+news_cafe_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 60_to_70;
+	=> nrel_coordinates: 53.899765_27.561759;
+	=> nrel_type_of_food: 
+		italian;
+		european;
+		central_european;
+		vegan;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		alcohol;
+		wine;
+		champagne;
+		juice;
+		coffee;
+		tea;;

@@ -1,0 +1,94 @@
+varenik_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "Varenik"] (* <- lang_ru;; *);
+	[Varenik cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "Varenik"] (* <- lang_ru;; *);
+	[Varenik cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/varenik_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_varenik_cafe (*
+	-> rrel_key_sc_element: varenik_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "Varenik" - это очаровательное и уютное заведение, расположенное в Минске, Беларусь. Кафе специализируется на традиционной белорусской кухне, с особым акцентом на вареники, излюбленное местное блюдо. Вареники - это вкусные пельмени, наполненные различными солеными или сладкими начинками, такими как картофель, творог, грибы, ягоды и многое другое. В кафе "Varenik" вы можете насладиться широким выбором вареников, каждый из которых приготовлен с заботой и с использованием подлинных рецептов, переданных из поколения в поколение. Кроме вареников, в кафе предлагается также разнообразие других белорусских специальностей, включая драники (картофельные оладьи), калдуны (начиненные блины) и блинчики. Уютный интерьер кафе "Varenik" создает теплую и гостеприимную атмосферу, идеальную для наслаждения сытным обедом или чашкой чая. Независимо от того, являетесь ли вы местным жителем, желающим попробовать традиционную белорусскую кухню, или гостем, желающим познакомиться с местной гастрономией, кафе "Вареник" предлагает вам аутентичные блюда, воспевающие богатое кулинарное наследие Беларуси.] (* <- lang_ru;; *);;
+		-> [Varenik cafe is a charming and cozy café located in Minsk, Belarus. The café specializes in serving traditional Belarusian cuisine, with a focus on vareniki, a beloved local dish. Vareniki are delicious dumplings filled with various savory or sweet fillings, such as potato, cottage cheese, mushrooms, berries, and more. At Varenik cafe, you can indulge in a wide selection of vareniki, each made with care and using authentic recipes that have been passed down through generations. In addition to vareniki, the café also offers a range of other Belarusian specialties, including draniki (potato pancakes), kalduny (stuffed pancakes), and blinchiki (crepes). The cozy interior of Varenik cafe creates a warm and inviting atmosphere, perfect for enjoying a hearty meal or a cup of tea. Whether you're a local looking for a taste of traditional Belarusian cuisine or a visitor eager to explore the local gastronomy, Varenik cafe provides an authentic dining experience that celebrates the rich culinary heritage of Belarus.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "Varenik")] (* <- lang_ru;; *);
+		[Def. (Varenik cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		varenik_cafe;
+		minsk;
+		belarus;
+		concept_charming_and_cozy_cafe;
+		concept_specializes_in_traditional_Belarusian_cuisine;
+		concept_vareniki;
+		concept_local_dish;
+		concept_savory_fillings;
+		concept_sweet_fillings;
+		concept_potato_filling;
+		concept_cottage_cheese_filling;
+		concept_mushroom_filling;
+		concept_berry_filling;
+		concept_authentic_recipes;
+		concept_passed_down_through_generations;
+		concept_belarusian_specialties;
+		concept_draniki;
+		concept_potato_pancakes;
+		concept_kalduny;
+		concept_stuffed_pancakes;
+		concept_blinchiki;
+		concept_crepes;
+		concept_cozy_interior;
+		concept_warm_and_inviting_atmosphere;
+		concept_hearty_meal;
+		concept_cup_of_tea;
+		concept_local_experience;
+		concept_gastronomy;
+		concept_authentic_dining_experience;
+		concept_rich_culinary_heritage;
+		nrel_specializes_in;
+		nrel_offers;
+		nrel_made_with;
+		nrel_includes;
+		nrel_creates;
+		nrel_provides;
+		nrel_celebrates
+	};;
+*);;
+
+varenik_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 30_plus;
+	=> nrel_average_bill: not_specified;
+	=> nrel_coordinates: 53.901367_27.601353;
+	=> nrel_type_of_food: 
+		european;
+		breakfast;
+		soups;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		alcohol;
+		beer;
+		wine;
+		tea;
+		cocktail;;

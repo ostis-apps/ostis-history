@@ -1,0 +1,58 @@
+national_art_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Национальный художественный музей] (* <- lang_ru;; *);
+	[National Art Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Национальный художественный музей] (* <- lang_ru;; *);
+	[National Art Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/national_art_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_national_art_museum (*
+	-> rrel_key_sc_element: national_art_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Национальный художественный музей - это главный художественный музей Беларуси, расположенный в центре Минска. Он был основан в 1939 году и на сегодняшний день в нем находится более 30 тысяч экспонатов, включая произведения белорусских и зарубежных мастеров разных эпох и стилей.] (* <- lang_ru;; *);;
+		-> [National Art Museum is the main art museum of Belarus, located in the center of Minsk. It was founded in 1939 and currently holds over 30,000 exhibits, including works by Belarusian and foreign artists of different eras and styles.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Национальный художественный музей)] (* <- lang_ru;; *);
+		[Def. (National Art Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		national_art_museum;
+		concept_location;
+		minsk;
+		belarus;
+		concept_foundation;
+		concept_exhibits;
+		concept_belarusian_artists;
+		concept_foreign_artists;
+		concept_eras;
+		concept_styles;
+		nrel_located_in;
+		nrel_founded_by;
+		nrel_holds;
+		nrel_includes
+	};;
+*);;
+
+national_art_museum
+	=> nrel_museum_type: art_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 4_to_10;
+	=> nrel_coordinates: 53.898538_27.560898;
+	=> nrel_age_restictions: 0_plus;;

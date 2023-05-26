@@ -1,0 +1,56 @@
+octyabrskaya_street
+<- concept_historic_district;
+=> nrel_main_idtf:
+	[Улица Октябрьская] (* <- lang_ru;; *);
+	[Octyabrskya street] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Улица Октябрьская] (* <- lang_ru;; *);
+	[Octyabrskya street] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/octyabrskaya_street.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_octyabrskaya_street (*
+	-> rrel_key_sc_element: octyabrskaya_street;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Улица Октябрьская - улица в историческом центре Минска. Старое название - Нижне-Ляховская, перестроена из промашленного района. Обладает множеством красивых граффити.] (* <- lang_ru;; *);;
+		-> [Octyabrskya street is street in the historical center of Minsk. The old name - Nizhne-Lyakhovskaya, was rebuilt from an industrial area. Has a lot of beautiful graffiti.
+
+] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Улица Октябрьская)] (* <- lang_ru;; *);
+		[Def. (Octyabrskya street)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_street;
+		concept_historic_district;
+		octyabrskaya_street;
+        concept_cultural_center;
+        concept_old_factory;
+        concept_club;
+        concept_food_establishment;
+		minsk;
+        belarus;
+        concept_graffiti;
+		concept_soviet_architecture;
+        cocnept_renovation;
+		nrel_offers;
+		nrel_provides;
+		nrel_rebuild
+	};;
+*);;
+
+octyabrskaya_street
+	=> nrel_coordinates: 53.891658989687095_27.570713753795562;;

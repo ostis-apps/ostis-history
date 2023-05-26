@@ -1,0 +1,81 @@
+cat_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей кота] (* <- lang_ru;; *);
+	[Cat Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей кота] (* <- lang_ru;; *);
+	[Cat Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/cat_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_cat_museum (*
+	-> rrel_key_sc_element: cat_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей кота - это музей, расположенный в городе Минск, Беларусь, посвященный кошкам. Музей является уникальным местом для всех любителей кошек, где можно узнать о различных породах кошек, их истории, поведении и увлечениях. В экспозиции музея представлены многочисленные предметы и артефакты, связанные с кошками, такие как игрушки, картины, скульптуры, посуда и другие украшения. Также в музее можно посмотреть видео- и фотоматериалы о кошках, поучаствовать в интерактивных играх и даже погладить настоящую кошку, живущую в музее. Музей проводит выставки и мероприятия, посвященные кошкам, а также организует встречи для кошатников и кошек.] (* <- lang_ru;; *);;
+		-> [Cat Museum is a museum located in Minsk, Belarus, dedicated to cats. The museum is a unique place for all cat lovers where you can learn about different cat breeds, their history, behavior, and hobbies. The museum's exposition features numerous objects and artifacts related to cats, such as toys, paintings, sculptures, dishes, and other decorations. Visitors can also watch videos and photos about cats, participate in interactive games, and even stroke a real cat that lives in the museum. The museum holds exhibitions and events dedicated to cats, as well as organizes meetings for cat owners and their furry friends.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей кота)] (* <- lang_ru;; *);
+		[Def. (Cat Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		cat_museum;
+		minsk;
+		belarus;
+		concept_cats;
+		concept_cat_lovers;
+		concept_cat_breeds;
+		concept_history_of_cats;
+		concept_behavior_of_cats;
+		concept_hobbies_of_cats;
+		concept_exposition;
+		concept_objects;
+		concept_artifacts;
+		concept_toys;
+		concept_paintings;
+		concept_sculptures;
+		concept_dishes;
+		concept_decorations;
+		concept_videos;
+		concept_photos;
+		concept_interactive_games;
+		concept_real_cat;
+		concept_exhibitions;
+		concept_events;
+		concept_meetings;
+		concept_cat_owners;
+		concept_furry_friends;
+		nrel_is_a_museum_located_in;
+		nrel_dedicated_to;
+		nrel_learn_about;
+		nrel_features;
+		nrel_related_to_cats;
+		nrel_watch_videos_and_photos_about;
+		nrel_participate_in_interactive_games;
+		nrel_stroke_a_real_cat;
+		nrel_holds;
+		nrel_organizes;
+		nrel_related_to_cat_owners_and_furry_friends
+	};;
+*);;
+
+cat_museum
+	=> nrel_museum_type: cat_museum;
+	=> nrel_capacity: 25_plus;
+	=> nrel_ticket_price: 10_to_12;
+	=> nrel_coordinates: 53.903887_27.558789;
+	=> nrel_age_restictions: 0_plus;;

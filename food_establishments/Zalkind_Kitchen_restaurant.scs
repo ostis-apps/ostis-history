@@ -1,0 +1,102 @@
+zalkind_kitchen_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Zalkind Kitchen"] (* <- lang_ru;; *);
+	[Zalkind Kitchen restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Zalkind Kitchen"] (* <- lang_ru;; *);
+	[Zalkind Kitchen restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/zalkind_kitchen_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_zalkind_kitchen_restaurant (*
+	-> rrel_key_sc_element: zalkind_kitchen_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Zalkind Kitchen" - это современный и стильный ресторан, расположенный в Минске, Беларусь. Ресторан предлагает смесь традиционной белорусской и еврейской кухонь с современными нотками. В меню представлены блюда, приготовленные из местных продуктов, включая известные блюда, такие как картофельные латки, гефилт фиш и голубцы. В ресторане также предлагается широкий выбор вин, пива и крепких напитков, а также ассортимент десертов и выпечки. Интерьер "Zalkind Kitchen" элегантный и современный, с минималистическим дизайном, который сочетает в себе натуральные материалы с лаконичными линиями и современной мебелью. Атмосфера теплая и гостеприимная, делая его идеальным местом для уютного ужина или живого вечера. Благодаря уникальному сочетанию традиционных и современных вкусов, "Zalkind Kitchen" - обязательное место для посещения гурманов в Минске.] (* <- lang_ru;; *);;
+		-> [Zalkind Kitchen restaurant is a modern and stylish restaurant located in Minsk, Belarus. The restaurant offers a fusion of traditional Belarusian and Jewish cuisine with contemporary twists. The menu features a variety of dishes made from locally sourced ingredients, including signature dishes like potato latkes, gefilte fish, and stuffed cabbage. The restaurant also offers a wide selection of wines, beers, and spirits, as well as a range of desserts and pastries. The interior of Zalkind Kitchen is elegant and contemporary, with a minimalist design that combines natural materials with sleek lines and modern furnishings. The atmosphere is warm and inviting, making it the perfect spot for a cozy dinner or a lively night out. With its unique blend of traditional and modern flavors, Zalkind Kitchen is a must-visit destination for foodies in Minsk.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Zalkind Kitchen")] (* <- lang_ru;; *);
+		[Def. (Zalkind Kitchen restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		zalkind_kitchen_restaurant;
+		minsk;
+		belarus;
+		concept_modern_restaurant;
+		concept_stylish_restaurant;
+		concept_fusion_cuisine;
+		concept_traditional_Belarusian_cuisine;
+		concept_jewish_cuisine;
+		concept_contemporary_twists;
+		concept_menu;
+		concept_locally_sourced_ingredients;
+		concept_signature_dishes;
+		concept_potato_latkes;
+		concept_gefilte_fish;
+		concept_stuffed_cabbage;
+		concept_wide_selection;
+		concept_wines;
+		concept_beers;
+		concept_spirits;
+		concept_desserts;
+		concept_pastries;
+		concept_interior_design;
+		concept_elegant;
+		concept_contemporary;
+		concept_minimalist_design;
+		concept_natural_materials;
+		concept_sleek_lines;
+		concept_modern_furnishings;
+		concept_warm_and_inviting_atmosphere;
+		concept_cozy_dinner;
+		concept_lively_night_out;
+		concept_unique_blend;
+		concept_foodies;
+		nrel_located_in;
+		nrel_offers;
+		nrel_fusion_of;
+		nrel_features;
+		nrel_made_from;
+		nrel_including;
+		nrel_offers_a_wide_selection_of;
+		nrel_interior_designed_with;
+		nrel_combines;
+		nrel_makes;
+		nrel_perfect_spot_for;
+		nrel_unique_blend_of
+	};;
+*);;
+
+zalkind_kitchen_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 30_plus;
+	=> nrel_average_bill: not_specified;
+	=> nrel_coordinates: 53.902409_27.551228;
+	=> nrel_type_of_food: 
+		mediterranean;
+		middle_eastern;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+		soups;
+	=> nrel_type_of_drink: 
+		alcohol;
+		wine;
+		coffee;
+		tea;;

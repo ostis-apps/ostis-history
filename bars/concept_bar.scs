@@ -1,0 +1,65 @@
+concept_bar
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Бар] (* <- lang_ru;; *);
+	[Bar] (* <- lang_en;; *);;
+
+definition -> definition_of_bar (*
+	-> rrel_key_sc_element: concept_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Бар - редприятие общественного питания, оборудованное барной стойкой и реализующее в зависимости от специализации алкогольные и (или) безалкогольные напитки, горячие и прохладительные напитки, коктейли, холодные и горячие закуски и блюда в ограниченном ассортименте, покупные товары.] (* <- lang_ru;; *);;
+		-> [Bar is a retail business establishment that serves alcoholic beverages, such as beer, wine, liquor, cocktails, and other beverages such as mineral water and soft drinks.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар)] (* <- lang_ru;; *);
+		[Def. (Bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_organization;
+		concept_food;
+		concept_drinks;
+		concept_bar;
+		concept_bar_counter;
+		concept_snack_bar;
+		concept_alcohol;
+		concept_beer;
+		concept_wine;
+		concept_liquor;
+		nrel_serves;
+		nrel_includes;
+		nrel_designed_to;
+		nrel_similar_to
+	};;
+*);;
+
+statement -> statement_of_bar (*
+	-> rrel_key_sc_element: concept_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Термин «бар» произошёл от названия специализированной барной стойки. ] (* <- lang_ru;; *);;
+		-> [Therm bar has its roots from the name of special bar counter.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О баре)] (* <- lang_ru;; *);
+		[Stat. (About bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_organization;
+		concept_food;
+		concept_drinks;
+		concept_bar;
+		concept_bar_counter;
+		concept_snack_bar;
+		concept_alcohol;
+		concept_beer;
+		concept_wine;
+		concept_liquor;
+		nrel_serves;
+		nrel_includes;
+		nrel_designed_to;
+		nrel_similar_to
+	};;
+*);;

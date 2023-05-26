@@ -1,0 +1,65 @@
+aviation_technology_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей авиационной техники] (* <- lang_ru;; *);
+	[Aviation Technology Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей авиационной техники] (* <- lang_ru;; *);
+	[Aviation Technology Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/aviation_technology_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_aviation_technology_museum (*
+	-> rrel_key_sc_element: aviation_technology_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей авиационной техники - это музей авиационной техники, расположенный в Минске, Беларусь. Он был открыт в 2002 году на базе Минского аэропорта и представляет собой уникальную экспозицию, посвященную истории авиации. В музее представлены самолеты, вертолеты, двигатели, радиооборудование, а также другие экспонаты, связанные с авиацией. Посетители музея могут не только рассмотреть экспонаты, но и принять участие в экскурсиях, попробовать себя в пилотировании симуляторов, а также посетить магазин сувениров.] (* <- lang_ru;; *);;
+		-> [Aviation Technology Museum is an aviation technology museum located in Minsk, Belarus. It was opened in 2002 on the basis of Minsk Airport and represents a unique exposition dedicated to the history of aviation. The museum features airplanes, helicopters, engines, radio equipment, and other exhibits related to aviation. Visitors to the museum can not only view the exhibits but also take part in excursions, try their hand at piloting simulators, and visit the souvenir shop.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей авиационной техники)] (* <- lang_ru;; *);
+		[Def. (Aviation Technology Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		aviation_technology_museum;
+		minsk;
+		belarus;
+		concept_aviation_technology;
+		concept_history_of_aviation;
+		concept_airplanes;
+		concept_helicopters;
+		concept_engines;
+		concept_radio_equipment;
+		concept_exhibits;
+		concept_excursions;
+		concept_piloting_simulators;
+		concept_souvenir_shop;
+		nrel_located_in;
+		nrel_opened_on_the_basis_of;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_related_to;
+		nrel_allows_visitors_to_view;
+		nrel_allows_visitors_to_take_part_in;
+		nrel_has_a_souvenir_shop
+	};;
+*);;
+
+aviation_technology_museum
+	=> nrel_museum_type: aviation_technology_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 4_to_20;
+	=> nrel_coordinates: 53.960758_27.651198;
+	=> nrel_age_restictions: 0_plus;;

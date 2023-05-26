@@ -1,0 +1,78 @@
+lidbeer_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар Lidbeer] (* <- lang_ru;; *);
+	[Lidbeer bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар Lidbeer] (* <- lang_ru;; *);
+	  [Lidbeer bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/lidbeer_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_lidbeer_bar (*
+	-> rrel_key_sc_element:lidbeer_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Lidbeer bar - бар на проспекте Дзержинского с демократичными ценами и отличным крафтовым пивом.] (* <- lang_ru;; *);;
+		-> [Lidbeer bar - a bar on Dzerzhinsky Avenue with affordable prices and excellent craft beer.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар Lidbeer)] (* <- lang_ru;; *);
+		[Def. (Lidbeer bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+	Lidbeer_bar;
+		minsk;
+		belarus;
+		concept_bar;
+		concept_modern_atmosphere;
+		concept_eclectic_menu;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_hearty_breakfast_options;
+		concept_delicious_sandwiches;
+		concept_craft_beer;
+        concept_modest_prices;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_interior_design;
+		concept_rustic_and_contemporary_elements;
+		concept_comfortable_and_inviting_ambiance;
+		concept_flavorful_meal;
+		concept_vibrant_dining_experience;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+lidbeer_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 15_plus;	
+	=> nrel_capacity: 100;
+	=> nrel_average_bill: 10_to_20;
+	=> nrel_coordinates: 53.900752414430755_27.55463352333635;
+	=> nrel_type_of_food: 
+        burgers;
+        steaks;
+	=> nrel_type_of_drink: 
+		coffee;
+        liquor;
+        whiskey;
+        coctail;
+        vodka;
+        beer;
+		tea;;
+

@@ -1,0 +1,58 @@
+iron_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей утюга] (* <- lang_ru;; *);
+	[Iron museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей утюга] (* <- lang_ru;; *);
+	[Iron museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/iron_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_iron_museum (*
+	-> rrel_key_sc_element: iron_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей утюга - это музей, посвященный истории и развитию утюговой промышленности. Он демонстрирует экспонаты, показывающие эволюцию утюгов, от ранних ручных до современных электрических утюгов. Музей также предоставляет информацию о социальном и культурном значении глажки на протяжении истории.] (* <- lang_ru;; *);;
+		-> [Iron museum is a museum dedicated to the history and development of the ironing industry. It features exhibits showcasing the evolution of the ironing device, from early flat irons to modern electric irons. The museum also provides insight into the social and cultural significance of ironing throughout history.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей утюга)] (* <- lang_ru;; *);
+		[Def. (Iron museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		iron_museum;
+		concept_history;
+		concept_development;
+		concept_ironing_industry;
+		concept_exhibit;
+		concept_flat_iron;
+		concept_electric_iron;
+		concept_social_significance;
+		concept_cultural_significance;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_showcasing;
+		nrel_evolution_of;
+		nrel_provides_insight_into
+	};;
+*);;
+
+iron_museum
+	=> nrel_museum_type: history_museum;
+	=> nrel_capacity: 10;
+	=> nrel_ticket_price: not_specified;
+	=> nrel_coordinates: 53.908508_27.556824;
+	=> nrel_age_restictions: 0_plus;;

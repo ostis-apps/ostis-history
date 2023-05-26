@@ -1,0 +1,96 @@
+maslow6_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Maslow6"] (* <- lang_ru;; *);
+	[Maslow6 restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Maslow6"] (* <- lang_ru;; *);
+	[Maslow6 restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/maslow6_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_maslow6_restaurant (*
+	-> rrel_key_sc_element: maslow6_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Maslow6" - это современное и инновационное заведение общественного питания, расположенное в Минске, Беларусь. Ресторан назван в честь пирамиды потребностей Абрахама Маслоу, подчеркивая важность удовлетворения кулинарных потребностей. Maslow6 предлагает уникальное и постоянно меняющееся меню, объединяющее международные вкусы с местными ингредиентами, предоставляя гостям кулинарное путешествие по различным кухням. Блюда представлены с искусством, демонстрируя креативность и мастерство талантливых шеф-поваров. Современный и стильный интерьер ресторана создает гостеприимную атмосферу, идеальную для уютных ужинов или общения в кругу друзей. В Maslow6 также предлагается обширный выбор изысканных вин и авторских коктейлей, дополняющих впечатления от обеда. Благодаря своему стремлению к кулинарному совершенству и стремлению к гастрономическому наслаждению, ресторан Maslow6 является местом, которое привлекает гурманов, желающих получить незабываемый и удовлетворительный опыт обеда.] (* <- lang_ru;; *);;
+		-> [Maslow6 restaurant is a contemporary and innovative dining establishment located in Minsk, Belarus. The restaurant takes its name from Abraham Maslow's hierarchy of needs, emphasizing the importance of satisfying culinary experiences. Maslow6 offers a unique and evolving menu that combines international flavors with local ingredients, providing guests with a culinary journey through various cuisines. The dishes are artfully presented, showcasing the creativity and skill of the talented chefs. The restaurant's modern and stylish interior creates a welcoming atmosphere, ideal for intimate dinners or social gatherings. Maslow6 also boasts an extensive selection of fine wines and handcrafted cocktails to complement the dining experience. With its commitment to culinary excellence and the pursuit of gastronomic pleasure, Maslow6 restaurant is a destination for food enthusiasts seeking a memorable and satisfying dining experience.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Maslow6")] (* <- lang_ru;; *);
+		[Def. (Maslow6 restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		maslow6_restaurant;
+		minsk;
+		belarus;
+		concept_contemporary_dining_establishment;
+		concept_innovative;
+		abraham_maslow;
+		concept_hierarchy_of_needs;
+		concept_culinary_experiences;
+		concept_unique_menu;
+		concept_international_flavors;
+		concept_local_ingredients;
+		concept_culinary_journey;
+		concept_artful_presentation;
+		concept_creativity;
+		concept_skill;
+		concept_talented_chefs;
+		concept_modern_interior;
+		concept_stylish_interior;
+		concept_welcoming_atmosphere;
+		concept_intimate_dinners;
+		concept_social_gatherings;
+		concept_extensive_selection;
+		concept_fine_wines;
+		concept_handcrafted_cocktails;
+		concept_complement;
+		concept_commitment_to_culinary_excellence;
+		concept_gastronomic_pleasure;
+		concept_food_enthusiasts;
+		concept_memorable_dining_experience;
+		concept_satisfying_dining_experience;
+		nrel_located_in;
+		nrel_takes_its_name_from;
+		nrel_emphasizing;
+		nrel_offers;
+		nrel_combines;
+		nrel_providing;
+		nrel_showcasing;
+		nrel_creating;
+		nrel_ideal_for;
+		nrel_boasts;
+		nrel_to_complement;
+		nrel_pursuit_of
+	};;
+*);;
+
+maslow6_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 60_to_120;
+	=> nrel_coordinates: 53.904584_27.558870;
+	=> nrel_type_of_food: 
+		european;
+		vegan;
+		lunch;
+		dinner;
+		breakfast;
+	=> nrel_type_of_drink: 
+		champagne;
+		alcohol;
+		cocktail;;

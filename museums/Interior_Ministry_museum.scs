@@ -1,0 +1,60 @@
+interior_ministry_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей Министерства внутренних дел Республики Беларусь] (* <- lang_ru;; *);
+	[The Interior Ministry Museum of the Republic of Belarus] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей Министерства внутренних дел Республики Беларусь] (* <- lang_ru;; *);
+	[The Interior Ministry Museum of the Republic of Belarus] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/interior_ministry_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_interior_ministry_museum (*
+	-> rrel_key_sc_element: interior_ministry_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей Министерства внутренних дел Республики Беларусь - это музей, расположенный в городе Минск, посвященный истории и деятельности Министерства внутренних дел Беларуси. В экспозиции музея представлены различные экспонаты, связанные с историей правоохранительных органов Беларуси, такие как униформа, оружие, специальное оборудование, документы и другие материалы.] (* <- lang_ru;; *);;
+		-> [The Interior Ministry Museum of the Republic of Belarus is a museum located in Minsk dedicated to the history and activities of the Ministry of Internal Affairs of Belarus. The museum's exposition features various exhibits related to the history of law enforcement agencies in Belarus, such as uniforms, weapons, special equipment, documents, and other materials.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей Министерства внутренних дел Республики Беларусь)] (* <- lang_ru;; *);
+		[Def. (The Interior Ministry Museum of the Republic of Belarus)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		interior_ministry_museum;
+		belarus;
+		minsk;
+		concept_law_enforcement_agencies;
+		concept_history;
+		concept_activities;
+		concept_exposition;
+		concept_exhibits;
+		concept_uniforms;
+		concept_weapons;
+		concept_special_equipment;
+		concept_documents;
+		nrel_is_a_museum_dedicated_to;
+		nrel_features;
+		nrel_related_to_history_and_activities_of_internal_affairs_of_belarus;
+		nrel_contains
+	};;
+*);;
+
+interior_ministry_museum
+	=> nrel_museum_type: ministry_of_the_interior_museum;
+	=> nrel_capacity: 20;
+	=> nrel_ticket_price: free;
+	=> nrel_coordinates: 53.898919_27.551947;
+	=> nrel_age_restictions: 14_plus;;

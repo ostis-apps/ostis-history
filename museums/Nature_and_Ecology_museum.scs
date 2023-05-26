@@ -1,0 +1,68 @@
+nature_and_ecology_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей природы и экологии] (* <- lang_ru;; *);
+	[Nature and Ecology museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей природы и экологии] (* <- lang_ru;; *);
+	[Nature and Ecology museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/nature_and_ecology_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_nature_and_ecology_museum (*
+	-> rrel_key_sc_element: nature_and_ecology_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей природы и экологии - это музей, расположенный в Минске, Беларусь, посвященный изучению и сохранению природной среды. Он демонстрирует экспонаты, показывающие разнообразие флоры и фауны Беларуси, а также экологические системы, которые поддерживают их. Музей также предоставляет образовательные программы и мероприятия, связанные с охраной окружающей среды и устойчивым развитием.] (* <- lang_ru;; *);;
+		-> [Nature and Ecology museum is a museum located in Minsk, Belarus, dedicated to the study and conservation of the natural environment. It features exhibits showcasing the diversity of flora and fauna in Belarus, as well as the ecological systems that support them. The museum also provides educational programs and activities related to environmental conservation and sustainability.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей природы и экологии)] (* <- lang_ru;; *);
+		[Def. (Nature and Ecology museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		nature_and_ecology_museum;
+		minsk;
+		belarus;
+		concept_study;
+		concept_conservation;
+		concept_natural_environment;
+		concept_exhibit;
+		concept_diversity;
+		concept_flora;
+		concept_fauna;
+		concept_ecological_systems;
+		concept_education;
+		concept_program;
+		concept_activity;
+		concept_environmental_conservation;
+		concept_sustainability;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_showcasing;
+		nrel_diversity_of;
+		nrel_includes;
+		nrel_supports;
+		nrel_provides;
+		nrel_related_to
+	};;
+*);;
+
+nature_and_ecology_museum
+	=> nrel_museum_type: nature_and_ecology_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: 2_to_7;
+	=> nrel_coordinates: 53.896816_27.555354;
+	=> nrel_age_restictions: 0_plus;;

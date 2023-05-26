@@ -1,0 +1,66 @@
+jewish_history_and_culture_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей истории и культуры евреев] (* <- lang_ru;; *);
+	[Jewish History and Culture museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей истории и культуры евреев] (* <- lang_ru;; *);
+	[Jewish History and Culture museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/jewish_history_and_culture_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_jewish_history_and_culture_museum (*
+	-> rrel_key_sc_element: jewish_history_and_culture_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей истории и культуры евреев - это музей, посвященный истории и культуре еврейской общины в Беларуси. Он демонстрирует экспонаты, показывающие богатое и разнообразное еврейское наследие в Беларуси, включая артефакты, фотографии и документы, связанные с еврейской жизнью, традициями и обычаями. Музей также предоставляет образовательные программы и мероприятия, связанные с историей и культурой евреев.] (* <- lang_ru;; *);;
+		-> [Jewish History and Culture museum is a museum dedicated to the history and culture of the Jewish community in Belarus. It features exhibits showcasing the rich and diverse Jewish heritage in Belarus, including artifacts, photographs, and documents related to Jewish life, traditions, and customs. The museum also provides educational programs and activities related to Jewish history and culture.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей истории и культуры евреев)] (* <- lang_ru;; *);
+		[Def. (Jewish History and Culture museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		jewish_history_and_culture_museum;
+		concept_history;
+		concept_culture;
+		concept_jewish_community;
+		belarus;
+		concept_exhibit;
+		concept_artifact;
+		concept_photograph;
+		concept_document;
+		concept_life;
+		concept_tradition;
+		concept_custom;
+		concept_education;
+		concept_program;
+		concept_activity;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_showcasing;
+		nrel_related_to;
+		nrel_includes;
+		nrel_provides;
+		nrel_related_to
+	};;
+*);;
+
+jewish_history_and_culture_museum
+	=> nrel_museum_type: history_and_culture_museum;
+	=> nrel_capacity: not_specified;
+	=> nrel_ticket_price: not_specified;
+	=> nrel_coordinates: 53.922735_27.563394;
+	=> nrel_age_restictions: 0_plus;;

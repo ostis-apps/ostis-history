@@ -1,0 +1,65 @@
+folk_architecture_and_life_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей народной архитектуры и быта] (* <- lang_ru;; *);
+	[Folk Architecture and Life Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей народной архитектуры и быта] (* <- lang_ru;; *);
+	[Folk Architecture and Life Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/folk_architecture_and_life_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_folk_architecture_and_life_museum (*
+	-> rrel_key_sc_element: folk_architecture_and_life_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей народной архитектуры и быта - это музей, расположенный в Нижнем Дворе, Беларусь. Музей основан в 1976 году и представляет собой национальный комплекс народной архитектуры и быта, включающий в себя более 30 зданий из разных регионов Беларуси. В музее посетители могут познакомиться с жизнью и бытом белорусского народа, а также посмотреть национальные костюмы, ремесла, народную музыку и танцы.] (* <- lang_ru;; *);;
+		-> [Folk Architecture and Life Museum is a museum located in the town of Nizhny Dwor, Belarus. The museum was founded in 1976 and represents a national complex of folk architecture and life, comprising over 30 buildings from various regions of Belarus. Visitors to the museum can get acquainted with the life and customs of the Belarusian people, as well as see national costumes, crafts, folk music and dances.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей народной архитектуры и быта)] (* <- lang_ru;; *);
+		[Def. (Folk Architecture and Life Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		folk_architecture_and_life_museum;
+		nizhny_dwor;
+		belarus;
+		concept_folk_architecture;
+		concept_life;
+		concept_national_complex;
+		concept_regions_of_Belarus;
+		concept_visitors;
+		concept_life_and_customs;
+		concept_belarusian_people;
+		concept_national_costumes;
+		concept_crafts;
+		concept_folk_music;
+		concept_folk_dances;
+		nrel_located_in;
+		nrel_founded_by;
+		nrel_represents;
+		nrel_comprises;
+		nrel_gets_acquainted_with;
+		nrel_see;
+		nrel_showcases
+	};;
+*);;
+
+folk_architecture_and_life_museum
+	=> nrel_museum_type: cat_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 10_to_125;
+	=> nrel_coordinates: 53.834225_27.374070;
+	=> nrel_age_restictions: 0_plus;;

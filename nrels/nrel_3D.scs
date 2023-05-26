@@ -1,0 +1,29 @@
+nrel_3D
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[3D] (* <- lang_ru;; *);
+	[3D] (* <- lang_en;; *);;
+
+definition -> definition_of_3D (*
+	-> rrel_key_sc_element: nrel_3D;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [3D - разновидность кинематографических систем, имитирующих наличие третьего измерения, или вызывающих у зрителя иллюзию глубины пространства.] (* <- lang_ru;; *);;
+		-> [Age restrictions a kind of cinematic systems that imitate the presence of a third dimension, or cause the viewer to have the illusion of depth in space.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (возрастные ограничения)] (* <- lang_ru;; *);
+		[Def. (age restictions)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_3D;
+		concept_rules;
+		concept_third_dimension;
+		concept_visual_illusion;
+		concept_depth;
+		concept_space;
+		concept_films;	
+		nrel_watch
+	};;
+*);;

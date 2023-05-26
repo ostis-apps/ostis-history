@@ -1,0 +1,76 @@
+rakovsky_brovar_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар "Раковский бровар"] (* <- lang_ru;; *);
+	[Rakovsky brovar bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар "Раковский бровар"] (* <- lang_ru;; *);
+	[Rakovsky brovar bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/rakovsky_brovar_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_rakovsky_brovar_bar (*
+	-> rrel_key_sc_element: rakovsky_brovar_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Rakovsky brovar -  одно из лучших заведений с крафтовым пивом и белорусской национальной атмосферой в Минске.] (* <- lang_ru;; *);;
+		-> [Rakovsky brovar - bone of the best establishments with craft beer and Belarusian national atmosphere in Minsk.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар "Раковский бровар")] (* <- lang_ru;; *);
+		[Def. (Rakovsky brovar bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		rakovsky_brovar_bar;
+		minsk;
+		belarus;
+		concept_bar;
+		concept_national_atmosphere;
+		concept_belarusian_cuisine;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_hearty_breakfast_options;
+		concept_craft_beer;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_interior_design;
+		concept_comfortable_and_inviting_ambiance;
+		concept_flavorful_meal;
+		concept_vibrant_dining_experience;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+rakovsky_brovar_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 120;
+	=> nrel_average_bill: 20_to_30;
+	=> nrel_coordinates: 53.904367366502996_27.54852891146829;
+	=> nrel_type_of_food: 
+        burgers;
+        bread;
+        steaks;
+        potatoes;
+	=> nrel_type_of_drink: 
+		coffee;
+        whiskey;
+        coctail;
+        vodka;
+        beer;
+		tea;;

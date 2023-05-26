@@ -1,8 +1,8 @@
 nrel_capacity
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[вместимость*] (* <- lang_ru;; *);
-	[capacity*] (* <- lang_en;; *);;
+	[вместимость] (* <- lang_ru;; *);
+	[capacity] (* <- lang_en;; *);;
 
 definition -> definition_of_capacity (*
 	-> rrel_key_sc_element: nrel_capacity;;

@@ -1,0 +1,58 @@
+belarus_cinema
+<- concept_movie_theater;
+=> nrel_main_idtf:
+	[Кинотеатр "Беларусь"] (* <- lang_ru;; *);
+	[Belarus movie theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кинотеатр "Беларусь"] (* <- lang_ru;; *);
+	[Belarus movie theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/belarus_cinema.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_belarus_cinema (*
+	-> rrel_key_sc_element: belarus_cinema;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> ["Беларусь" - современный комфортабельный театр с 5 залами, основанный в 2008.] (* <- lang_ru;; *);;
+		-> [Belarus is modern comfortable theater with 5 halls, founded in 2008.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кинотеатр "Беларусь")] (* <- lang_ru;; *);
+		[Def. (Belarus  movie theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_movie_theater;
+		belarus_cinema;
+        concept_high_comfort;
+        concept_fresh_air;
+        concept_good_image_quality;
+		minsk;
+		belarus;
+        concept_multiplexor;
+		concept_contemporary_architecture;
+		concept_medium_cost;
+        concept_cinema;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+belarus_cinema
+	=> nrel_capacity: 700;
+    => nrel_3D: yes;
+	=> nrel_ticket_price: 25;
+    => nrel_number_of_halls : 5;
+	=> nrel_coordinates: 53.90550684049567_27.54245674841501;;
