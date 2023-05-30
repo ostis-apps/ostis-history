@@ -1,0 +1,170 @@
+ 
+chelyuskintsev_park
+=> nrel_main_idtf:
+	[Парк Челюскинцев] (* <- lang_ru;; *);
+	[Chelyuskintsev Park] (* <- lang_en;; *);;
+definition -> definition_of_chelyuskintsev_park (*
+	-> rrel_key_sc_element: chelyuskintsev_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Парк культуры и отдыха имени Челюскинцев — парк культуры и отдыха в Минске] (* <- lang_ru;; *);;
+		-> [Park of Culture and Leisure named after Chelyuskintsev - Park of Culture and Leisure in Minsk] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Парк Челюскинцев)] (* <- lang_ru;; *);
+		[Def. (Chelyuskintsev Park)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monuments;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История Chelyuskintsev Park]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Открыт в мае 1932 года как центральный парк культуры и отдыха. Имя челюскинцев присвоено в 1934 году в честь участников экспедиции на пароходе «Челюскин». ](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monuments;
+	concept_greenhouse;
+	concept_ecological_zones;
+	concept_hour;
+	concept_attractions;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_amusement_park;;
+//описание парка
+concept_amusement_park->chelyuskintsev_park(*
+	
+	=>nrel_district:pervomaisky_district(*
+	<-concept_district_of_Minsk;;
+	*);;//район
+	
+	=>nrel_visit_price:...(*
+		<-concept_price_in_rub;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:4.50;;
+		*);;
+	*);;
+	
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1928;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		{
+		autodrome_high_speed;
+		autodrom;
+		kangaroo;
+		waltz;
+		zodiac;
+		rolling_mountain;
+		calypso;
+		view_wheel;
+		rook;
+		swans;
+		mini_jet;
+		kolobok;
+		zigzag;
+		pleasure_train;
+		swings;
+		labyrinth;
+		toons
+		};;
+
+	//размер
+	=>nrel_size:...(*
+		<-concept_size_in_ha;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:78_ha;;
+		*);;
+	*);;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53o55_19_N_sh._27o37_00_E_d.;;
+	*);;
+	//время работы
+	=>nrel_working_hours:start(*
+		<-concept_number;;
+		=>nrel_main_idtf:11_am;;
+	*);;
+
+	=>nrel_working_hours:finish(*
+		<-concept_number;;
+		=>nrel_main_idtf:9_pm;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_hours;;
+		=>nrel_main_idtf:3;;
+	*);;
+*);;
+
+concept_attractions->
+	autodrome_high_speed;
+	autodrom;
+	kangaroo;
+	waltz;
+	zodiac;
+	rolling_mountain;
+	calypso;
+	view_wheel;
+	rook;
+	swans;
+	mini_jet;
+	kolobok;
+	zigzag;
+	pleasure_train;
+	swings;
+	labyrinth;
+	toons;;
+		

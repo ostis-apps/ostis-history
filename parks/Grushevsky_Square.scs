@@ -1,0 +1,123 @@
+Grushevsky_Square
+=> nrel_main_idtf:
+	[Грушевский сквер] (* <- lang_ru;; *);
+	[Grushevsky Square] (* <- lang_en;; *);;
+definition -> definition_of_Grushevsky_Square (*
+	-> rrel_key_sc_element: Grushevsky_Square;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Грушевский сквер — прекрасное место для спокойного семейного отдыха и романтических прогулок. Облагороженная зеленая зона раскинулась в одном из спальных районов города Минска и быстро превратилась в потрясающий ландшафтный ансамбль, ставший настоящим украшением этой части столицы.] (* <- lang_ru;; *);;
+		-> [Grushevsky Square is a great place for a relaxing family vacation and romantic walks. The ennobled green area is located in one of the sleeping areas of the city of Minsk and quickly turned into a stunning landscape ensemble that has become a real decoration of this part of the capital.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Грушевский сквер)] (* <- lang_ru;; *);
+		[Def. (Grushevsky Square)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		nrel_street;
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monuments;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История Грушевского сквера]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Сквер на площади Парижской коммуны в Минске был заложен в 1950 году. Историческое название парку «Троицкая Гора» вернули в 2009 году, а до этого место называлось площадь Парижской Коммуны.](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monuments;
+	concept_greenhouse;
+	concept_square;
+	concept_hour;
+	concept_street_in_Minsk;
+	concept_building_in_minsk;
+	concept_monument;
+	concept_minutes;
+	concept_price_in_rub;;
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_street;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_square;;
+//описание парка
+concept_square->Grushevsky_Square(*
+	
+	=>nrel_district:sovietsky_district
+	(*
+		<-concept_district_of_Minsk;;
+	*);;//район
+	
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+
+	=>nrel_metro_station:
+		Grushevka(*<-concept_metro_station;;*);;
+		
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1950;;
+	*);;
+	
+	//улицы
+	=>nrel_street:
+		Decembrists(*<-concept_street_in_Minsk;;*);
+		Papanina(*<-concept_street_in_Minsk;;*);;
+
+	
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_hours;;
+		=>nrel_main_idtf:2;;
+	*);;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53.886637_27.518739;;
+	*);;
+*);;
