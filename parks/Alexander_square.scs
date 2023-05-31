@@ -15,11 +15,6 @@ definition -> definition_of_Alexander_square (*
 		[Def. (Alexander Square)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		nrel_district; // район
-		nrel_center; //центер парка
-        nrel_size; // размеры
-		nrel_visit_price;//цена посещения
-		nrel_street;
 		concept_park;	
 		concept_size;
 		concept_metro_station;
@@ -74,7 +69,9 @@ sc_node_norole_relation ->
 	nrel_center;
 	nrel_main_object;
 	nrel_working_hours;
-	nrel_street;
+	nrel_street;	
+    nrel_size; // размеры
+	nrel_visit_price;//цена посещения
 	nrel_estimated_duration_of_the_walk;;
 
 
