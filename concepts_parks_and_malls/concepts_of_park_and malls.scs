@@ -380,20 +380,349 @@ definition -> definition_of_concept_amusement_park (*
 		[Def. (Amusement park)] (* <- lang_en;; *);;
 *);;
 //21
+
 concept_department_store
+=> nrel_main_idtf:
+	[Универмаг] (* <- lang_ru;; *);
+	[Department store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_department_store (*
+	-> rrel_key_sc_element: concept_department_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [это предприятие розничной торговли, предлагающее широкий ассортимент потребительских товаров в различных отделах магазина, каждый из которых специализируется на определенной товарной категории.] (* <- lang_ru;; *);;
+		-> [is a retail establishment offering a wide range of consumer goods in different areas of the store, each area specializing in a product category.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Универмаг)] (* <- lang_ru;; *);
+		[Def. (Department store)] (* <- lang_en;; *);;
+*);;
+
 concept_mall
+=> nrel_main_idtf:
+	[Торговый центр] (* <- lang_ru;; *);
+	[Mall] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_mall (*
+	-> rrel_key_sc_element: concept_mall;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [это предприятие розничной торговли, предлагающее широкий ассортимент потребительских товаров в различных отделах магазина, каждый из которых специализируется на определенной товарной категории.] (* <- lang_ru;; *);;
+		-> [is a retail establishment offering a wide range of consumer goods in different areas of the store, each area specializing in a product category.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Торговый центр)] (* <- lang_ru;; *);
+		[Def. (Mall)] (* <- lang_en;; *);;
+*);;
+
 concept_shopping_mall
+=> nrel_main_idtf:
+	[Специализированный торговый центр] (* <- lang_ru;; *);
+	[Shopping mall] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_shopping_mall (*
+	-> rrel_key_sc_element: concept_shopping_mall;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [это предприятие розничной торговли, предлагающее широкий ассортимент потребительских товаров в различных отделах магазина, каждый из которых специализируется на определенной товарной категории.] (* <- lang_ru;; *);;
+		-> [is a retail establishment offering a wide range of consumer goods in different areas of the store, each area specializing in a product category.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Специализированный торговый центр)] (* <- lang_ru;; *);
+		[Def. (Shopping mall)] (* <- lang_en;; *);;
+*);;
+
 concept_coordinates
+=> nrel_main_idtf:
+	[Координаты] (* <- lang_ru;; *);
+	[Coordinates] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_coordinates (*
+	-> rrel_key_sc_element: concept_coordinates;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [система точек, определяющих положение объекта на плоскости. Соответственно, координаты здания будут определять его положение на земельном участке, на котором расположен объект.] (* <- lang_ru;; *);;
+		-> [a system of points that determine the position of an object on a plane. Accordingly, the coordinates of the building will determine its position on the land on which the object is located.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Координаты)] (* <- lang_ru;; *);
+		[Def. (Coordinates)] (* <- lang_en;; *);;
+*);;
+
 concept_price_in_rub
+=> nrel_main_idtf:
+	[Цена в белорусских рублях] (* <- lang_ru;; *);
+	[Price in bel.rub.] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_price_in_rub (*
+	-> rrel_key_sc_element: concept_price_in_rub;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Измерение цены в белорусских рублях.] (* <- lang_ru;; *);;
+		-> [Price measurement in Belarusian rubles.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Цена в бел.рублях)] (* <- lang_ru;; *);
+		[Def. (Price in bel. rub.)] (* <- lang_en;; *);;
+*);;
+
 concept_attractions
+=> nrel_main_idtf:
+	[Аттракцион] (* <- lang_ru;; *);
+	[Attraction] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_attractions (*
+	-> rrel_key_sc_element: concept_attractions;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [сооружение или устройство, созданное для развлечений. Обычно устанавливается в местах, предназначенных для коллективного отдыха.] (* <- lang_ru;; *);;
+		-> [a structure or device designed for entertainment. Usually installed in places intended for collective recreation.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Аттракцион)] (* <- lang_ru;; *);
+		[Def. (Attraction)] (* <- lang_en;; *);;
+*);;
+
 concept_public_toilets
+=> nrel_main_idtf:
+	[Общественный туалет] (* <- lang_ru;; *);
+	[Public toilet] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_public_toilets (*
+	-> rrel_key_sc_element: concept_public_toilets;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [это помещение или небольшое здание с туалетами и раковинами для общего пользования.] (* <- lang_ru;; *);;
+		-> [is a room or small building with toilets and sinks for use by the general public.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Общественный туалет)] (* <- lang_ru;; *);
+		[Def. (Public toilet)] (* <- lang_en;; *);;
+*);;
+
 concept_shoe_store
+=> nrel_main_idtf:
+	[Обувной магазин] (* <- lang_ru;; *);
+	[Shoe store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_shoe_store(*
+	-> rrel_key_sc_element: concept_shoe_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Фирменный магазин, специализирующийся на обуви и товарах по уходе за ней.] (* <- lang_ru;; *);;
+		-> [Company store specializing in footwear and care products.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Обувной магазин)] (* <- lang_ru;; *);
+		[Def. (Shoe store)] (* <- lang_en;; *);;
+*);;
+
 concept_cosmetics_store
+=> nrel_main_idtf:
+	[Магазин косметики] (* <- lang_ru;; *);
+	[Cosmetics store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_cosmetics_store(*
+	-> rrel_key_sc_element: concept_cosmetics_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Фирменный магазин, специализирующийся на косметике.] (* <- lang_ru;; *);;
+		-> [Company store specializing in cosmetics.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Магазин косметики)] (* <- lang_ru;; *);
+		[Def. (Cosmetics store)] (* <- lang_en;; *);;
+*);;
+
+
 concept_lingerie_store
+=> nrel_main_idtf:
+	[Магазин нижнего белья] (* <- lang_ru;; *);
+	[Lingerie store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_lingerie_store(*
+	-> rrel_key_sc_element: concept_lingerie_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Фирменный магазин, специализирующийся на косметике.] (* <- lang_ru;; *);;
+		-> [Company store specializing in cosmetics.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Магазин нижнего белья)] (* <- lang_ru;; *);
+		[Def. (Lingerie store)] (* <- lang_en;; *);;
+*);;
+
 concept_grocery_store
+=> nrel_main_idtf:
+	[Магазин продуктов] (* <- lang_ru;; *);
+	[Grocery store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_lingerie_store(*
+	-> rrel_key_sc_element: concept_lingerie_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Магазин, специализирующийся на прдуктах питания.] (* <- lang_ru;; *);;
+		-> [Shop specializing in food products.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Магазин продкутов)] (* <- lang_ru;; *);
+		[Def. (Grocery store)] (* <- lang_en;; *);;
+*);;
+
 concept_accessories_store
+=> nrel_main_idtf:
+	[Магазин аксессуаров] (* <- lang_ru;; *);
+	[Accessories store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_accessories_store(*
+	-> rrel_key_sc_element: concept_accessories_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Магазин, специализирующийся на разного рода аксессуарах.] (* <- lang_ru;; *);;
+		-> [Shop specializing in accessories.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Магазин аксессуаров)] (* <- lang_ru;; *);
+		[Def. (Accessories store)] (* <- lang_en;; *);;
+*);;
+
 concept_river
+=> nrel_main_idtf:
+	[Река] (* <- lang_ru;; *);
+	[River] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_accessories_store(*
+	-> rrel_key_sc_element: concept_accessories_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [природный водный поток значительных размеров с естественным течением по руслу от истока вниз до устья. Реки являются составной частью круговорота воды в природе.] (* <- lang_ru;; *);;
+		-> [a natural water stream of considerable size with a natural course along the channel from the source down to the mouth. Rivers are an integral part of the water cycle in nature.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Река)] (* <- lang_ru;; *);
+		[Def. (River)] (* <- lang_en;; *);;
+*);;
+
 concept_church
+=> nrel_main_idtf:
+	[Церковь] (* <- lang_ru;; *);
+	[Church] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_church(*
+	-> rrel_key_sc_element: concept_church;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [религиозное сообщество христиан, объединённых общей верой в Иисуса Христа как Бога и Спасителя, который является создателем и главой церкви.] (* <- lang_ru;; *);;
+		-> [a religious community of Christians united by a common faith in Jesus Christ as God and Savior, who is the founder and head of the church.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Церковь)] (* <- lang_ru;; *);
+		[Def. (Church)] (* <- lang_en;; *);;
+*);;
+
 concept_arhitect
+=> nrel_main_idtf:
+	[Архитектор] (* <- lang_ru;; *);
+	[Arhitect] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_arhitect(*
+	-> rrel_key_sc_element: concept_arhitect;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [квалифицированный специалист, который на профессиональной основе осуществляет архитектурное проектирование (организацию архитектурной среды), включая проектирование зданий, в том числе разработку объёмно-планировочных и интерьерных решений.] (* <- lang_ru;; *);;
+		-> [a qualified specialist who professionally carries out architectural design (organization of the architectural environment), including the design of buildings, including the development of space-planning and interior solutions.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Архитектор)] (* <- lang_ru;; *);
+		[Def. (Arhitect)] (* <- lang_en;; *);;
+*);;
+
+
 concept_writer
-//37
+=> nrel_main_idtf:
+	[Писатель] (* <- lang_ru;; *);
+	[Writer] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_writer(*
+	-> rrel_key_sc_element: concept_writer;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [человек, который занимается созданием словесных произведений, предназначенных так или иначе для общественного потребления.] (* <- lang_ru;; *);;
+		-> [a person who is engaged in the creation of verbal works intended in one way or another for public consumption.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Писатель)] (* <- lang_ru;; *);
+		[Def. (Writer)] (* <- lang_en;; *);;
+*);;
+
+
+concept_vertical_conveyance
+=> nrel_main_idtf:
+	[Устройство для вертикальной транспортировки] (* <- lang_ru;; *);
+	[Vertical transport device] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_vertical_conveyance(*
+	-> rrel_key_sc_element: concept_vertical_conveyance;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Устройство, предназначенное для перемещения объекта в вертикальной плоскости.] (* <- lang_ru;; *);;
+		-> [a person who is engaged in the creation of verbal works intended in one way or another for public consumption.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Устройство для вертикальной транспортировки)] (* <- lang_ru;; *);
+		[Def. (Vertical transport device)] (* <- lang_en;; *);;
+*);;
+
+
+concept_storage_facility_for_personal_belongings
+=> nrel_main_idtf:
+	[Хранилище для личных вещей] (* <- lang_ru;; *);
+	[Storage facility for personal belongings] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_storage_facility_for_personal_belongings(*
+	-> rrel_key_sc_element: concept_storage_facility_for_personal_belongings;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Устройство, предназначенное для перемещения объекта в вертикальной плоскости.] (* <- lang_ru;; *);;
+		-> [A device designed to move an object in a vertical plane.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Хранилище для личных вещей)] (* <- lang_ru;; *);
+		[Def. (Storage facility for personal belongings)] (* <- lang_en;; *);;
+*);;
+
+concept_currency_exchange
+=> nrel_main_idtf:
+	[Валютный обменник] (* <- lang_ru;; *);
+	[Currency exchange] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_currency_exchange(*
+	-> rrel_key_sc_element: concept_currency_exchange;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Подразделение банка, совершающее операции по продаже и покупке наличной валюты у физическиз лиц.] (* <- lang_ru;; *);;
+		-> [A bank subdivision that performs operations for the sale and purchase of cash currency from individuals.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Валютный обменник)] (* <- lang_ru;; *);
+		[Def. (Currency exchange)] (* <- lang_en;; *);;
+*);;

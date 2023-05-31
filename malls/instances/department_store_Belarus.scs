@@ -54,7 +54,10 @@ sc_node_class ->
 	concept_ATM;
 	concept_church_shop;
 	concept_health_store;
+	concept_currency_exchange;
 	concept_hobby_store;
+	concept_vertical_conveyance;
+	concept_storage_facility_for_personal_belongings;
 	concept_repair_shop;;
 
 sc_node_norole_relation ->
@@ -219,3 +222,7 @@ concept_department_store->department_store_belarus(*
 	concept_repair_shop->
 		gift_wrapping;
 		watch_repair;;
+	
+	concept_currency_exchange->currency_exchange;;
+	concept_vertical_conveyance->elevator;;
+	concept_storage_facility_for_personal_belongings->storage_rooms;;

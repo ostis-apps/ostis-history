@@ -1,16 +1,14 @@
-large_shopping_centers=[*
     sc_node_struct->section_subject_domain_of_large_shopping_centers;;
    
     section_subject_domain_of_large_shopping_centers<=nrel_section_decomposition:{
-        section_subject_domain_of_malls(*<-sc_node_struct;;*);
-        section_subject_domain_of_department_stores(*<-sc_node_struct;;*);
-        section_subject_domain_of_shopping_malls(*<-sc_node_struct;;*)
+        section_subject_domain_of_mall(*<-sc_node_struct;;*);
+        section_subject_domain_of_department_store(*<-sc_node_struct;;*);
+        section_subject_domain_of_shopping_mall(*<-sc_node_struct;;*)
     };;
-        
     section_subject_domain_of_large_shopping_centers->rrel_key_sc_element:subject_domain_of_large_shopping_centers(*<-sc_node_struct;;*);
-        concept_department_stores(*<-sc_node_class;;*);
-        concept_malls(*<-sc_node_class;;*);
-        concept_shopping_malls(*<-sc_node_class;;*);
+        concept_department_store(*<-sc_node_class;;*);
+        concept_mall(*<-sc_node_class;;*);
+        concept_shopping_mall(*<-sc_node_class;;*);
         nrel_place(*<-sc_node_norole_relation;;*);
         nrel_shops_inside(*<-sc_node_norole_relation;;*);
         nrel_number_of_floors(*<-sc_node_norole_relation;;*);
@@ -39,9 +37,9 @@ large_shopping_centers=[*
         (* <- lang_en;; *);;
 
     subject_domain_of_large_shopping_centers=>nrel_private_subject_domain:
-        subject_domain_of_mallss(*<-sc_node_struct;;*);
-        subject_domain_of_department_storess(*<-sc_node_struct;;*);
-        subject_domain_of_shopping_malls(*<-sc_node_struct;;*);;
+        subject_domain_of_mall(*<-sc_node_struct;;*);
+        subject_domain_of_department_store(*<-sc_node_struct;;*);
+        subject_domain_of_shopping_mall(*<-sc_node_struct;;*);;
         
     subject_domain_of_large_shopping_centers<=nrel_private_subject_domain:subject_domain_of_attractions(*<-sc_node_struct;;*);;
 
@@ -56,5 +54,3 @@ large_shopping_centers=[*
         nrel_metro;;
 
     subject_domain_of_large_shopping_centers<-subject_domain;;
-
-*];;

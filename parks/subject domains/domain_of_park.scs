@@ -39,13 +39,13 @@
     subject_domain_of_park=>nrel_main_idtf:
         [Subject domain of park](*<-lang_en;;*);;
 
-    subject_domain_of_park=>nrel_private_subject_domain:
+    subject_domain_of_park<=nrel_private_subject_domain:
         subject_domain_of_amusement_park;
         subject_domain_of_forest_park;
         subject_domain_of_square;
         subject_domain_of_ecological_zones;;
         
-    subject_domain_of_park<=nrel_private_subject_domain:subject_domain_of_attractions;;
+    
 
     subject_domain_of_park->rrel_maximum_studied_object_class:concept_park;;
 

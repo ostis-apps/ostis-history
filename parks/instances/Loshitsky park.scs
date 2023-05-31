@@ -23,7 +23,7 @@ definition -> definition_of_loshitsky_park (*
 		nrel_center; //центер парка
         nrel_size; // размеры
 		nrel_visit_price;//цена посещения
-		concept_parks;	
+		concept_park;	
 		concept_size;
 		concept_metro_station;
 		concept_coordinates;
@@ -54,7 +54,7 @@ statement->...
     *);;
 
 sc_node_class ->
-	concept_parks;	
+	concept_park;	
 	concept_size;
 	concept_metro_station;
 	concept_coordinates;

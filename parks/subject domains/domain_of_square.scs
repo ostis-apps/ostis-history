@@ -1,0 +1,51 @@
+    sc_node_struct->section_subject_domain_of_square;;
+        
+    section_subject_domain_of_square->rrel_key_sc_element:subject_domain_of_square(*<-sc_node_struct;;*);
+        concept_square(*<-sc_node_class;;*);
+        nrel_visit_price;
+	    nrel_metro_station;
+    	nrel_district;
+	    nrel_year;
+    	nrel_center;
+	    nrel_main_object;
+    	nrel_working_hours;
+	    nrel_street;
+    	nrel_estimated_duration_of_the_walk;
+        concept_center(*<-sc_node_class;;*);;
+
+    section_subject_domain_of_square=>nrel_main_idtf:[Раздел.Предметная область скверов](*<-lang_ru;;*);;
+
+    section_subject_domain_of_square=>nrel_main_idtf:[Section.Subject domain of square](*<-lang_en;;*);;
+
+    //не максимальный объект    
+    concept_quantity_of_trees<-rrel_not_maximum_studied_object_class:subject_domain_of_square;;
+    
+    section_subject_domain_of_square<-non_atomic_section;;
+
+    subject_domain_of_square=>nrel_main_idtf:
+        [Предметная область скверов](*<-lang_ru;;*);;
+    
+    subject_domain_of_square=>nrel_main_idtf:
+        [Subject domain of square](*<-lang_en;;*);;
+        
+    subject_domain_of_square=>nrel_private_subject_domain:subject_domain_of_park;;
+
+    //максимальный объект
+    subject_domain_of_square->rrel_maximum_studied_object_class:concept_square;;
+
+    sc_node_struct->section_subject_domain_of_amusement_park;
+    	section_subject_domain_of_square;
+        subject_domain_of_square;;
+    
+    subject_domain_of_square->rrel_explored_relation:
+        nrel_visit_price;
+	    nrel_metro_station;
+    	nrel_district;
+	    nrel_year;
+    	nrel_center;
+	    nrel_main_object;
+    	nrel_working_hours;
+	    nrel_street;
+    	nrel_estimated_duration_of_the_walk;;
+
+    subject_domain_of_square<-subject_domain;;
