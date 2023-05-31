@@ -1,0 +1,61 @@
+coyot_club
+<- concept_club;
+=> nrel_main_idtf:
+	[Клуб Coyot] (* <- lang_ru;; *);
+	[Coyot club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб Coyot] (* <- lang_ru;; *);
+	  [Coyot club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/coyot_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_coyot_club (*
+	-> rrel_key_sc_element: coyot_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб Coyot - атмосферный клуб-бар в духе Дикого Запада, отличной музыкой и антуражем.] (* <- lang_ru;; *);;
+		-> [Coyot club - atmospheric club-bar in the spirit of the Wild West, great music and surroundings.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб Coyot)] (* <- lang_ru;; *);
+		[Def. (Coyot club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		coyot_club;
+		minsk;
+		belarus;
+		concept_bar;
+		concept_club;
+		concept_music;
+		concept_octyabrskaya_street;
+		concept_good_service;
+        concept_atmoshere;
+        concept_karaoke_club;
+		concept_wild_west;
+		concept_electronic_music;
+		concept_craft_beer;
+		concept_decent_alcohol;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+coyot_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 70;
+	=> nrel_average_bill: 30_to_40;
+	=> nrel_coordinates: 53.93246378588542_27.637293027758954;;
