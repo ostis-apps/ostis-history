@@ -1,0 +1,109 @@
+
+victory_park
+=> nrel_main_idtf:
+	[Парк Победы] (* <- lang_ru;; *);
+	[Victory Park] (* <- lang_en;; *);
+	[Парк Перамогi] (* <- lang_by;; *);;
+definition -> definition_of_victory_park (*
+	-> rrel_key_sc_element: victory_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Парк Победы — крупнейший из парков Минска, одно из любимых мест отдыха минчан.] (* <- lang_ru;; *);;
+		-> [Victory Park is the largest of the parks in Minsk, one of the favorite places for recreation in Minsk.] (* <- lang_en;; *);;
+		-> [Парк Перамогі - вялiзны парк горада Мінска, адно з любімых месцаў адпачынку мінчан.] (* <- lang_by;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Парк Победы)] (* <- lang_ru;; *);
+		[Def. (Victory Park)] (* <- lang_en;; *);
+		[Выз. (Парк Перамогi)](* <- lang_by;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+		nrel_purity; //уровень чистоты
+        nrel_size; // размеры
+		nrel_visit_price//цена посещения
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История парка Победы]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[В 1985 году, к сорокалетию Победы, у главного входа установили монумент «Минск – город-герой».
+В 2005 году Государственным комитетом было принято решение о глобальной реставрации сквера. ](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_price;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;
+	nrel_main_object;;
+
+concept_park->concept_forest_park;;
+//описание парка
+concept_forest_park->victory_park(*
+	=>nrel_district:central_district(*
+	<-concept_district_of_Minsk;;
+	*);;//центральнй район
+	=>nrel_metro_station:square_of_victory(*
+		<-concept_metro_station;;
+	*);;//метро площадь победы
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1945;;
+	*);;
+
+	=>nrel_main_object:
+		{
+		world_war_II_history_museum;
+		Minsk_is_a_hero_city
+		};;
+
+	=>nrel_size:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:200_ha;;
+	*);;
+
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53o55_N._sh._27o32_e_d;;
+	*);;
+
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+*);;
+
+Minsk_is_a_hero_city<-concept_monument;;

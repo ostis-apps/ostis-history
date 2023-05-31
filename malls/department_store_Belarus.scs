@@ -1,0 +1,221 @@
+
+department_store_belarus
+=> nrel_main_idtf:
+	[Универмаг Беларусь г. Минск] (* <- lang_ru;; *);
+	[Department store Belarus, Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_department_store_belarus (*
+	-> rrel_key_sc_element: department_store_belarus;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Большой универмаг, где можно купить одежду, аксессуары, товары для дома, электронику и ювелирные изделия и посетить кафе и бар.] (* <- lang_ru;; *);;
+		-> [The shopping center "Stolitsa" is located in the very center of Minsk, on Independence Square. Its entire pedestrian part is the roof of the underground shopping center.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Универмаг Беларусь г. Минск)] (* <- lang_ru;; *);
+		[Def. (Department store Belarus, Minsk)] (* <- lang_en;; *);;
+		
+	=> nrel_using_constants: {
+		concept_department_stores;
+        concept_malls;
+        concept_shopping_malls;
+        concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monument;
+		concept_address_in_Minsk;
+		concept_shop;
+		concept_price;
+		concept_store_for_children;
+		concept_store_for_man;
+		concept_home_goods_store;
+		concept_ATM;
+		concept_church_shop;
+		concept_health_store;
+		concept_hobby_store;
+		concept_repair_shop
+		};;
+*);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_address_in_Minsk;
+	concept_shop;
+	concept_price;
+	concept_store_for_children;
+	concept_store_for_man;
+	concept_home_goods_store;
+	concept_ATM;
+	concept_church_shop;
+	concept_health_store;
+	concept_hobby_store;
+	concept_repair_shop;;
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;
+	nrel_wifi;
+	nrel_elevator_for_dissabled_people;
+	nrel_located_on_the_first_floor;
+	nrel_located_on_the_second_floor;
+	nrel_located_on_the_third_floor;
+	nrel_located_on_the_fourth_floor;
+	nrel_main_object;;
+
+concept_mall->concept_department_store;;
+
+//описание тц
+concept_department_store->department_store_belarus(*
+	=>nrel_district:central_district(*
+	<-concept_district_of_Minsk;;
+	*);;
+
+	=>nrel_metro_station:Frantishek_Bogushevich_Square(*
+		<-concept_metro_station;;
+		*);;
+	
+	=>nrel_elevator_for_dissabled_people:yes;;
+
+	//количество этажей
+	=>nrel_number_of_floors:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:4;;
+		*);;
+
+	=>nrel_located_on_the_first_floor:
+	{
+		information_center;
+		discount_territory;
+		jewelry;
+		watch;
+		food_products;
+		electrical_goods;
+		tableware;
+		flowers;
+		storage_rooms;
+		elevator;
+		dry_cleaning;
+		icon_shop
+	};;
+	
+	=>nrel_located_on_the_second_floor:
+	{
+		cosmetics;
+		sport_territory;
+		mens_knitwear;
+		mens_clothing;
+		mens_shoes;
+		home_furniture;
+		household_goods;
+		paintings;
+		mirrors;
+		plumbing;
+		currency_exchange;
+		green_pharmacy;
+		gift_wrapping;
+		storage_rooms;
+		watch_repair;
+		sports_betting;
+		ATM_Belinvestbank;
+		ATM_Belgazprombank;
+		ATM_Belsrusbank;
+		infokiosk_Belarusbank;
+		seasonal_wardrobe;
+		elevator
+	};;
+
+	=>nrel_located_on_the_third_floor:{
+		womens_shoes;
+		womens_underwear;
+		womens_clothing;
+		hosiery_for_women;
+		icon_shop;
+		ATM_Belinvestbank;
+		ATM_Alfabank;
+		ATM_VTB_bank;
+		elevator
+	};;
+
+	=>nrel_located_on_the_fourth_floor:{
+		stationery_and_toys;
+		children_clothing_and_toys;
+		carpets_and_carpet_products;
+		fabric_and_tulle_products;
+		goods_for_sewing_and_needlework;
+		mobile_operator;
+		bar;
+		mother_and_children_room;
+		insurance_of_tusk;
+		production_of_keys;
+		pharmacy;
+		elevator;
+		cafe_Belarus
+	};;
+	
+
+	//есть вайфай?
+	=>nrel_wifi:yes;;
+
+	//улица
+	=>nrel_street:
+	{
+		Zhilunovicha
+	};;
+
+	=>nrel_place:...(*
+		<-concept_address_in_Minsk(*<-sc_node_class;;*);;
+		=>Zhilunovicha_4(*<-concept_street_in_Minsk;;*);;
+	*);;
+
+*);;
+
+	concept_store_for_children->
+		stationery_and_toys;
+		children_clothing_and_toys;;
+	
+	concept_store_for_man->
+		mens_knitwear;
+		mens_clothing;
+		mens_shoes;;
+
+	concept_home_goods_store->
+		home_furniture;
+		household_goods;
+		paintings;
+		mirrors;
+		carpets_and_carpet_products;
+		plumbing;;
+
+	concept_ATM->
+		ATM_Belinvestbank;
+		ATM_Alfabank;
+		ATM_VTB_bank;
+		ATM_Belgazprombank;
+		ATM_Belsrusbank;;
+
+	concept_church_shop->
+		icon_shop;;
+
+	concept_health_store->
+		pharmacy;
+		green_pharmacy;;
+
+	concept_hobby_store->
+		fabric_and_tulle_products;
+		sport_territory;
+		goods_for_sewing_and_needlework;;
+		
+	concept_repair_shop->
+		gift_wrapping;
+		watch_repair;;
