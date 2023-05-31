@@ -22,6 +22,8 @@ section_subject_domain_of_historic_districts->rrel_key_sc_element:
 
 subject_domain_of_historic_districts<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
 
+subject_domain_of_historic_districts<=nrel_private_subject_domain:
+        concept_history;;
 
 subject_domain_of_historic_districts=>nrel_main_idtf:
      [Предметная область исторических районов]

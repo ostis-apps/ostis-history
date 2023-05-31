@@ -1,0 +1,58 @@
+tesla_club
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Клуб Tesla] (* <- lang_ru;; *);
+	[Tesla club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб Tesla] (* <- lang_ru;; *);
+	  [Tesla club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/tesla_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_tesla_club (*
+	-> rrel_key_sc_element: tesla_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб Tesla - клуб на Зыбицкой с своременной музыкой, диджеем и стриптиз-танцами.] (* <- lang_ru;; *);;
+		-> [Tesla club - club on Zybitskaya with modern music, DJ and striptease dancing.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб Tesla)] (* <- lang_ru;; *);
+		[Def. (Tesla club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		tesla_club;
+		minsk;
+		belarus;
+		concept_club;
+		concept_music;
+        concept_striptease;
+        concept_young_people;
+		concept_interior_design;
+		concept_modern_music;
+        concept_hookah;
+        concept_DJ;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+tesla_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 50;
+	=> nrel_average_bill: 40_to_50;
+	=> nrel_coordinates: 53.90632157464279_27.557696511468368;;

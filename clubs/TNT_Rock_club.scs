@@ -1,0 +1,64 @@
+tnt_rock_club
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Клуб TNT ROCK] (* <- lang_ru;; *);
+	[TNT ROCK club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб TNT ROCK] (* <- lang_ru;; *);
+	  [TNT ROCK club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/tnt_rock_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_tnt_rock_club (*
+	-> rrel_key_sc_element: tnt_rock_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб TNT ROCK - рок-клуб на Немиге со вкусными обедами, качественным пивом, большим количеством живых выступлений и культурных мероприятий.] (* <- lang_ru;; *);;
+		-> [TNT ROCK club - rock club on Nemiga with delicious lunches, quality beer, a lot of live performances and cultural events.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб TNT ROCK)] (* <- lang_ru;; *);
+		[Def. (TNT ROCK club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		tnt_rock_club;
+		minsk;
+		belarus;
+        upper_city;
+        concept_rock_music;
+		concept_club;
+		concept_music;
+        concept_renovated_infastructure;
+        concept_atmoshere:
+        concept_young_people;
+		concept_interior_design;
+        concept_diverse_cultural_events;
+        concept_craft_beer;
+        concept_ydelicious_food;
+		concept_modern_music;
+        concept_DJ;
+		concept_live_perfomance;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+tnt_rock_club
+	=> nrel_age_restictions: 15_plus;	
+	=> nrel_capacity: 200;
+	=> nrel_average_bill: 40_to_50;
+	=> nrel_coordinates: 53.902408672455834_27.551580869140285;;
