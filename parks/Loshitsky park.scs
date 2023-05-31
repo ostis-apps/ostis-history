@@ -1,0 +1,135 @@
+
+loshitsky_park
+=> nrel_main_idtf:
+	[Лошицкий парк] (* <- lang_ru;; *);
+	[Loshitsky park] (* <- lang_en;; *);
+	[Цэнтральны Батанiчны Сад] (* <- lang_by;; *);;
+definition -> definition_of_loshitsky_park (*
+	-> rrel_key_sc_element: loshitsky_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [«Ло́шица» — усадебно-парковый комплекс XVIII—XIX веков, который дал название микрорайону Лошица города Минска. ] (* <- lang_ru;; *);;
+		-> [Loshitsa is a manor and park complex of the 18th-19th centuries, which gave the name to the Loshitsa microdistrict of the city of Minsk.] (* <- lang_en;; *);;
+		-> ["Лошыца" - сядзібна-паркавы комплекс XVIII-XIX стагоддзяў, які даў назву мікрараёну Лошыца ​​горада Мінска.] (* <- lang_by;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Лошицкий парк)] (* <- lang_ru;; *);
+		[Def. (Loshitsky park)] (* <- lang_en;; *);
+		[Выз. (Цэнтральны Батанiчны Сад)](* <- lang_by;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		concept_parks;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monuments;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История Лошицкого парка]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[По всей видимости, на территории Лошицкого парка в X—XIII столетиях было огромное городище, которое со временем раздробилось на ряд поселений: Лошица Большая, Лошица Малая, Лошица Горностаевская](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_parks;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monuments;
+	concept_greenhouse;
+	concept_forest_park;
+	concept_hour;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_forest_park;;
+//описание парка
+concept_forest_park->loshitsky_park(*
+	
+	=>nrel_district:leninsky_district(*
+	<-concept_district_of_Minsk;;
+	*);;//район
+
+	
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+	
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1998;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		{
+		entrance_alley;
+		hapel;
+		outbuilding
+		};;
+
+	//размер
+	=>nrel_size:...(*
+		<-concept_size_in_ha;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:97_ha;;
+		*);;
+	*);;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53.85569127.579559;;
+	*);;
+	
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+
+	=>nrel_working_hours:finish(*
+		<-concept_number;;
+		=>nrel_main_idtf:never;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_hours;;
+		=>nrel_main_idtf:2;;
+	*);;
+*);;

@@ -1,0 +1,130 @@
+
+Zamok_mall
+=> nrel_main_idtf:
+	[ТЦ Замок г. Минск] (* <- lang_ru;; *);
+	[Shopping center Zamok Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_Zamok_mall (*
+	-> rrel_key_sc_element: Zamok_mall;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Простой большой торговый центр с магазинами международных брендов, фуд-кортом, кинотеатром, концертным залом и катком.] (* <- lang_ru;; *);;
+		-> [A simple large mall with international brand stores, a food court, a cinema, a concert hall and an ice rink.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ТЦ Замок г. Минск)] (* <- lang_ru;; *);
+		[Def. (Shopping center Zamok Minsk)] (* <- lang_en;; *);;
+		
+	=> nrel_using_constants: {
+		concept_department_stores;
+        concept_malls;
+        concept_shopping_malls;
+		concept_mall;
+		concept_size;
+		concept_metro_station;
+		concept_address_in_Minsk;
+		concept_shop;
+		concept_price
+		};;
+*);;
+
+sc_node_class ->
+	concept_mall;
+	concept_size;
+	concept_metro_station;
+	concept_address_in_Minsk;
+	concept_shop;
+	concept_price;;
+
+
+sc_node_norole_relation ->
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_estimated_duration_of_the_walk;
+	nrel_wifi;
+	nrel_number_of_floors;
+	nrel_main_object;;
+
+concept_mall->concept_department_store;;
+
+//описание парка
+concept_department_store->Zamok_mall(*
+	=>nrel_district:central_district(*
+	<-concept_district_of_Minsk;;
+	*);;
+
+	=>nrel_metro_station:oktyabrskaya(*
+		<-concept_metro_station;;
+		*);;
+	
+	//количество этажей
+	=>nrel_number_of_floors:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:4;;
+		*);;
+
+	=>nrel_shops_inside:{
+		Wonderful_Books;
+    	Igropolis;
+    	Playtoday;
+    	Coccodrillo; 
+		Fizcult;
+		L_Occitane;
+		Perfumer;
+		Cosmo;
+		Aeronautica_Militare;
+		Statum;
+		Brogues_and_Tweed;
+		Expedition; 
+    	Time;
+    	Versado;
+    	Accent;
+    	Merceria 
+	};;
+
+	//есть вайфай?
+	=>nrel_wifi:yes;;
+
+	=>nrel_size:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:92000_m;;
+	*);;
+
+	//улица
+	=>nrel_street:
+	{
+		Pobediteley_Ave.
+	};;
+
+	=>nrel_place:...(*
+		<-concept_address_in_Minsk(*<-sc_node_class;;*);;
+		=>Pobediteley_Ave._65;;
+	*);;
+*);;
+
+concept_store_for_children->
+	Wonderful_Books;
+    Igropolis;
+    Playtoday;
+    Coccodrillo;; 
+
+concept_beauty_store->
+	Fizcult;
+	L_Occitane;
+	Perfumer;
+	Cosmo;;
+
+concept_store_for_women->
+	Aeronautica_Militare;
+	Statum;
+	Brogues_and_Tweed;
+	Expedition;; 
+
+concept_accessories_store->
+    Time;
+    Versado;
+    Accent;
+    Merceria;; 
+	

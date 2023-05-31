@@ -1,0 +1,399 @@
+concept_metro_station
+=> nrel_main_idtf:
+	[Станция метро] (* <- lang_ru;; *);
+	[Metro station] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_metro_station (*
+	-> rrel_key_sc_element: concept_metro_station;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Станция метрополитена — остановочный пункт, предназначенный для посадки/высадки пассажиров метрополитена (метро). ] (* <- lang_ru;; *);;
+		-> [Metro station - a stopping point intended for embarkation / disembarkation of passengers of the subway (metro).] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Станция метро)] (* <- lang_ru;; *);
+		[Def. (Metro station)] (* <- lang_en;; *);;
+*);;
+
+
+concept_park
+=> nrel_main_idtf:
+	[Парк] (* <- lang_ru;; *);
+	[Park] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_park (*
+	-> rrel_key_sc_element: concept_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Парк — земельный участок с естественной или специально посаженной растительностью, обустроенными дорогами, аллеями, водоёмами, предназначенная для отдыха и прогулок открытая озеленённая территория, с продуманным ландшафтным дизайном, подчиняющимся рельефу местности. ] (* <- lang_ru;; *);;
+		-> [Park - a land plot with natural or specially planted vegetation, equipped roads, alleys, reservoirs, an open green area intended for recreation and walks, with a thoughtful landscape design that obeys the terrain.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Парк)] (* <- lang_ru;; *);
+		[Def. (Park)] (* <- lang_en;; *);;
+*);;
+
+
+concept_monument
+=> nrel_main_idtf:
+	[Памятник] (* <- lang_ru;; *);
+	[Monument] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_monument (*
+	-> rrel_key_sc_element: concept_monument;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Памятник — сооружение, поддерживающее воспоминания о чём-либо] (* <- lang_ru;; *);;
+		-> [A monument is a building that keeps memories of something] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Памятник)] (* <- lang_ru;; *);
+		[Def. (Monument)] (* <- lang_en;; *);;
+*);;
+
+concept_address_in_Minsk
+=> nrel_main_idtf:
+	[Адрес в городе Минске] (* <- lang_ru;; *);
+	[Address in Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_address_in_Minsk (*
+	-> rrel_key_sc_element: concept_address_in_Minsk;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Памятник — сооружение, поддерживающее воспоминания о чём-либо] (* <- lang_ru;; *);;
+		-> [A monument is a building that keeps memories of something] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Адрес в городе Минске)] (* <- lang_ru;; *);
+		[Def. (Address in Minsk)] (* <- lang_en;; *);;
+*);;
+
+
+concept_store_for_children
+=> nrel_main_idtf:
+	[Детский магазин] (* <- lang_ru;; *);
+	[Store for children] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_store_for_children (*
+	-> rrel_key_sc_element: concept_store_for_children;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Магазин, в котором продаются товары для детей.] (* <- lang_ru;; *);;
+		-> [A store that sells goods for children.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Детский магазин)] (* <- lang_ru;; *);
+		[Def. (Store for children)] (* <- lang_en;; *);;
+*);;
+
+concept_store_for_man
+=> nrel_main_idtf:
+	[Мужской магазин] (* <- lang_ru;; *);
+	[Store for man] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_store_for_man (*
+	-> rrel_key_sc_element: concept_store_for_man;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Магазин, в котором продаются товары для мужчин.] (* <- lang_ru;; *);;
+		-> [A store that sells goods for man.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Мужской магазин)] (* <- lang_ru;; *);
+		[Def. (Store for man)] (* <- lang_en;; *);;
+*);;
+
+concept_home_goods_store
+=> nrel_main_idtf:
+	[Хозяйственный магазин] (* <- lang_ru;; *);
+	[Home goods store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_home_goods_store (*
+	-> rrel_key_sc_element: concept_home_goods_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [специализированный магазин розничной торговли, в котором продают строительные, отделочные материалы и оборудование, товары для дома и сада. ] (* <- lang_ru;; *);;
+		-> [a specialized retail store that sells building, finishing materials and equipment, home and garden products.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Хозяйственный магазин)] (* <- lang_ru;; *);
+		[Def. (Home goods store)] (* <- lang_en;; *);;
+*);;
+
+
+concept_ATM
+=> nrel_main_idtf:
+	[Банкомат] (* <- lang_ru;; *);
+	[ATM] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_ATM (*
+	-> rrel_key_sc_element: concept_ATM;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [аппарат для выдачи и приёма денег, а также оплаты услуг и погашения кредитов без участия сотрудника банка, с использованием банковских карт.] (* <- lang_ru;; *);;
+		-> [a device for issuing and receiving money, as well as paying for services and repaying loans without the participation of a bank employee, using bank cards.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Банкомат)] (* <- lang_ru;; *);
+		[Def. (ATM)] (* <- lang_en;; *);;
+*);;
+//8
+concept_church_shop
+=> nrel_main_idtf:
+	[Церковная лавка] (* <- lang_ru;; *);
+	[Сhurch shop] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_church_shop (*
+	-> rrel_key_sc_element: concept_church_shop;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Церковная лавка - это место, где можно купить предметы для богослужения, такие как свечи, иконы, ладанки, книги и т.д. Также в церковной лавке можно приобрести памятные сувениры, например, магниты, брелоки, открытки с изображением церквей или святых. Церковная лавка обычно находится на территории храма или прихода и может быть открыта как для посетителей церкви, так и для широкой публики. Деньги, полученные от продажи в церковной лавке, могут быть использованы для поддержания церкви и ее службы.] (* <- lang_ru;; *);;
+		-> [The church shop is a place where you can buy items for worship, such as candles, icons, amulets, books, etc. Also in the church shop you can buy souvenirs, such as magnets, key rings, postcards with images of churches or saints. A church shop is usually located on the grounds of a church or parish and may be open to both church goers and the general public. The money received from the sale in the church shop can be used to support the church and its services.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Церковная лавка)] (* <- lang_ru;; *);
+		[Def. (Church shop)] (* <- lang_en;; *);;
+*);;
+
+concept_health_store
+=> nrel_main_idtf:
+	[Аптека] (* <- lang_ru;; *);
+	[Pharmacy] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_health_store (*
+	-> rrel_key_sc_element: concept_health_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Аптека — особая специализированная организация системы здравоохранения, занимающаяся изготовлением, фасовкой, анализом и продажей лекарственных средств.] (* <- lang_ru;; *);;
+		-> [A pharmacy is a special specialized organization of the healthcare system engaged in the manufacture, packaging, analysis and sale of medicines.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Аптека)] (* <- lang_ru;; *);
+		[Def. (Pharmacy)] (* <- lang_en;; *);;
+*);;
+
+concept_hobby_store
+=> nrel_main_idtf:
+	[Магазин хобби] (* <- lang_ru;; *);
+	[Hobby store] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_hobby_store (*
+	-> rrel_key_sc_element: concept_hobby_store;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Магазин товаров для хобби.] (* <- lang_ru;; *);;
+		-> [Hobby Store.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Магазин хобби)] (* <- lang_ru;; *);
+		[Def. (Hobby store)] (* <- lang_en;; *);;
+*);;
+
+concept_repair_shop
+=> nrel_main_idtf:
+	[Ремонтная мастерская] (* <- lang_ru;; *);
+	[Repair shop] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_repair_shop (*
+	-> rrel_key_sc_element: concept_repair_shop;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [специализированный магазин или мастерская в сфере ремонтных услуг.] (* <- lang_ru;; *);;
+		-> [specialized shop or workshop in the field of repair services.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ремонтная мастерская)] (* <- lang_ru;; *);
+		[Def. (Repair shop)] (* <- lang_en;; *);;
+*);;
+
+concept_shop
+=> nrel_main_idtf:
+	[Магазин] (* <- lang_ru;; *);
+	[Shop] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_shop (*
+	-> rrel_key_sc_element: concept_shop;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [предприятие розничной торговли, размещённое в стационарном здании, оборудованном для продаж товаров и оказания услуг.] (* <- lang_ru;; *);;
+		-> [a retail trade enterprise located in a stationary building equipped for the sale of goods and the provision of services.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Магазин)] (* <- lang_ru;; *);
+		[Def. (Shop)] (* <- lang_en;; *);;
+*);;
+
+concept_price
+=> nrel_main_idtf:
+	[Цена] (* <- lang_ru;; *);
+	[Price] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_price (*
+	-> rrel_key_sc_element: concept_price;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Цена — количество денег, в обмен на которые продавец готов передать единицу товара.] (* <- lang_ru;; *);;
+		-> [Price - the amount of money in exchange for which the seller is willing to transfer a unit of goods.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Цена)] (* <- lang_ru;; *);
+		[Def. (Price)] (* <- lang_en;; *);;
+*);;
+
+concept_district_of_Minsk
+=> nrel_main_idtf:
+	[Район города Минска] (* <- lang_ru;; *);
+	[District of the city of Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_district_of_Minsk (*
+	-> rrel_key_sc_element: concept_district_of_Minsk;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [низовая административно-территориальная единица, включающая часть территории города Минска ] (* <- lang_ru;; *);;
+		-> [grassroots administrative-territorial unit, including part of the territory of the city of Minsk] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Район города Минска)] (* <- lang_ru;; *);
+		[Def. (District of the city of Minsk)] (* <- lang_en;; *);;
+*);;
+
+concept_square
+=> nrel_main_idtf:
+	[Сквер] (* <- lang_ru;; *);
+	[Square] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_square (*
+	-> rrel_key_sc_element: concept_square;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Сквер — благоустроенная и озеленённая территория внутри жилой или промышленной застройки. Сквер — объект озеленения города, представляющий собой участок величиной 0,15—2 га; размещается обычно на площади, перекрёстке улиц, либо на примыкающем к улице участке квартала.] (* <- lang_ru;; *);;
+		-> [A square is a landscaped and landscaped area inside a residential or industrial building. Square - an object of city gardening, which is a plot of 0.15-2 hectares; is usually located on the square, the intersection of streets, or on the section of the block adjacent to the street] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Сквер)] (* <- lang_ru;; *);
+		[Def. (Square)] (* <- lang_en;; *);;
+*);;
+
+concept_building_in_minsk
+=> nrel_main_idtf:
+	[Здание в городе Минске] (* <- lang_ru;; *);
+	[Building in the city of Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_building_in_minsk (*
+	-> rrel_key_sc_element: concept_building_in_minsk;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [результат строительства, представляющий собой объемное надземное строительное сооружение в городе Минске] (* <- lang_ru;; *);;
+		-> [the result of construction, which is a three-dimensional above-ground building structure in the city of Minsk] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Здание в городе Минске)] (* <- lang_ru;; *);
+		[Def. (Building in the city of Minsk)] (* <- lang_en;; *);;
+*);;
+//17
+concept_greenhouse
+=> nrel_main_idtf:
+	[Оранжерея] (* <- lang_ru;; *);
+	[Greenhouse] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_greenhouse (*
+	-> rrel_key_sc_element: concept_greenhouse;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Оранжерея — пристройка или строение для выращивания растений, искусственная экосистема.] (* <- lang_ru;; *);;
+		-> [Greenhouse - an extension or building for growing plants, an artificial ecosystem.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Оранжерея)] (* <- lang_ru;; *);
+		[Def. (Greenhouse)] (* <- lang_en;; *);;
+*);;
+
+concept_ecological_park
+=> nrel_main_idtf:
+	[Экологический парк] (* <- lang_ru;; *);
+	[Ecological park] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_ecological_park (*
+	-> rrel_key_sc_element: concept_ecological_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [экологический парк - специализированная особо охраняемая природная территория, предназначенная для отработки методов и приемов сохранения, восстановления и рационального использования территорий природного комплекса.] (* <- lang_ru;; *);;
+		-> [ecological park - a specialized specially protected natural area designed to develop methods and techniques for the conservation, restoration and rational use of the territories of the natural complex] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Экологический парк)] (* <- lang_ru;; *);
+		[Def. (Ecological park)] (* <- lang_en;; *);;
+*);;
+
+concept_forest_park
+=> nrel_main_idtf:
+	[Лесной парк] (* <- lang_ru;; *);
+	[Forest park] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_forest_park (*
+	-> rrel_key_sc_element: concept_forest_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Парк, напоминающий лес. ] (* <- lang_ru;; *);;
+		-> [A park that looks like a forest.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Лесной парк)] (* <- lang_ru;; *);
+		[Def. (Forest park)] (* <- lang_en;; *);;
+*);;
+
+concept_amusement_park
+=> nrel_main_idtf:
+	[Парк развлечений] (* <- lang_ru;; *);
+	[Amusement park] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_amusement_park (*
+	-> rrel_key_sc_element: concept_amusement_park;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Парк развлече́ний — собирательный термин, описывающий некоторое количество аттракционов и других видов развлечений, размещённых на одной территории. Парк развлечений отличается от обычных парков тем, что предназначен именно для развлечения людей, в основном взрослых, подростков и детей.] (* <- lang_ru;; *);;
+		-> [An amusement park is a collective term that describes a number of attractions and other types of entertainment located in the same area. An amusement park differs from ordinary parks in that it is designed specifically for the entertainment of people, mainly adults, teenagers and children. Wikipedia] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Парк развлечений)] (* <- lang_ru;; *);
+		[Def. (Amusement park)] (* <- lang_en;; *);;
+*);;
+//21
+concept_department_store
+concept_mall
+concept_shopping_mall
+concept_coordinates
+concept_price_in_rub
+concept_attractions
+concept_public_toilets
+concept_shoe_store
+concept_cosmetics_store
+concept_lingerie_store
+concept_grocery_store
+concept_accessories_store
+concept_river
+concept_church
+concept_arhitect
+concept_writer
+//37

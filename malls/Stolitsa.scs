@@ -1,0 +1,156 @@
+
+Stolytsa_mall
+=> nrel_main_idtf:
+	[ТЦ Столица г. Минск] (* <- lang_ru;; *);
+	[Shopping center Stolitsa Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_Stolytsa_mall (*
+	-> rrel_key_sc_element: Stolytsa_mall;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [ Торговый центр «Столица» расположен в самом центре Минска, на площади Независимости. Вся ее пешеходная часть - это кровля подземного торгового центра.] (* <- lang_ru;; *);;
+		-> [The shopping center "Stolitsa" is located in the very center of Minsk, on Independence Square. Its entire pedestrian part is the roof of the underground shopping center.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ТЦ Столица г. Минск)] (* <- lang_ru;; *);
+		[Def. (Shopping center Stolitsa Minsk)] (* <- lang_en;; *);;
+		
+	=> nrel_using_constants: {
+		concept_department_stores;
+        concept_malls;
+        concept_shopping_malls;
+        nrel_place;
+        nrel_shops_inside;
+        nrel_number_of_floors;
+        nrel_street;
+        nrel_district;
+		nrel_wifi;
+        nrel_metro
+		};;
+*);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_address_in_Minsk;
+	concept_shop;
+	concept_price;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;
+	nrel_wifi;
+	nrel_main_object;;
+
+concept_mall->concept_department_store;;
+
+//описание парка
+concept_department_store->Stolytsa_mall(*
+	=>nrel_district:central_district(*
+	<-concept_district_of_Minsk;;
+	*);;
+
+	=>nrel_metro_station:Frantishek_Bogushevich_Square(*
+		<-concept_metro_station;;
+		*);;
+	
+	//количество этажей
+	=>nrel_number_of_floors:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:4;;
+		*);;
+
+	=>nrel_shops_inside:{
+		Etam;
+		OLSEMA;
+		7_carats;
+		Verolena;
+		Extyn;
+		kari;
+		Colibra;
+		Mattioli; 
+		Accessorize_London; 
+		Galanteya;
+		Episodes;
+		Svitanak;
+		YOUR;
+		Sisters;
+    	Tom_Farr; 
+		MEXX;
+		Jennyfer;
+		Areola;
+		Milavitsa; 
+		Megatop; 
+		Quick_Style; 
+		Avenue;
+		Belarusian_Fashion_Center; 
+		Nicole_and_Nicole;
+		LTB_Jeans;
+		Calliope;
+		Nelva;
+		Colins;
+		Terranova
+	};;
+
+	//есть вайфай?
+	=>nrel_wifi:yes;;
+
+	=>nrel_size:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:75000_m;;
+	*);;
+
+	//улица
+	=>nrel_street:
+	{
+		Independence_Ave.
+	};;
+
+	=>nrel_place:...(*
+		<-concept_address_in_Minsk(*<-sc_node_class;;*);;
+		=>Independence_Ave._3_2;;
+	*);;
+*);;
+
+concept_accessories_store->
+	Etam;
+	OLSEMA;
+	7_carats;
+	Verolena;
+	Extyn;
+	kari;
+	Colibra;
+	Mattioli; 
+	Accessorize_London; 
+	Galanteya;;
+
+concept_store_for_women->
+	Episodes;
+	Svitanak;
+	YOUR;
+	Sisters;
+    Tom_Farr; 
+	MEXX;
+	Jennyfer;
+	Areola;
+	Milavitsa; 
+	Megatop; 
+	Quick_Style; 
+	Avenue;
+	Belarusian_Fashion_Center; 
+	Nicole_and_Nicole;
+	LTB_Jeans;
+	Calliope;
+	Nelva;
+	Colins;
+	Terranov;;	

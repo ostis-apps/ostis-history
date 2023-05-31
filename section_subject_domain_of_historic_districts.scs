@@ -10,7 +10,6 @@ section_subject_domain_of_historic_districts=>nrel_main_idtf:
      [Section. Subject domain historic_districts]
      (*<-lang_en;;*);;
      
-
 non_atomic_section->section_subject_domain_of_historic_districts;;
 
 subject_domain_of_historic_districts->rrel_maximum_studied_object_class:
@@ -18,7 +17,6 @@ subject_domain_of_historic_districts->rrel_maximum_studied_object_class:
 
 section_subject_domain_of_historic_districts->rrel_key_sc_element:
      subject_domain_of_historic_districts;;
-
 
 subject_domain_of_historic_districts<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
 
