@@ -1,0 +1,58 @@
+black_house_club
+<- concept_club;
+=> nrel_main_idtf:
+	[Клуб Black house] (* <- lang_ru;; *);
+	[Black house club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб Black house] (* <- lang_ru;; *);
+	[Black house club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/black_house_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_black_house_club (*
+	-> rrel_key_sc_element: black_house_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб Black house - ночной клуб на Киселева с низкими отзывами, в которых жалуются с плохую организацию, однако хвалят современную музыку и диджея-профессионала.] (* <- lang_ru;; *);;
+		-> [Black house club - a nightclub on Kiselev street with low reviews, in which they complain about poor organization, but praise modern music and professional DJs..] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб Black house)] (* <- lang_ru;; *);
+		[Def. (Black house club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		black_house_club;
+		minsk;
+		belarus;
+		concept_club;
+		concept_music;
+        concept_atmoshere:
+        concept_young_people;
+		concept_low_reviews;
+		concept_modern_music;
+        concept_DJ;
+		concept_live_perfomance;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+black_house_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 200;
+	=> nrel_average_bill: 40_to_50;
+	=> nrel_coordinates: 53.912779322307514_27.569492299316625;;

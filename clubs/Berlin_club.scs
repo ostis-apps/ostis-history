@@ -1,0 +1,59 @@
+berlin_club
+<- concept_club;
+=> nrel_main_idtf:
+	[Клуб Berlin] (* <- lang_ru;; *);
+	[Berlin club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб Berlin] (* <- lang_ru;; *);
+	  [Berlin club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/berlin_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_berlin_club (*
+	-> rrel_key_sc_element: berlin_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб Berlin - клуб на Фрунзенской, нахоядщийся в подвале заброшенного завода. Несмотря на давнее отсутствие ремонта, посетителям нравится особый шарм и атмосфера.] (* <- lang_ru;; *);;
+		-> [Berlin club - club on Frunzenskaya, located in the basement of an abandoned factory. Despite the lack of renovation for a long time, visitors like the special charm and atmosphere.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб Berlin)] (* <- lang_ru;; *);
+		[Def. (Berlin club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		berlin_club;
+		minsk;
+		belarus;
+		concept_club;
+		concept_music;
+        concept_renovated_infastructure;
+        concept_atmoshere:
+        concept_young_people;
+		concept_interior_design;
+		concept_modern_music;
+        concept_DJ;
+		concept_live_perfomance;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+berlin_club
+	=> nrel_age_restictions: 15_plus;	
+	=> nrel_capacity: 150;
+	=> nrel_average_bill: 10_to_20;
+	=> nrel_coordinates: 53.907098309585734_27.529490270541533;;

@@ -1,0 +1,71 @@
+concept_club
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Клуб] (* <- lang_ru;; *);
+	[Club] (* <- lang_en;; *);;
+
+definition -> definition_of_club (*
+	-> rrel_key_sc_element: concept_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб - общественное заведение, работающее после 21:00, предназначенное для распития спиртных напитков, танцов и других подобных развлечений.] (* <- lang_ru;; *);;
+		-> [Club is a organization that is open at night, usually for drinking, dancing and other entertaiment.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб)] (* <- lang_ru;; *);
+		[Def. (Club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_organization;
+		concept_food;
+		concept_drinks;
+		concept_club;
+		concept_entartaiment;
+		concept_night;
+		concept_alcohol;
+		concept_beer;
+		concept_wine;
+		concept_liquor;
+		nrel_serves;
+		nrel_includes;
+        nrel_dancing;
+        nrel_drinking;
+		nrel_designed_to;
+		nrel_similar_to
+	};;
+*);;
+
+statement -> statement_of_club (*
+	-> rrel_key_sc_element: concept_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ночные клубы часто имеют в своем составе бар и дискотеку с танцполом, а также сцену с живой музыкой или диджеем, который проигрывает записанную музыку.] (* <- lang_ru;; *);;
+		-> [Nightclubs often have a bar and discothèque with a dance floor, laser lighting displays, and a stage for live music or a disc jockey (DJ) who plays recorded music.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О Клубе)] (* <- lang_ru;; *);
+		[Stat. (About club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_organization;
+		concept_food;
+		concept_drinks;
+		concept_club;
+		concept_nightclub;
+		concept_bar;
+		concept_DJ;
+		concept_music;
+		concept_dance_floor;
+		concept_discotheque;
+		concept_stage;
+		concept_lasers;
+		nrel_serves;
+		nrel_includes;
+		nrel_dancing;
+		nrel_play;
+		nrel_designed_to;
+		nrel_similar_to
+	};;
+*);;
