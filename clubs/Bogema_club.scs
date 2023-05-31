@@ -1,0 +1,59 @@
+bogema_club
+<- concept_club;
+=> nrel_main_idtf:
+	[Клуб Bogema] (* <- lang_ru;; *);
+	[Bogema club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб Bogema] (* <- lang_ru;; *);
+	  [Bogema club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/bogema_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_bogema_club (*
+	-> rrel_key_sc_element: bogema_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб Bogema - караоке-клуб на Машерова с качественным своременным дизайном и хорошим обслуживанием, однако соответсвующими им высокими ценами.] (* <- lang_ru;; *);;
+		-> [Bogema club - karaoke club on Masherova street with high-quality modern design and good service, but correspondingly high prices.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб Bogema)] (* <- lang_ru;; *);
+		[Def. (Bogema club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		bogema_club;
+		minsk;
+		belarus;
+		concept_club;
+		concept_music;
+		concept_good_service;
+        concept_renovated_infastructure;
+        concept_atmoshere:
+        concept_karaoke_club;
+		concept_modern_music;
+		concept_high_prices;
+		concept_live_perfomance;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+bogema_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 80;
+	=> nrel_average_bill: 50_to_60;
+	=> nrel_coordinates: 53.91607865693865_27.568251855649237;;

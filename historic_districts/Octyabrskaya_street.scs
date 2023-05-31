@@ -23,7 +23,7 @@ definition -> definition_of_octyabrskaya_street (*
 	-> rrel_key_sc_element: octyabrskaya_street;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Улица Октябрьская - улица в историческом центре Минска. Старое название - Нижне-Ляховская, перестроена из промашленного района. Обладает множеством красивых граффити.] (* <- lang_ru;; *);;
+		-> [Улица Октябрьская - улица в историческом центре Минска. Старое название - Нижне-Ляховская, перестроена из промышленного района. Обладает множеством красивых граффити.] (* <- lang_ru;; *);;
 		-> [Octyabrskya street is street in the historical center of Minsk. The old name - Nizhne-Lyakhovskaya, was rebuilt from an industrial area. Has a lot of beautiful graffiti.
 
 ] (* <- lang_en;; *);;
@@ -43,6 +43,36 @@ definition -> definition_of_octyabrskaya_street (*
         concept_food_establishment;
 		minsk;
         belarus;
+        concept_graffiti;
+		concept_soviet_architecture;
+        cocnept_renovation;
+		nrel_offers;
+		nrel_provides;
+		nrel_rebuild
+	};;
+*);;
+
+statement -> statement_of_octyabrskaya_street (*
+	-> rrel_key_sc_element: concept_octyabrskaya_street;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Улица Октябрьская является прекрасным примером реновации и перестройки старых промышленных районов в культурные центры города.] (* <- lang_ru;; *);;
+		-> [Oktyabrskaya Street is an excellent example of the renovation and restructuring of old industrial areas into cultural centers of the city.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О Октябрьской улице)] (* <- lang_ru;; *);
+		[Stat. (About octyabrskaya_street)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_renovated_infastructure;
+		concept_street;
+		concept_historic_district;
+		octyabrskaya_street;
+        concept_cultural_center;
+        concept_old_factory;
+        concept_club;
+        concept_food_establishment;
         concept_graffiti;
 		concept_soviet_architecture;
         cocnept_renovation;

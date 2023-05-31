@@ -71,12 +71,12 @@ backdoor_bar
 	=> nrel_type_of_food: 
 		fast_food;
 		sandwich;
-    burgers;
+    	burgers;
 	=> nrel_type_of_drink: 
 		coffee;
-    wine;
-    liquor;
-    coctail;
-    vodka;
-    beer;
+		wine;
+		liquor;
+		coctail;
+		vodka;
+		beer;
 		tea;;
