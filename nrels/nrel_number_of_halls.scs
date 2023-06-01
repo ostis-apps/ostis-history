@@ -1,0 +1,32 @@
+nrel_number_of_halls
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[количество залов] (* <- lang_ru;; *);
+	[number of halls] (* <- lang_en;; *);;
+
+definition -> definition_of_number_of_halls (*
+	-> rrel_key_sc_element: nrel_number_of_halls;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Количество залов - это количество площадок для проведения опредёлённых мероприятий в учреждениях.] (* <- lang_ru;; *);;
+		-> [Museum type is the number of venues for holding certain events in facilities.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Количество залов)] (* <- lang_ru;; *);
+		[Def. (Number of halls)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_number_of_halls;
+		concept_classification;
+        concept_hall;
+		concept_event;
+		concept_characteristics;
+		concept_number;
+        concept_facility;
+		nrel_used_to_facility;
+		nrel_based_on;
+		nrel_main_characteristics;
+		nrel_main_focus
+	};;
+*);;

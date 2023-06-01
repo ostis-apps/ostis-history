@@ -1,0 +1,98 @@
+nuahule_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Nuahule"] (* <- lang_ru;; *);
+	[Nuahule restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Nuahule"] (* <- lang_ru;; *);
+	[Nuahule restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/nuahule_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_nuahule_restaurant (*
+	-> rrel_key_sc_element: nuahule_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Nuahule" - это яркое и современное заведение в Минске, Беларусь. Ресторан предлагает объединение вкусов азиатской и латиноамериканской кухонь, создавая уникальный и захватывающий кулинарный опыт. Меню ресторана "Nuahule" представляет разнообразие инновационных блюд, сочетающих смелые и острые азиатские вкусы с яркими и красочными ингредиентами Латинской Америки. От суши с латиноамериканским акцентом до ароматных севиче и аппетитных жареных блюд, каждое блюдо в "Nuahule" представляет собой гармоничное сочетание вкусов и текстур. Ресторан также предлагает хороший выбор коктейлей, созданных с креативностью и освежающими сочетаниями, идеально дополняющих яркие вкусы кухни. Интерьер ресторана "Nuahule" стильно оформлен, с современным декором и живой атмосферой, предоставляя гостям энергичную атмосферу, чтобы насладиться своим кулинарным опытом. Будь вы ищете запоминающийся ужин с друзьями, свидание или празднование, ресторан "Nuahule" предлагает слияние вкусов, которые порадуют ваше гастрономическое восприятие.] (* <- lang_ru;; *);;
+		-> [Nuahule restaurant is a vibrant and contemporary dining destination located in Minsk, Belarus. The restaurant offers a fusion of flavors inspired by Asian and Latin American cuisines, creating a unique and exciting culinary experience. Nuahule restaurant's menu showcases a variety of innovative dishes that combine the bold and spicy flavors of Asia with the vibrant and colorful ingredients of Latin America. From sushi rolls with a Latin twist to flavorful ceviches and sizzling stir-fries, each dish at Nuahule is a harmonious blend of tastes and textures. The restaurant also features a well-crafted cocktail menu, with creative and refreshing concoctions that perfectly complement the vibrant flavors of the cuisine. The interior of Nuahule restaurant is stylishly designed, with modern décor and a lively ambiance, providing a lively and energetic atmosphere for guests to enjoy their dining experience. Whether you're looking for a memorable dinner with friends, a date night, or a celebratory gathering, Nuahule restaurant offers a fusion of flavors that will delight your taste buds.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Nuahule")] (* <- lang_ru;; *);
+		[Def. (Nuahule restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		nuahule_restaurant;
+		minsk;
+		belarus;
+		concept_dining_destination;
+		concept_cuisine;
+		concept_culinary_experience;
+		concept_menu;
+		concept_innovative_dishes;
+		concept_flavors;
+		concept_asian;
+		concept_latin_american;
+		concept_ingredients;
+		concept_sushi_rolls;
+		concept_ceviches;
+		concept_stir_fries;
+		concept_dish;
+		concept_blend;
+		concept_tastes;
+		concept_textures;
+		concept_cocktail_menu;
+		concept_concoctions;
+		concept_complement;
+		concept_interior;
+		concept_decor;
+		concept_ambiance;
+		concept_guests;
+		concept_dining_experience;
+		concept_dinner;
+		concept_date_night;
+		concept_celebratory_gathering;
+		nrel_located_in;
+		nrel_offers;
+		nrel_inspired_by;
+		nrel_showcases;
+		nrel_combines;
+		nrel_features;
+		nrel_provide;
+		nrel_design;
+		nrel_providing;
+		nrel_enjoy
+	};;
+*);;
+
+nuahule_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: not_specified;
+	=> nrel_coordinates: 53.913489_27.576079;
+	=> nrel_type_of_food: 
+		american;
+		european;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+		fast_food;
+	=> nrel_type_of_drink: 
+		wine;
+		alcohol;
+		beer;
+		coffee;
+		tea;;

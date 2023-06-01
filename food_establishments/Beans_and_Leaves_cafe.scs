@@ -1,0 +1,77 @@
+beans_and_leaves_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "Beans and Leaves"] (* <- lang_ru;; *);
+	[Beans and Leaves cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "Beans and Leaves"] (* <- lang_ru;; *);
+	[Beans and Leaves cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/beans_and_leaves_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_beans_and_leaves_cafe (*
+	-> rrel_key_sc_element: beans_and_leaves_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "Beans and Leaves" - городское кафе с летней террасой в центре Минска, где можно позавтракать и пообедать, выпить чашку кофе и взять навынос десерты и выпечку. Кафе расположено на первом этаже ТРЦ Galleria Minsk и отеля DoubleTree by Hilton Minsk.] (* <- lang_ru;; *);;
+		-> [Beans and Leaves cafe is an urban cafe with a summer terrace in the center of Minsk, where you can have breakfast and lunch, drink a cup of coffee and take away desserts and pastries. The cafe is located on the first floor of the Galleria Minsk shopping mall and DoubleTree by Hilton Minsk hotel.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "Beans and Leaves")] (* <- lang_ru;; *);
+		[Def. (Beans and Leaves cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		beans_and_leaves_cafe;
+		minsk;
+		belarus;
+		concept_urban_cafe;
+		concept_summer_terrace;
+		concept_center_of_minsk;
+		concept_breakfast_and_lunch;
+		concept_cup_of_coffee;
+		concept_take_away;
+		concept_desserts_and_pastries;
+		galleria_minsk_shopping_mall;
+		goubletree_by_hilton_minsk_hotel;
+		nrel_have;
+		nrel_drink;
+		nrel_take_away;
+		nrel_located_on;
+		nrel_first_floor_of;
+		nrel_in_the_center_of;
+		nrel_offers_breakfast_and_lunch;
+		nrel_provides_cup_of_coffee;
+		nrel_offers_take_away_option;
+		nrel_serves_desserts_and_pastries;
+		nrel_located_in_galleria_minsk_shopping_mall;
+		nrel_located_in_doubletree_by_hilton_minsk_hotel
+	};;
+*);;
+
+beans_and_leaves_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: from_20;
+	=> nrel_coordinates: 53.908486_27.548415;
+	=> nrel_type_of_food: 
+		breakfast;
+		lunch;
+		brunch;
+		barbecue;
+		grill;
+		vegan;
+	=> nrel_type_of_drink: 
+		not_specified;;

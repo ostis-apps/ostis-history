@@ -1,0 +1,99 @@
+vasilki_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Vasilki"] (* <- lang_ru;; *);
+	[Vasilki restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Vasilki"] (* <- lang_ru;; *);
+	[Vasilki restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/vasilki_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_vasilki_restaurant (*
+	-> rrel_key_sc_element: vasilki_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Vasilki" - это очаровательное и привлекательное заведение общественного питания, расположенное в Минске, Беларусь. Ресторан назван по белорусскому слову "васілкі", которое является символом красоты и изящества. "Василки" предлагает восхитительный кулинарный опыт с уклоном на традиционную белорусскую кухню. В меню представлены разнообразные блюда из местных ингредиентов, включая сытные супы, ароматные мясные и рыбные блюда, и изысканные десерты. Гости могут насладиться аутентичными вкусами Беларуси, наслаждаясь теплой и гостеприимной атмосферой ресторана. Интерьер "Василков" выполнен в стиле традиционной белорусской избы с деревянными акцентами и уютными местами для отдыха. Внимательное обслуживание и внимание к деталям делают посещение ресторана "Василки" незабываемым опытом. Будь то для неформального обеда или особого случая, ресторан "Василки" является замечательным местом для наслаждения богатыми вкусами белорусской кухни.] (* <- lang_ru;; *);;
+		-> [Vasilki restaurant is a charming and inviting dining establishment located in Minsk, Belarus. The restaurant takes its name from the Belarusian word for "cornflowers," which are a symbol of beauty and grace. Vasilki offers a delightful culinary experience with a focus on traditional Belarusian cuisine. The menu features a variety of dishes made from locally sourced ingredients, including hearty soups, flavorful meat and fish dishes, and delectable desserts. Guests can savor the authentic flavors of Belarus while enjoying the warm and welcoming atmosphere of the restaurant. The interior of Vasilki is designed to reflect the rustic charm of a traditional Belarusian cottage, with wooden accents and cozy seating areas. The attentive service and attention to detail make dining at Vasilki a memorable experience. Whether for a casual lunch or a special occasion, Vasilki restaurant is a wonderful place to indulge in the rich flavors of Belarusian cuisine.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Vasilki")] (* <- lang_ru;; *);
+		[Def. (Vasilki restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		vasilki_restaurant;
+		minsk;
+		belarus;
+		concept_charming_dining_establishment;
+		concept_belarusian_word;
+		concept_cornflowers;
+		concept_symbol_of_beauty;
+		concept_grace;
+		concept_delightful_culinary_experience;
+		concept_traditional_Belarusian_cuisine;
+		concept_locally_sourced_ingredients;
+		concept_hearty_soups;
+		concept_flavorful_meat_dishes;
+		concept_delectable_desserts;
+		concept_authentic_flavors;
+		concept_warm_and_welcoming_atmosphere;
+		concept_rustic_charm;
+		concept_traditional_belarusian_cottage;
+		concept_wooden_accents;
+		concept_cozy_seating_areas;
+		concept_attentive_service;
+		concept_attention_to_detail;
+		concept_memorable_experience;
+		concept_casual_lunch;
+		concept_special_occasion;
+		concept_rich_flavors;
+		concept_belarusian_cuisine;
+		nrel_located_in;
+		nrel_takes_its_name_from;
+		nrel_offers;
+		nrel_features;
+		nrel_made_from;
+		nrel_savor;
+		nrel_reflects;
+		nrel_design;
+		nrel_enjoying;
+		nrel_provides;
+		nrel_make_dining_at;
+		nrel_indulge_in
+	};;
+*);;
+
+vasilki_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 34_to_45;
+	=> nrel_coordinates: 53.898215_27.555022;
+	=> nrel_type_of_food: 
+		european;
+		russian;
+		eastern_european;
+		central_european;
+		vegan;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		alcohol;
+		wine;
+		champagne;
+		juice;
+		tea;;

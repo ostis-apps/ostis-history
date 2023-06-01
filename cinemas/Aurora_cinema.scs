@@ -1,0 +1,55 @@
+aurora_cinema
+<- concept_movie_theater;
+=> nrel_main_idtf:
+	[Кинотеатр "Аврора"] (* <- lang_ru;; *);
+	[Aurora movie theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кинотеатр "Аврора"] (* <- lang_ru;; *);
+	[Aurora movie theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/aurora_cinema.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_aurora_cinema (*
+	-> rrel_key_sc_element: aurora_cinema;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Аврора - дешевый, но не сильно комфортабельный кинотеатр c 3 залами на станции метро Пушкинская, основанный в 1988.] (* <- lang_ru;; *);;
+		-> [Aurora - cheap, but not very comfortable cinema at the Pushkinskaya metro station, founded in 1988.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кинотеатр "Аврора")] (* <- lang_ru;; *);
+		[Def. (Aurora movie theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_movie_theater;
+		aurora_cinema;
+		minsk;
+		belarus;
+        concept_multiplexor;
+		concept_soviet_architecture;
+		concept_cheap_cost;
+        concept_cinema;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+aurora_cinema
+	=> nrel_capacity: 1000;
+    => nrel_3D: no;
+    => nrel_number_of_halls : 3;
+	=> nrel_ticket_price: 15;
+	=> nrel_coordinates: 53.90889462547645_27.49262334725116;;

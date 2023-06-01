@@ -1,0 +1,92 @@
+the_view_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "The View"] (* <- lang_ru;; *);
+	[The View restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "The View"] (* <- lang_ru;; *);
+	[The View restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/the_view_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_the_view_restaurant (*
+	-> rrel_key_sc_element: the_view_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "The View" - это захватывающее заведение общественного питания, расположенное в Минске, Беларусь. Как следует из названия, ресторан предлагает захватывающий панорамный вид на городской пейзаж, создавая незабываемый кулинарный опыт. Меню в ресторане "The View" представляет собой сочетание местных и международных кухонь, предлагая разнообразие блюд, приготовленных из качественных ингредиентов с изысканными вкусами. Стильная и утонченная атмосфера ресторана дополняет общий опыт обеда, делая его идеальным выбором для романтических ужинов, особых событий или просто для наслаждения прекрасной едой с живописным фоном. С безупречным обслуживанием и акцентом на кулинарное совершенство, ресторан "The View" стремится предоставить гостям по-настоящему незабываемое гастрономическое путешествие.] (* <- lang_ru;; *);;
+		-> [The View restaurant is a captivating dining establishment located in Minsk, Belarus. As the name suggests, the restaurant offers stunning panoramic views of the cityscape, creating a memorable dining experience. The menu at The View restaurant showcases a combination of local and international cuisines, featuring a range of dishes prepared with quality ingredients and exquisite flavors. The restaurant's stylish and sophisticated ambiance adds to the overall dining experience, making it an ideal choice for romantic dinners, special occasions, or simply enjoying a delightful meal with a picturesque backdrop. With impeccable service and a focus on culinary excellence, The View restaurant aims to provide guests with a truly unforgettable gastronomic journey.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "The View")] (* <- lang_ru;; *);
+		[Def. (The View restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		the_view_restaurant;
+		minsk;
+		belarus;
+		concept_captivating_ambiance;
+		concept_dining_experience;
+		concept_panoramic_views;
+		concept_cityscape;
+		concept_menu;
+		concept_local_cuisine;
+		concept_international_cuisine;
+		concept_combination_of;
+		concept_dishes;
+		concept_quality_ingredients;
+		concept_exquisite_flavors;
+		concept_stylish_ambiance;
+		concept_sophisticated_ambiance;
+		concept_romantic_dinners;
+		concept_special_occasions;
+		concept_delightful_meal;
+		concept_picturesque_backdrop;
+		concept_impeccable_service;
+		concept_culinary_excellence;
+		concept_gastronomic_journey;
+		concept_unforgettable_experience;
+		nrel_located_in;
+		nrel_offers;
+		nrel_showcases;
+		nrel_combination_of;
+		nrel_prepared_with;
+		nrel_adds_to;
+		nrel_makes_it_an_ideal_choice;
+		nrel_provide;
+		nrel_aims_to_provide
+	};;
+*);;
+
+the_view_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 100_to_150;
+	=> nrel_coordinates: 53.907724_27.549701;
+	=> nrel_type_of_food: 
+		european;
+		central_european;
+		vegan;
+		gluten_free;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		cocktail;
+		alcohol;
+		wine;
+		champagne;
+		coffee;
+		tea;;

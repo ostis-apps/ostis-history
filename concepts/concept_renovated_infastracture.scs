@@ -1,0 +1,31 @@
+concept_renovated_infastructure
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Клуб] (* <- lang_ru;; *);
+	[Renovated infastructure] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_renovated_infastructure (*
+	-> rrel_key_sc_element: concept_renovated_infastructure;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Реновация построек это процесс обновления старых обветшалых районов с приданием им новых функций и "вдыханием жизни".] (* <- lang_ru;; *);;
+		-> [Building renovation is the process of renovating old impoverished areas with new functions and "breathing life".] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб)] (* <- lang_ru;; *);
+		[Def. (Renovated infastructure)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_district;
+		concept_historic_district;
+		concept_renovation;
+		concept_renovated_infastructure;
+		concept_new_functions;
+		concept_culture;
+		concept_area;
+		nrel_renovated_by;
+		nrel_build;
+        nrel_update
+	};;
+*);;

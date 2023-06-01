@@ -1,0 +1,69 @@
+maxim_bogdanovich_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей Максима Богдановича] (* <- lang_ru;; *);
+	[Maxim Bogdanovich museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей Максима Богдановича] (* <- lang_ru;; *);
+	[Maxim Bogdanovich museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/maxim_bogdanovich_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_maxim_bogdanovich_museum (*
+	-> rrel_key_sc_element: maxim_bogdanovich_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей Максима Богдановича - это музей, посвященный жизни и творчеству Максима Богдановича, выдающегося белорусского поэта, писателя и переводчика. Он демонстрирует экспонаты, показывающие литературные достижения Богдановича, а также его личную жизнь и наследие. Музей также предоставляет образовательные программы и мероприятия, связанные с белорусской литературой и культурой.] (* <- lang_ru;; *);;
+		-> [Maxim Bogdanovich museum is a museum dedicated to the life and works of Maxim Bogdanovich, a prominent Belarusian poet, writer, and translator. It features exhibits showcasing Bogdanovich's literary achievements, as well as his personal life and legacy. The museum also provides educational programs and activities related to Belarusian literature and culture.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей Максима Богдановича)] (* <- lang_ru;; *);
+		[Def. (Maxim Bogdanovich museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		maxim_bogdanovich_museum;
+		minsk;
+		concept_dedication;
+		concept_life;
+		concept_works;
+		maxim_bogdanovich;
+		concept_belarusian;
+		concept_poet;
+		concept_writer;
+		concept_translator;
+		concept_exhibit;
+		concept_literary_achievements;
+		concept_personal_life;
+		concept_legacy;
+		concept_education;
+		concept_program;
+		concept_activity;
+		concept_literature;
+		concept_culture;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_showcasing;
+		nrel_achievements_of;
+		nrel_provides;
+		nrel_related_to
+	};;
+*);;
+
+maxim_bogdanovich_museum
+	=> nrel_museum_type: literature_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: not_specified;
+	=> nrel_coordinates: 53.908064_27.556109;
+	=> nrel_age_restictions: 0_plus;;

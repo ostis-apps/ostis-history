@@ -1,0 +1,22 @@
+concept_architecture
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Архитектура] (* <- lang_ru;; *);
+	[Architecture] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_architecture (*
+	-> rrel_key_sc_element: concept_architecture;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Архитектура - искусство и наука строить, проектировать здания и сооружения (включая их комплексы).] (* <- lang_ru;; *);;
+		-> [Architecture is the art and science of building, designing buildings and structures (including their complexes).] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Архитектура)] (* <- lang_ru;; *);
+		[Def. (Architecture)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_building
+	};;
+*);;

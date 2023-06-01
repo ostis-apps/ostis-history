@@ -1,0 +1,63 @@
+yakub_kolas_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей Якуба Коласа] (* <- lang_ru;; *);
+	[Yakub Kolas Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей Якуба Коласа] (* <- lang_ru;; *);
+	[Yakub Kolas Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/yakub_kolas_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_yakub_kolas_museum (*
+	-> rrel_key_sc_element: yakub_kolas_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей Якуба Коласа - это музей, посвященный жизни и творчеству известного белорусского писателя Якуба Коласа, расположенный в городе Минск, Беларусь. В экспозиции музея представлены различные экспонаты, связанные с жизнью и творчеством писателя, такие как рукописи, фотографии, документы и другие материалы, отображающие основные этапы его творческого пути. Музей также содержит мемориальную квартиру Якуба Коласа, где посетители могут увидеть оригинальную обстановку, в которой жил и работал писатель.] (* <- lang_ru;; *);;
+		-> [Yakub Kolas Museum is a museum dedicated to the life and work of the famous Belarusian writer Yakub Kolas, located in Minsk, Belarus. The museum's exposition features various exhibits related to the life and work of the writer, such as manuscripts, photographs, documents, and other materials that reflect the main stages of his creative path. The museum also contains the memorial apartment of Yakub Kolas, where visitors can see the original atmosphere in which the writer lived and worked.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей Якуба Коласа)] (* <- lang_ru;; *);
+		[Def. (Yakub Kolas Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		yakub_kolas_museum;
+		belarus;
+		minsk;
+		yakub_kolas;
+		concept_writer;
+		concept_exposition;
+		concept_exhibits;
+		concept_manuscripts;
+		concept_photographs;
+		concept_documents;
+		concept_creative_path;
+		concept_memorial_apartment;
+		concept_original_atmosphere;
+		nrel_is_a_museum_dedicated_to;
+		nrel_features;
+		nrel_related_to_life_and_work_of_yakub_kolas;
+		nrel_reflects_main_stages_of_creative_path;
+		nrel_contains;
+		nrel_visitors_can_see
+	};;
+*);;
+
+yakub_kolas_museum
+	=> nrel_museum_type: literature_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: 5;
+	=> nrel_coordinates: 53.919480_27.600145;
+	=> nrel_age_restictions: 0_plus;;

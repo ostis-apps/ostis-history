@@ -1,0 +1,55 @@
+groshi_money_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей денег "Гроши"] (* <- lang_ru;; *);
+	[Groshi Money Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей денег "Гроши"] (* <- lang_ru;; *);
+	[Groshi Money Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/groshi_money_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_groshi_money_museum (*
+	-> rrel_key_sc_element: groshi_money_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей денег "Гроши" - это музей, посвященный истории денег и финансов. В музее представлены экспонаты из разных стран и эпох, включая монеты, банкноты, медали, печатные формы, документы и другие предметы, связанные с денежным обращением.] (* <- lang_ru;; *);;
+		-> [Groshi Money Museum is a museum dedicated to the history of money and finance. The museum exhibits artifacts from different countries and eras, including coins, banknotes, medals, printing plates, documents, and other items related to monetary circulation.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей денег "Гроши")] (* <- lang_ru;; *);
+		[Def. (Groshi Money Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		groshi_money_museum;
+		concept_history_of_money;
+		concept_finance;
+		concept_coins;
+		concept_banknotes;
+		concept_medals;
+		concept_printing_plates;
+		concept_documents;
+		concept_monetary_circulation;
+		nrel_contains;
+		nrel_related_to
+	};;
+*);;
+
+groshi_money_museum
+	=> nrel_museum_type: money_museum;
+	=> nrel_capacity: 50_plus;
+	=> nrel_ticket_price: 10_to_45;
+	=> nrel_coordinates: 53.906400_27.557492;
+	=> nrel_age_restictions: 0_plus;;

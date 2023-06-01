@@ -1,0 +1,143 @@
+
+park_named_after_Yanka_Kupala
+=> nrel_main_idtf:
+	[Парк имени Янки Купалы] (* <- lang_ru;; *);
+	[Park named after Yanka Kupala] (* <- lang_en;; *);;
+definition -> definition_of_park_named_after_Yanka_Kupala (*
+	-> rrel_key_sc_element: park_named_after_Yanka_Kupala;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Парк имени Янки Купалы (белор. Парк імя Янкі Купалы) — парк культуры и отдыха в центре Минска.  ] (* <- lang_ru;; *);;
+		-> [Park named after Yanka Kupala (Belarusian Park named after Yanka Kupala) is a park of culture and recreation in the center of Minsk. Yankee Kupala.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Парк имени Янки Купалы)] (* <- lang_ru;; *);
+		[Def. (Park named after Yanka Kupala)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monument;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История парка имени Янки Купалы]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Назван в честь белорусского поэта Янки Купалы.](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_greenhouse;
+	concept_hour;
+	concept_church;
+	cncept_river;
+	concept_museum;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_forest_park;;
+//описание парка
+concept_forest_park->park_named_after_Yanka_Kupala(*
+	
+	=>nrel_district:central_district(*
+	<-concept_district_of_Minsk;;
+	*);;//район
+
+	//метро
+	=>nrel_metro_station:square_of_victory(*
+		<-concept_metro_station;;
+	*);;
+	//цена посещения	
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+	
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1950;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		{
+		svisloch;
+		strana_mini;
+		church_of_Cyril_and_Methodius
+		};;
+
+	//размер
+	=>nrel_size:...(*
+		<-concept_size_in_ha;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:78_ha;;
+		*);;
+	*);;
+	
+	//архитектор
+	=>nrel_architect:Rudenko(*
+		<-concept_arhitect;;
+	*);;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53o54.20_s._sh._27o33.59;;
+	*);;
+
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_hours;;
+		=>nrel_main_idtf:2;;
+	*);;
+*);;
+
+concept_church->church_of_Cyril_and_Methodius;;
+concept_river->svisloch;;
+concept_museum->strana_mini;;
+		

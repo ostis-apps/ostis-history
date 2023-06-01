@@ -1,0 +1,56 @@
+salut_cinema
+<- concept_movie_theater;
+=> nrel_main_idtf:
+	[Кинотеатр "Салют"] (* <- lang_ru;; *);
+	[Salut movie theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кинотеатр "Салют"] (* <- lang_ru;; *);
+	[Salut movie theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/salut_cinema.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_salut_cinema (*
+	-> rrel_key_sc_element: salut_cinema;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> ["Салют" - советский кинотеатр с 3 кинозалами, основанный в 1980 году.] (* <- lang_ru;; *);;
+		-> [Salut is soviet cinema with 3 screens, founded in 1980.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кинотеатр "Салют")] (* <- lang_ru;; *);
+		[Def. (Salut cinema)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_movie_theater;
+		salut_cinema;
+        concept_good_image_quality;
+		minsk;
+		salut;
+        concept_multiplexor;
+		concept_soviet_architecture;
+		concept_medium_cost;
+        concept_cinema;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+salut_cinema
+	=> nrel_capacity: 600;
+    => nrel_3D: no;
+	=> nrel_ticket_price: 20;
+    => nrel_number_of_halls : 3;
+	=> nrel_coordinates: 53.855430238244004_27.610242455646283;;

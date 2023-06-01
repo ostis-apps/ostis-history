@@ -1,0 +1,89 @@
+arbat_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Arbat"] (* <- lang_ru;; *);
+	[Arbat restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Arbat"] (* <- lang_ru;; *);
+	[Arbat restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/arbat_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_arbat_restaurant (*
+	-> rrel_key_sc_element: arbat_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Arbat" - это очаровательное заведение общественного питания, расположенное в Минске, Беларусь. Вдохновленный знаменитой улицей Арбат в Москве, ресторан передает дух русской культуры и кухни. Меню в ресторане "Арбат" предлагает широкий выбор традиционных русских блюд, приготовленных по подлинным рецептам с использованием качественных ингредиентов. Гости могут насладиться классическими любимыми блюдами, такими как борщ, пельмени и блины, а также отведать выбор русских десертов и напитков. Интерьер ресторана создан в стиле уютной и ностальгической обстановки, с элементами, напоминающими русское народное искусство и архитектуру. С теплым гостеприимством и неподдельными русскими вкусами, ресторан "Арбат" предлагает восхитительное кулинарное путешествие для своих гостей.] (* <- lang_ru;; *);;
+		-> [Arbat restaurant is a charming dining establishment located in Minsk, Belarus. Inspired by the famous Arbat street in Moscow, the restaurant captures the spirit of Russian culture and cuisine. The menu at Arbat restaurant features a wide array of traditional Russian dishes, prepared with authentic recipes and high-quality ingredients. Guests can indulge in classic favorites like borscht, pelmeni, and blini, while also savoring a selection of Russian desserts and beverages. The restaurant's interior is designed to evoke a cozy and nostalgic ambiance, with elements reminiscent of Russian folk art and architecture. With its warm hospitality and genuine Russian flavors, Arbat restaurant offers a delightful culinary journey for its guests.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Arbat")] (* <- lang_ru;; *);
+		[Def. (Arbat restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		arbat_restaurant;
+		minsk;
+		belarus;
+		concept_charming_ambiance;
+		concept_russian_culture;
+		concept_russian_cuisine;
+		concept_menu;
+		concept_traditional_dishes;
+		concept_authentic_recipes;
+		concept_high_quality_ingredients;
+		concept_borscht;
+		concept_pelmeni;
+		concept_blini;
+		concept_russian_desserts;
+		concept_russian_beverages;
+		concept_interior_design;
+		concept_cozy_ambiance;
+		concept_nostalgic_ambiance;
+		concept_russian_folk_art;
+		concept_russian_architecture;
+		concept_warm_hospitality;
+		concept_genuine_flavors;
+		concept_culinary_journey;
+		nrel_located_in;
+		nrel_inspired_by;
+		nrel_captures;
+		nrel_features;
+		nrel_prepared_with;
+		nrel_indulge_in;
+		nrel_savoring;
+		nrel_designed_to_evoke;
+		nrel_reminiscent_of;
+		nrel_offers;
+		nrel_offers_a_delightful_culinary_journey
+	};;
+*);;
+
+arbat_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 50_to_60;
+	=> nrel_coordinates: 53.934309_27.648258;
+	=> nrel_type_of_food: 
+		european;
+		belarusian;
+		homemade;
+		dinner;
+		lunch;
+		brunch;
+	=> nrel_type_of_drink: 
+		alcohol;
+		wine;
+		beer;;

@@ -1,0 +1,59 @@
+belarusian_theater_of_dolls
+<- concept_theater;
+=> nrel_main_idtf:
+	[Белорусский театр кукол] (* <- lang_ru;; *);
+	[Belarusian theater of dolls] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Белорусский театр кукол] (* <- lang_ru;; *);
+	[Belarusian theater of dolls] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/belarusian_theater_of_dolls.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_belarusian_theater_of_dolls (*
+	-> rrel_key_sc_element: belarusian_theater_of_dolls;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Белорусский театр кукол - это старейший (основан в 1938) и самый уважаемый театр кукол в Беларуси.] (* <- lang_ru;; *);;
+		-> [Belarusian theater of dolls is the oldest (founded in 1938) and the most respectable theater of dolls in Belarus.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Белорусский театр кукол)] (* <- lang_ru;; *);
+		[Def. (Belarusian theater of dolls)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_theater;
+    concept_perfomance;
+		belarusian_theater_of_dolls;
+		minsk;
+		belarus;
+    concept_dolls;
+    concept_director;
+    concept_actors;
+    concept_puppets;
+    concept_orchestra;
+		concept_soviet_architecture;
+		concept_medium_cost;
+    concept_scene;
+		nrel_offers;
+		nrel_provides;
+		nrel_perform;
+		nrel_play
+	};;
+*);;
+
+belarusian_theater_of_dolls
+	=> nrel_capacity: 1000;
+    => nrel_number_of_halls : 1;
+	=> nrel_ticket_price: 35;
+	=> nrel_coordinates: 53.89944194514591_27.563405870992526;;

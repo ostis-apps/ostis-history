@@ -1,0 +1,73 @@
+rocknroll_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар "Рок-н-рольщик"] (* <- lang_ru;; *);
+	[Rocknroll bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар "Рок-н-рольщик"] (* <- lang_ru;; *);
+	[Rocknroll bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/rocknroll_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_rocknroll_bar (*
+	-> rrel_key_sc_element: rocknroll_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Рок-н-рольщик - маленький бар на Немиге с аутентичной атмосферой рок-культуры и высоким качеством обслуживания.] (* <- lang_ru;; *);;
+		-> [Rocknroll is a small bar on Nemiga with an authentic atmosphere of rock culture and high quality service.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар "Рок-н-рольщик")] (* <- lang_ru;; *);
+		[Def. (Rocknroll bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		rocknroll_bar;
+		minsk;
+		belarus;
+		concept_bar;
+		concept_atmosphere_of_20th_century;
+		concept_fresh_locally_sourced_ingredients;
+        concept_good_music;
+        concept_fast_serving;
+        concept_tincture;
+		upper_city;
+		concept_refreshing_beverages;
+		concept_interior_design;
+        concept_rock;
+		concept_comfortable_and_inviting_music;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+rocknroll_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 20;
+	=> nrel_average_bill: 30_to_40;
+	=> nrel_coordinates: 53.902136835663065_27.5546953556486;
+	=> nrel_type_of_food: 
+        sandwich;
+        snacks;
+	=> nrel_type_of_drink: 
+		coffee;
+        whiskey;
+        coctail;
+        tincture;
+        vodka;
+        beer;
+		tea;;

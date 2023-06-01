@@ -1,0 +1,71 @@
+tochka_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар "Точка"] (* <- lang_ru;; *);
+	[Tochka bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар "Точка"] (* <- lang_ru;; *);
+	[Tochka bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/tochka_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_tochka_bar (*
+	-> rrel_key_sc_element: tochka_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Tochka - одно из лучших заведений с крафтовым пивом и современной атмосферой в Минске на станции метро Спортивная.] (* <- lang_ru;; *);;
+		-> [Tochka - one of the best establishments with craft beer and a modern atmosphere in Minsk at the Sportivnaya metro station.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар "Точка")] (* <- lang_ru;; *);
+		[Def. (Tochka bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		tochka_bar;
+		minsk;
+		belarus;
+		concept_bar;
+		concept_modern_atmosphere;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_craft_beer;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_interior_design;
+		concept_comfortable_and_inviting_ambiance;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+tochka_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 30;
+	=> nrel_average_bill: 20_to_30;
+	=> nrel_coordinates: 53.90672414371426_27.480545638624065;
+	=> nrel_type_of_food: 
+        burgers;
+        bread;
+        steaks;
+	=> nrel_type_of_drink: 
+		coffee;
+        whiskey;
+        coctail;
+        vodka;
+        beer;
+		tea;;

@@ -1,0 +1,39 @@
+
+sc_node_struct->section_subject_domain_of_history_guide;;
+
+
+    section_subject_domain_of_history_guide=>nrel_main_idtf:
+        [Раздел. Предметная область интеллектуального гида]
+        (*<-lang_ru;;*);;
+
+    section_subject_domain_of_history_guide=>nrel_main_idtf:
+        [Section. Subject domain of history guide]
+        (*<-lang_en;;*);;
+
+section_subject_domain_of_history_guide<=nrel_section_decomposition:
+{
+      section_subject_domain_of_cinemas;
+      section_subject_domain_of_food_establishments;
+      section_subject_domain_of_museums;
+      section_subject_domain_of_history_guide;
+      section_subject_domain_of_cinemas;
+      section_subject_domain_of_clubs;
+      section_subject_domain_of_park;
+      section_subject_domain_of_mall;
+      section_subject_domain_of_theaters
+};; 
+
+section_subject_domain_of_history_guide->rrel_key_sc_element:
+     subject_domain_of_history_guide;;
+
+
+subject_domain_of_history_guide=>nrel_main_idtf:
+     [Предметная область интеллектуального гида]
+     (*<-lang_ru;;*);;
+     
+subject_domain_of_history_guide=>nrel_main_idtf:
+     [Subject domain of history guide]
+     (*<-lang_en;;*);;
+
+subject_domain_of_history_guide->rrel_maximum_studied_object_class:
+        concept_intelligent_guide;;

@@ -1,0 +1,81 @@
+elementum_bar
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Бар Elementum] (* <- lang_ru;; *);
+	[Elementum bar] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Бар Elementum] (* <- lang_ru;; *);
+	[Elementum bar] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/elementum_bar.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_elementum_bar (*
+	-> rrel_key_sc_element:elementum_bar;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Elementum bar - современный бар-кальянная недалеко от кинотетра Победа на Немиге.] (* <- lang_ru;; *);;
+		-> [Elementum bar - a modern hookah bar near the Pobdea cinema on Nemiga.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Бар Elementum)] (* <- lang_ru;; *);
+		[Def. (Elementum bar)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		Elementum_bar;
+		minsk;
+		belarus;
+		concept_bar;
+        concept_hookah;
+		concept_modern_atmosphere;
+		concept_eclectic_menu;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_hearty_breakfast_options;
+		concept_delicious_sandwiches;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_delicious_burgers;
+		concept_pastries;
+		concept_interior_design;
+		concept_rustic_and_contemporary_elements;
+		concept_comfortable_and_inviting_ambiance;
+		concept_flavorful_meal;
+		concept_vibrant_dining_experience;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+elementum_bar
+	=> nrel_food_establishment_type: bar;
+	=> nrel_age_restictions: 15_plus;	
+	=> nrel_capacity: 40;
+	=> nrel_average_bill: 20_to_30;
+	=> nrel_coordinates: 53.900752414430755_27.55463352333635;
+	=> nrel_type_of_food: 
+		sandwich;
+        burgers;
+        steaks;
+        pasta;
+	=> nrel_type_of_drink: 
+		coffee;
+        wine;
+        liquor;
+        whiskey;
+        coctail;
+        vodka;
+        beer;
+		tea;;

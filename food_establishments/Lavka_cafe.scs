@@ -1,0 +1,79 @@
+lavka_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "Lavka"] (* <- lang_ru;; *);
+	[Lavka cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "Lavka"] (* <- lang_ru;; *);
+	[Lavka cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/lavka_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_lavka_cafe (*
+	-> rrel_key_sc_element: lavka_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "Lavka" - это модное и стильное заведение, расположенное в Минске, Беларусь. Кафе славится своей современной атмосферой, эклектичным меню и акцентом на использование свежих, местных ингредиентов. В кафе "Lavka" предлагается разнообразие блюд, чтобы удовлетворить разные вкусы и предпочтения в питании. От сытных завтраков до вкусных бутербродов, салатов и основных блюд, здесь найдется что-то для каждого. Кафе гордится своим специализированным кофе, предлагая разнообразие напитков на основе эспрессо, а также выбор цельных листьев чая и освежающих напитков. Кафе "Lavka" также популярно своими восхитительными десертами и выпечкой, что делает его идеальным местом для наслаждения сладким угощением. Интерьер кафе продуманно оформлен, сочетая в себе рустические и современные элементы, чтобы создать комфортную и гостеприимную атмосферу. Будь то встреча с друзьями, неформальное собрание, поиск уютного места для работы или учебы или просто желание попробовать вкусное блюдо, кафе "Lavka" предлагает яркий и приятный кулинарный опыт.] (* <- lang_ru;; *);;
+		-> [Lavka cafe is a trendy and stylish café located in Minsk, Belarus. The café is known for its modern atmosphere, eclectic menu, and emphasis on using fresh, locally sourced ingredients. Lavka cafe offers a diverse range of dishes to cater to various tastes and dietary preferences. From hearty breakfast options to delicious sandwiches, salads, and main courses, there is something for everyone. The café takes pride in its specialty coffee, offering a variety of espresso-based drinks, as well as a selection of loose-leaf teas and refreshing beverages. Lavka cafe is also popular for its delectable desserts and pastries, making it a perfect spot for indulging in a sweet treat. The interior of the café is thoughtfully designed, combining rustic and contemporary elements to create a comfortable and inviting ambiance. Whether you're meeting friends for a casual gathering, looking for a cozy place to work or study, or simply craving a flavorful meal, Lavka cafe provides a vibrant and enjoyable dining experience.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "Lavka")] (* <- lang_ru;; *);
+		[Def. (Lavka cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		lavka_cafe;
+		minsk;
+		belarus;
+		concept_trendy_and_stylish_cafe;
+		concept_modern_atmosphere;
+		concept_eclectic_menu;
+		concept_fresh_locally_sourced_ingredients;
+		concept_diverse_range_of_dishes;
+		concept_hearty_breakfast_options;
+		concept_delicious_sandwiches;
+		concept_salads;
+		concept_main_courses;
+		concept_specialty_coffee;
+		concept_espresso_based_drinks;
+		concept_loose_leaf_teas;
+		concept_refreshing_beverages;
+		concept_delectable_desserts;
+		concept_pastries;
+		concept_interior_design;
+		concept_rustic_and_contemporary_elements;
+		concept_comfortable_and_inviting_ambiance;
+		concept_casual_gathering;
+		concept_cozy_place_to_work_or_study;
+		concept_flavorful_meal;
+		concept_vibrant_dining_experience;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+lavka_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;	
+	=> nrel_capacity: 10_plus;
+	=> nrel_average_bill: 10_to_20;
+	=> nrel_coordinates: 53.889970_27.574810;
+	=> nrel_type_of_food: 
+		fast_food;
+		sandwich;
+	=> nrel_type_of_drink: 
+		coffee;
+		tea;;

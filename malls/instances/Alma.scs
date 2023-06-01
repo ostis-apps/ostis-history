@@ -1,0 +1,108 @@
+
+ALMA_moll
+=> nrel_main_idtf:
+	[ТЦ АЛМИ г. Минск] (* <- lang_ru;; *);
+	[Shopping center ALMA Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_ALMA_moll (*
+	-> rrel_key_sc_element: ALMA_moll;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [торговый центр на пр-те Дзержинского, 91, расположенный рядом со студенческой деревней, работает круглосуточно и полностью адаптирован для своей молодежной аудитории.] (* <- lang_ru;; *);;
+		-> [the shopping center at 91 Dzerzhinsky Avenue, located next to the student village, operates around the clock and is fully adapted to its youth audience.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ТЦ АЛМИ г. Минск)] (* <- lang_ru;; *);
+		[Def. (Shopping center ALMA Minsk)] (* <- lang_en;; *);;
+		
+	=> nrel_using_constants: {
+		concept_department_store;
+        concept_mall;
+        nrel_place;
+        nrel_shops_inside;
+        nrel_number_of_floors;
+        nrel_street;
+        nrel_district;
+		nrel_wifi;
+        nrel_metro
+		};;
+*);;
+
+sc_node_class ->
+	concept_mall;
+	concept_size;
+	concept_metro_station;
+	concept_address_in_Minsk;
+	concept_shop;
+	concept_lingerie_store;
+	concept_shoe_store;
+	concept_grocery_store;
+	concept_cosmetics_store;
+	concept_price;;
+
+
+sc_node_norole_relation ->
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_estimated_duration_of_the_walk;
+	nrel_wifi;
+	nrel_number_of_floors;
+	nrel_working_hours;
+	nrel_main_object;;
+
+concept_mall->concept_small_mall;;
+
+//описание парка
+concept_small_mall->ALMA_moll(*
+	=>nrel_district:Moskovsky_district(*
+	<-concept_district_of_Minsk;;
+	*);;
+
+	=>nrel_metro_station:Petrovshchina(*
+		<-concept_metro_station;;
+		*);;
+	
+	//количество этажей
+	=>nrel_number_of_floors:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:2;;
+		*);;
+
+	//есть вайфай?
+	=>nrel_wifi:yes;;
+
+	=>nrel_size:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:7731_m;;
+	*);;
+
+	=>nrel_shops_inside:{
+		Mark_Formel;
+		kari;
+		Alma;
+		Cosmo
+	};;
+
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+
+	//улица
+	=>nrel_street:
+	{
+		Dzerzhinsky_Ave.
+	};;
+
+	=>nrel_place:...(*
+		<-concept_address_in_Minsk(*<-sc_node_class;;*);;
+		=>Dzerzhinsky_Ave._91;;
+	*);;
+*);;
+
+Mark_Formel<-concept_lingerie_store;;
+kari<-concept_shoe_store;;
+Alma<-concept_grocery_store;;
+Cosmo<-concept_cosmetics_store;;

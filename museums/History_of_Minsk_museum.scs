@@ -1,0 +1,70 @@
+history_of_minsk_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей истории Минска] (* <- lang_ru;; *);
+	[History of Minsk Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей истории Минска] (* <- lang_ru;; *);
+	[History of Minsk Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/history_of_minsk_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_history_of_minsk_museum (*
+	-> rrel_key_sc_element: history_of_minsk_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей истории Минска - это музей, расположенный в историческом центре Минска, Беларусь. Он был открыт в 2013 году и представляет собой уникальную экспозицию, посвященную истории города Минска. В музее представлены экспонаты, отображающие жизнь и быт минчан в разные исторические периоды, а также историю архитектуры города. В экспозиции также присутствуют макеты и интерактивные экспонаты, позволяющие посетителям более детально познакомиться с историей Минска. Музей проводит экскурсии для взрослых и детей, а также предлагает различные образовательные программы и мероприятия.] (* <- lang_ru;; *);;
+		-> [History of Minsk Museum is a museum located in the historical center of Minsk, Belarus. It was opened in 2013 and represents a unique exposition dedicated to the history of the city of Minsk. The museum features exhibits reflecting the life and customs of the people of Minsk in different historical periods, as well as the history of the city's architecture. The exposition also includes models and interactive exhibits that allow visitors to become more familiar with the history of Minsk. The museum conducts tours for adults and children, as well as offers various educational programs and events.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей истории Минска)] (* <- lang_ru;; *);
+		[Def. (History of Minsk Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		history_of_minsk_museum;
+		concept_location;
+		concept_historical_center;
+		minsk;
+		belarus;
+		concept_exposition;
+		concept_history;
+		concept_city_life;
+		concept_city_customs;
+		concept_architecture;
+		concept_models;
+		concept_interactive_exhibits;
+		concept_visitors;
+		concept_tours;
+		concept_adults;
+		concept_children;
+		concept_educational_programs;
+		concept_events;
+		nrel_located_in;
+		nrel_represents;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_includes;
+		nrel_allows_visitors_to_become_familiar_with;
+		nrel_conducts;
+		nrel_offers
+	};;
+*);;
+
+history_of_minsk_museum
+	=> nrel_museum_type: history_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: not_specified;
+	=> nrel_coordinates: 53.903943_27.553533;
+	=> nrel_age_restictions: 0_plus;;

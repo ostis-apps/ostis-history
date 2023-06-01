@@ -1,0 +1,55 @@
+concept_historic_district
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Исторический район] (* <- lang_ru;; *);
+	[historic_district] (* <- lang_en;; *);;
+
+definition -> definition_of_historic_district (*
+	-> rrel_key_sc_element: concept_historic_district;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Исторический район - территория в пределах существующего населённого пункта, на которой расположены здания и сооружения, имеющие историческую, историко-археологическую, архитектурную и иную культурную ценность, а также местность где расположены эти населённые пункты в краях (странах, регионах) и государствах.] (* <- lang_ru;; *);;
+		-> [Historical district is the territory within the boundaries of an existing settlement on which buildings and structures of historical, historical-archaeological, architectural and other cultural value are located, as well as the area where these settlements are located in the territories (countries, regions) and states.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Исторический район)] (* <- lang_ru;; *);
+		[Def. (Historic district)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_territory;
+		concept_entartaiment;
+		concept_history;
+		concept_culture;
+		concept_streets;
+		concept_historic_district;
+		concept_architecture;
+		nrel_walk;
+		nrel_view
+	};;
+*);;
+
+statement -> statement_of_historic_district (*
+	-> rrel_key_sc_element: concept_historic_district;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Исторические районы почти всегда являются духовным, культурным и географиским центром города.] (* <- lang_ru;; *);;
+		-> [Historic districts are almost always the spiritual, cultural and geographical center of the city.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О историческом районе)] (* <- lang_ru;; *);
+		[Stat. (About historic district)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_territory;
+		concept_city;
+		concept_entartaiment;
+		concept_history;
+		concept_culture;
+		concept_streets;
+		concept_center;
+		nrel_walk;
+		nrel_view
+	};;
+*);;

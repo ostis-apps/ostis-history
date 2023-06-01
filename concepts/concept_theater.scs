@@ -1,0 +1,58 @@
+concept_theater
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Театр] (* <- lang_ru;; *);
+	[theater] (* <- lang_en;; *);;
+
+definition -> definition_of_movie_theater (*
+	-> rrel_key_sc_element: concept_theater;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Театр - зрелищный вид искусства, представляющий собой синтез различных искусств (литературы, музыки, хореографии, вокала, изобразительного искусства и других) и обладающий собственной спецификой: отражение действительности, конфликтов, характеров, а также их трактовка и оценка, утверждение тех или иных идей здесь происходит посредством драматического действия, главным носителем которого является актёр.] (* <- lang_ru;; *);;
+		-> [theater is a spectacular art form, which is a synthesis of various arts (literature, music, choreography, vocals, fine arts, and others) and has its own specifics: a reflection of reality, conflicts, characters, as well as their interpretation and evaluation, the approval of certain ideas here occurs through dramatic action, the main carrier of which is the actor.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Театр)] (* <- lang_ru;; *);
+		[Def. (theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_organization;
+		concept_entartaiment;
+		concept_theater;
+        concept_scene;
+        concept_actor;
+        concept_play;
+		concept_art;
+        concept_viewer;
+		concept_theater;
+		concept_synthesis;
+		nrel_watch;
+        nrel_play;
+        nrel_tell;
+		nrel_show
+	};;
+*);;
+
+statement -> statement_of_movie_theater (*
+	-> rrel_key_sc_element: concept_theater;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Здания для театра - архитектурное сооружение, предназначенное для проведения театрализованных действий, музыкальных концертов или иных видов представлений.] (* <- lang_ru;; *);;
+		-> [Building for theater is an architectural structure intended for theatrical performances, musical concerts or other types of performances.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О театре)] (* <- lang_ru;; *);
+		[Stat. (About theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_organization;
+		concept_building;
+		concept_theater;
+		concept_concerts;
+        concept_architecture;
+		concept_perfomance;
+		nrel_perform
+	};;
+*);;

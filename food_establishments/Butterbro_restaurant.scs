@@ -1,0 +1,95 @@
+butterbro_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Butterbro"] (* <- lang_ru;; *);
+	[Butterbro restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Butterbro"] (* <- lang_ru;; *);
+	[Butterbro restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/butterbro_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_butterbro_restaurant (*
+	-> rrel_key_sc_element: butterbro_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Butterbro" - это уютное и привлекательное место общественного питания, расположенное в Минске, Беларусь. Название ресторана сочетает слова "масло" и "брат", символизируя теплую и уютную атмосферу, которую они стремятся создать. Butterbro предлагает превосходный кулинарный опыт с уклоном на европейскую и международную кухню. В меню представлены разнообразные блюда, приготовленные из высококачественных ингредиентов, включая аппетитные стейки, морепродукты, пасту и креативные вегетарианские варианты. Ресторан гордится своим домашним хлебом и уникальным ароматизированным маслом, которые являются идеальным дополнением к каждому блюду. Интерьер Butterbro выполнен в стиле с элементами рустик, создавая уютную и приветливую атмосферу. Гости могут расслабиться в уютных зонах для отдыха или насладиться приятным обедом на открытом воздухе в теплые месяцы. Благодаря внимательному обслуживанию, привлекательной атмосфере и вкусной еде, ресторан "Butterbro" - отличный выбор для незабываемого кулинарного опыта в Минске.] (* <- lang_ru;; *);;
+		-> [Butterbro restaurant is a cozy and charming dining spot located in Minsk, Belarus. The restaurant takes its name from the combination of "butter" and "brother," symbolizing the warm and comforting atmosphere they aim to create. Butterbro offers a delightful culinary experience with a focus on European and international cuisine. The menu features a variety of dishes made with high-quality ingredients, including mouthwatering steaks, seafood, pasta, and creative vegetarian options. The restaurant takes pride in its homemade bread and signature flavored butter, which are the perfect accompaniment to every meal. The interior of Butterbro is designed with rustic elements, creating a cozy and welcoming ambiance. Guests can relax in the intimate seating areas or enjoy outdoor dining during the warmer months. With its attentive service, inviting atmosphere, and delicious food, Butterbro restaurant is a great choice for a memorable dining experience in Minsk.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Butterbro")] (* <- lang_ru;; *);
+		[Def. (Butterbro restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		butterbro_restaurant;
+		minsk;
+		belarus;
+		concept_cozy_dining_spot;
+		concept_charming;
+		concept_combination_of_butter_and_brother;
+		concept_warm_and_comforting_atmosphere;
+		concept_delightful_culinary_experience;
+		concept_focus_on_European_and_international_cuisine;
+		concept_high_quality_ingredients;
+		concept_mouthwatering_steaks;
+		concept_seafood;
+		concept_pasta;
+		concept_creative_vegetarian_options;
+		concept_homemade_bread;
+		concept_signature_flavored_butter;
+		concept_perfect_accompaniment;
+		concept_rustic_elements;
+		concept_welcoming_ambiance;
+		concept_intimate_seating_areas;
+		concept_outdoor_dining;
+		concept_attentive_service;
+		concept_inviting_atmosphere;
+		concept_delicious_food;
+		concept_memorable_dining_experience;
+		nrel_located_in;
+		nrel_takes_its_name_from;
+		nrel_offers;
+		nrel_features;
+		nrel_made_with;
+		nrel_take_pride_in;
+		nrel_accompaniment_to;
+		nrel_design_with;
+		nrel_relax_in;
+		nrel_enjoy_outdoor_dining;
+		nrel_provides;
+		nrel_create;
+		nrel_make_it_a_great_choice_for
+	};;
+*);;
+
+butterbro_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: from_60;
+	=> nrel_coordinates: 53.927016_27.589365;
+	=> nrel_type_of_food: 
+		european;
+		russian;
+		mediterranean;
+		vegan;
+		breakfast;
+		lunch;
+		dinner;
+		brunch;
+	=> nrel_type_of_drink: 
+		cocktail;
+		alcohol;
+		wine;;

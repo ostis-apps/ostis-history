@@ -1,0 +1,76 @@
+history_of_belarusian_cinema_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей истории белорусского кино] (* <- lang_ru;; *);
+	[Museum of the History of Belarusian Cinema] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей истории белорусского кино] (* <- lang_ru;; *);
+	[Museum of the History of Belarusian Cinema] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/history_of_belarusian_cinema_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_history_of_belarusian_cinema_museum (*
+	-> rrel_key_sc_element: history_of_belarusian_cinema_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей истории белорусского кино - это музей, расположенный в городе Минск, Беларусь, посвященный истории и развитию киноиндустрии в Беларуси. В экспозиции музея представлены различные экспонаты, связанные с историей белорусского кино, такие как постеры, фотографии, реквизит и другие материалы, отображающие основные этапы развития кинематографа в Беларуси. Посетители музея могут ознакомиться с работами известных белорусских режиссеров, актеров и кинопродюсеров, а также поучаствовать в интерактивных мероприятиях, связанных с киноискусством. Музей регулярно проводит показы классических и новых фильмов белорусского кино, а также организует мастер-классы, лекции и другие мероприятия, связанные с киноиндустрией в Беларуси.] (* <- lang_ru;; *);;
+		-> [Museum of the History of Belarusian Cinema is a museum located in Minsk, Belarus, dedicated to the history and development of the film industry in Belarus. The museum's exposition features various exhibits related to the history of Belarusian cinema, such as posters, photographs, props, and other materials that reflect the main stages of the development of cinematography in Belarus. Visitors to the museum can learn about the works of famous Belarusian directors, actors, and film producers, as well as participate in interactive activities related to filmmaking. The museum regularly hosts screenings of classic and new Belarusian films, as well as organizes master classes, lectures, and other events related to the film industry in Belarus.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей истории белорусского кино)] (* <- lang_ru;; *);
+		[Def. (Museum of the History of Belarusian Cinema)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		history_of_belarusian_cinema_museum;
+		minsk;
+		belarus;
+		concept_film_industry;
+		concept_history_and_development_of_film_industry_in_Belarus;
+		concept_exposition;
+		concept_exhibits;
+		concept_posters;
+		concept_photographs;
+		concept_props;
+		concept_cinematography_in_belarus;
+		concept_famous_belarusian_directors;
+		concept_actors;
+		concept_film_producers;
+		concept_interactive_activities;
+		concept_filmmaking;
+		concept_screenings;
+		concept_classic_belarusian_films;
+		concept_new_belarusian_films;
+		concept_master_classes;
+		concept_lectures;
+		concept_events;
+		nrel_is_a_museum_located_in;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_related_to_history_of_belarusian_cinema;
+		nrel_reflects_main_stages_of_development;
+		nrel_learn_about;
+		nrel_participate_in_interactive_activities;
+		nrel_hosts;
+		nrel_organizes;
+		nrel_related_to_film_industry_in_belarus
+	};;
+*);;
+
+history_of_belarusian_cinema_museum
+	=> nrel_museum_type: film_history_museum;
+	=> nrel_capacity: 100_plus;
+	=> nrel_ticket_price: 3_to_15;
+	=> nrel_coordinates: 53.897266_27.548617;
+	=> nrel_age_restictions: 0_plus;;

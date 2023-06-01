@@ -1,0 +1,22 @@
+concept_building
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Здание] (* <- lang_ru;; *);
+	[Bulding] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_building (*
+	-> rrel_key_sc_element: concept_building;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Здание -  результат строительства, представляющий собой объемное надземное строительное сооружение.] (* <- lang_ru;; *);;
+		-> [Building is the result of construction, which is a three-dimensional above-ground building structure.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Здание)] (* <- lang_ru;; *);
+		[Def. (Building)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_architecture
+	};;
+*);;

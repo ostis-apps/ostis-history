@@ -1,0 +1,67 @@
+open_ocean_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей Открытого океана] (* <- lang_ru;; *);
+	[Open Ocean Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей Открытого океана] (* <- lang_ru;; *);
+	[Open Ocean Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/open_ocean_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_open_ocean_museum (*
+	-> rrel_key_sc_element: open_ocean_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей Открытого океана - это музей, посвященный изучению и исследованию открытого океана и его разнообразной морской жизни. Он демонстрирует экспонаты, показывающие физические и биологические характеристики океана, а также влияние человеческой деятельности на морскую среду. Музей также предоставляет образовательные программы и мероприятия для посетителей всех возрастов.] (* <- lang_ru;; *);;
+		-> [Open Ocean Museum is a museum dedicated to the exploration and study of the open ocean and its diverse marine life. It features exhibits showcasing the ocean's physical and biological characteristics, as well as the human impact on the ocean environment. The museum also provides educational programs and activities for visitors of all ages.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей Открытого океана)] (* <- lang_ru;; *);
+		[Def. (Open Ocean Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		open_ocean_museum;
+		concept_exploration;
+		concept_study;
+		concept_open_ocean;
+		concept_marine_life;
+		concept_exhibit;
+		concept_physical_characteristics;
+		concept_biological_characteristics;
+		concept_human_impact;
+		concept_environment;
+		concept_education;
+		concept_program;
+		concept_activity;
+		concept_visitor;
+		nrel_dedicated_to;
+		nrel_features;
+		nrel_showcasing;
+		nrel_physical_characteristics_of;
+		nrel_biological_characteristics_of;
+		nrel_human_impact_on;
+		nrel_provides;
+		nrel_for;
+		nrel_of_all_ages
+	};;
+*);;
+
+open_ocean_museum
+	=> nrel_museum_type: ocean_museum;
+	=> nrel_capacity: 30_plus;
+	=> nrel_ticket_price: 6_to_8;
+	=> nrel_coordinates: 53.876851_27.532769;
+	=> nrel_age_restictions: 0_plus;;

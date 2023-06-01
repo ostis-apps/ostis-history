@@ -1,0 +1,62 @@
+alivaria_brewery_museum
+<- concept_museum;
+=> nrel_main_idtf:
+	[Музей пивоварения "Аливария"] (* <- lang_ru;; *);
+	[Alivaria Brewery Museum] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Музей пивоварения "Аливария"] (* <- lang_ru;; *);
+	[Alivaria Brewery Museum] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/alivaria_brewery_museum.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_alivaria_brewery_museum (*
+	-> rrel_key_sc_element: alivaria_brewery_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей пивоварения "Аливария" - это музей пивоварения, расположенный в Минске, Беларусь. Он был открыт в 2005 году на базе одноименной пивоваренной компании и представляет собой уникальную экспозицию, посвященную истории пивоварения в Беларуси. В музее посетители могут ознакомиться с процессом изготовления пива, познакомиться с историей компании "Аливария" и узнать о различных сортах пива. Также музей предлагает дегустацию пива и экскурсии по пивоваренному заводу.] (* <- lang_ru;; *);;
+		-> [Alivaria Brewery Museum is a brewery museum located in Minsk, Belarus. It was opened in 2005 on the basis of the Alivaria brewery company and represents a unique exposition dedicated to the history of brewing in Belarus. Visitors to the museum can learn about the process of brewing beer, get acquainted with the history of the Alivaria company and learn about different types of beer. The museum also offers beer tastings and tours of the brewery.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей пивоварения "Аливария")] (* <- lang_ru;; *);
+		[Def. (Alivaria Brewery Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		alivaria_brewery_museum;
+		minsk;
+		belarus;
+		concept_brewing_history;
+		concept_exposition;
+		alivaria_company;
+		concept_beer_types;
+		concept_beer_tastings;
+		concept_brewery_tours;
+		nrel_located_in;
+		nrel_opened_on_the_basis_of;
+		nrel_represents;
+		nrel_dedicated_to;
+		nrel_includes;
+		nrel_gets_acquainted_with;
+		nrel_offers;
+		nrel_provides_tastings;
+		nrel_provides_tours
+	};;
+*);;
+
+alivaria_brewery_museum
+	=> nrel_museum_type: beer_museum;
+	=> nrel_capacity: 100;
+	=> nrel_ticket_price: 20_to_33;
+	=> nrel_coordinates: 53.915170_27.561983;
+	=> nrel_age_restictions: 18_plus;;

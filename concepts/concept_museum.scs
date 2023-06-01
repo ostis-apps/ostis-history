@@ -1,0 +1,106 @@
+concept_museum
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Музей] (* <- lang_ru;; *);
+	[Museum] (* <- lang_en;; *);;
+
+definition -> definition_of_museum (*
+	-> rrel_key_sc_element: concept_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей - это учреждение, предназначенное для сбора, сохранения, исследования, выставления и популяризации материальных и духовных ценностей человечества. В музее могут храниться различные предметы, такие как артефакты и искусство, которые имеют историческую, научную, художественную или культурную ценность. Кроме того, музеи могут оказывать образовательную и культурную деятельность, предоставляя посетителям возможность узнать больше о прошлом и настоящем человечества, расширить свои знания и развить эстетическое восприятие.] (* <- lang_ru;; *);;
+		-> [A museum is an institution that is dedicated to the collection, preservation, research, exhibition, and promotion of material and spiritual treasures of humanity. Museums can house various objects such as artifacts and art that have historical, scientific, artistic, or cultural significance. Additionally, museums can provide educational and cultural activities, giving visitors the opportunity to learn more about the past and present of humanity, expand their knowledge, and develop aesthetic appreciation.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Музей)] (* <- lang_ru;; *);
+		[Def. (Museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		concept_institution;
+		concept_collection;
+		concept_preservation;
+		concept_research;
+		concept_exhibition;
+		concept_promotion;
+		concept_humanity;
+		concept_artifact;
+		concept_art;
+		concept_historical_significance;
+		concept_scientific_significance;
+		concept_artistic_significance;
+		concept_cultural_significance;
+		concept_educational_activities;
+		concept_cultural_activities;
+		concept_visitor;
+		concept_knowledge;
+		concept_aesthetic_appreciation;
+		nrel_is_dedicated_to;
+		nrel_houses;
+		nrel_provides_activities;
+		nrel_gives_opportunity_to;
+		nrel_expands_knowledge;
+		nrel_develops_appreciation;
+		nrel_can_have;
+		nrel_can_include;
+		nrel_related_to
+	};;
+*);;
+
+statement -> statement_of_museum (*
+	-> rrel_key_sc_element: concept_museum;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Музей - это культурное учреждение, которое играет важную роль в сохранении и популяризации истории, культуры и искусства, а также предоставляет возможность образования и развития для людей разных возрастов и интересов.] (* <- lang_ru;; *);;
+		-> [A museum is a cultural institution that plays an important role in preserving and promoting history, culture, and art, as well as providing opportunities for education and development for people of different ages and interests.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О музее)] (* <- lang_ru;; *);
+		[Stat. (About museum)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_museum;
+		concept_institution;
+		concept_collection;
+		concept_preservation;
+		concept_research;
+		concept_exhibition;
+		concept_promotion;
+		concept_material_treasures;
+		concept_spiritual_treasures;
+		concept_humanity;
+		concept_artifacts;
+		concept_art;
+		concept_historical_significance;
+		concept_scientific_significance;
+		concept_artistic_significance;
+		concept_cultural_significance;
+		concept_educational_activities;
+		concept_cultural_activities;
+		concept_past;
+		concept_present;
+		concept_human_development;
+		concept_aesthetic_appreciation;
+		nrel_houses;
+		nrel_can_include;
+		nrel_provides;
+		nrel_gives_opportunity;
+		nrel_expands_knowledge;
+		nrel_develops_appreciation;
+		nrel_plays_role_in;
+		nrel_preserves;
+		nrel_promotes;
+		nrel_contributes_to;
+		nrel_educates;
+		nrel_serves;
+		nrel_is_dedicated_to;
+		nrel_features;
+		nrel_is_important_for;
+		nrel_provides_opportunities_for;
+		nrel_promotes_history;
+		nrel_promotes_culture;
+		nrel_promotes_art
+	};;
+*);;

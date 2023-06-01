@@ -1,0 +1,141 @@
+
+central_botanical_garden
+=> nrel_main_idtf:
+	[Центральный Ботанический Сад] (* <- lang_ru;; *);
+	[Central Botanical Garden] (* <- lang_en;; *);
+	[Цэнтральны Батанiчны Сад] (* <- lang_by;; *);;
+definition -> definition_of_central_botanical_garden (*
+	-> rrel_key_sc_element: central_botanical_garden;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Центральый Ботанический Сад — одно из старейших ботанических учреждений г.Минска.] (* <- lang_ru;; *);;
+		-> [The Central Botanical Garden is one of the oldest botanical institutions in Minsk.] (* <- lang_en;; *);;
+		-> [Цэнтральны Батанічны Сад - адна з найстарэйшых батанічных устаноў г.Мінска.] (* <- lang_by;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Центральный Ботанический Сад)] (* <- lang_ru;; *);
+		[Def. (Central Botanical Garden)] (* <- lang_en;; *);
+		[Выз. (Цэнтральны Батанiчны Сад)](* <- lang_by;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monument;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История Центрального Ботанического Сада]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Организован в 1932 году по решению Совета народных комиссаров БССР. Это самый крупный в стране центр по сохранению биологического 
+			разнообразия живых растений, ведущее научное учреждение в области интродукции, акклиматизации, физиологии, биохимии и экологии растений, охраны окружающ
+			ей среды.  ](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_greenhouse;
+	concept_ecological_zone;
+	concept_hour;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_ecological_zone;;
+//описание парка
+concept_ecological_zone->central_botanical_garden(*
+	
+	=>nrel_district:pervomaisky_district(*
+	<-concept_district_of_Minsk;;
+	*);;//район
+	
+	=>nrel_visit_price:...(*
+		<-concept_price_in_rub;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:5;;
+		*);;
+	*);;
+	
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1932;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		{
+		exposition_greenhouse
+		};;
+
+	//размер
+	=>nrel_size:...(*
+		<-concept_size_in_ha;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:93_ha;;
+		*);;
+	*);;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53o55_N._sh._27o32_e_d;;
+	*);;
+	
+	//время работы
+	=>nrel_working_hours:start(*
+		<-concept_time;;
+		=>nrel_main_idtf:10_am;;
+	*);;
+
+	=>nrel_working_hours:finish(*
+		<-concept_time;;
+		=>nrel_main_idtf:6_pm;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_hours;;
+		=>nrel_main_idtf:3;;
+	*);;
+*);;
+
+exposition_greenhouse<-concept_greenhouse;;

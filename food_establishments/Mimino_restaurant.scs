@@ -1,0 +1,86 @@
+mimino_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Mimino"] (* <- lang_ru;; *);
+	[Mimino restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Mimino"] (* <- lang_ru;; *);
+	[Mimino restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/mimino_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_mimino_restaurant (*
+	-> rrel_key_sc_element: mimino_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Mimino" - это яркое заведение общественного питания, расположенное в Минске, Беларусь. Вдохновленный знаменитым советским комедийным фильмом, ресторан воплощает в себе дух грузинской кухни и культуры. Меню в ресторане "Mimino" предлагает разнообразие традиционных грузинских блюд, известных своими насыщенными вкусами и уникальными кулинарными техниками. Гости могут насладиться изысканными вкусами хачапури, хинкали и различных видов жареного мяса, сопровождаемых ароматными грузинскими винами. Интерьер ресторана оформлен в грузинских мотивах, создавая теплую и гостеприимную атмосферу, которая погружает посетителей в очарование Грузии. С живой атмосферой, вкусной кухней и гостеприимным обслуживанием ресторан "Mimino" предлагает незабываемый опыт обеда как для ценителей грузинской кухни, так и для тех, кто хочет познакомиться с новыми вкусами.] (* <- lang_ru;; *);;
+		-> [Mimino restaurant is a vibrant dining destination located in Minsk, Belarus. Inspired by the famous Soviet comedy film, the restaurant brings the spirit of Georgian cuisine and culture to life. The menu at Mimino restaurant features a variety of traditional Georgian dishes, known for their rich flavors and unique culinary techniques. Guests can savor the mouthwatering flavors of khachapuri, khinkali, and various grilled meats, accompanied by fragrant Georgian wines. The interior of the restaurant is designed with Georgian motifs, creating a warm and welcoming atmosphere that immerses diners in the charm of Georgia. With its lively ambiance, delicious cuisine, and hospitable service, Mimino restaurant offers a memorable dining experience for both Georgian food enthusiasts and those looking to explore new flavors.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Mimino")] (* <- lang_ru;; *);
+		[Def. (Mimino restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		mimino_restaurant;
+		minsk;
+		belarus;
+		concept_dining_destination;
+		concept_vibrant_ambiance;
+		concept_georgian_cuisine;
+		concept_georgian_culture;
+		concept_menu;
+		concept_traditional_dishes;
+		concept_rich_flavors;
+		concept_culinary_techniques;
+		concept_khachapuri;
+		concept_khinkali;
+		concept_grilled_meats;
+		concept_georgian_wines;
+		concept_interior_design;
+		concept_georgian_motifs;
+		concept_warm_atmosphere;
+		concept_welcoming_atmosphere;
+		concept_immersion;
+		concept_lively_ambiance;
+		concept_delicious_cuisine;
+		concept_hospitable_service;
+		concept_memorable_dining_experience;
+		concept_georgian_food_enthusiasts;
+		concept_exploring_new_flavors;
+		nrel_located_in;
+		nrel_inspired_by;
+		nrel_brings;
+		nrel_features;
+		nrel_known_for;
+		nrel_accompanied_by;
+		nrel_designed_with;
+		nrel_creating;
+		nrel_offers;
+		nrel_offers_a_memorable_dining_experience
+	};;
+*);;
+
+mimino_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 48_to_72;
+	=> nrel_coordinates: 53.932412_27.560654;
+	=> nrel_type_of_food: 
+		lunch;
+		dinner;
+	=> nrel_type_of_drink: 
+		alcohol;
+		wine;;

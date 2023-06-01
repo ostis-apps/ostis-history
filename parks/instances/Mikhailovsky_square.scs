@@ -1,0 +1,137 @@
+Mikhailovsky_square
+=> nrel_main_idtf:
+	[Михайловский сквер] (* <- lang_ru;; *);
+	[Mikhailovsky square] (* <- lang_en;; *);
+	[Міхайлаўскі сквер] (* <- lang_by;; *);;
+definition -> definition_of_Mikhailovsky_square (*
+	-> rrel_key_sc_element: Mikhailovsky_square;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [достопримечательность Минска, находящаяся на пересечении четырех улиц – Ленинградской, Свердлова, Кирова и Михайловского переулка. Он расположен в Октябрьском районе нашей столицы, радует не только гостей города Минска, но и его коренных жителей.] (* <- lang_ru;; *);;
+		-> [landmark of Minsk, located at the intersection of four streets - Leningradskaya, Sverdlov, Kirov and Mikhailovsky lane. It is located in the Oktyabrsky district of our capital, it pleases not only the guests of the city of Minsk, but also its indigenous people.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Михайловский сквер)] (* <- lang_ru;; *);
+		[Def. (Mikhailovsky square)] (* <- lang_en;; *);
+		[Выз. (Міхайлаўскі сквер)](* <- lang_by;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		nrel_street;
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monument;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История Михайловсого сквера]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Сквер, о котором идет речь в нашей статье, заложен почти сто лет назад. Впервые о нем заговорили еще в 1925 году, к этому же году и относится основание городской достопримечательности. Тогда сквер возле Виленской ярмарки еще не имел собственного названия. И только начиная с 1934 года он обрел собственное имя – Михайловский сквер, под которым достопримечательность и известна современникам.](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_greenhouse;
+	concept_square;
+	concept_hour;
+	concept_street_in_Minsk;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_street;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_square;;
+//описание парка
+concept_square->Mikhailovsky_square(*
+	
+	=>nrel_district:central_district(*
+	<-concept_district_of_Minsk;;
+	*);;//район
+	
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1976;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		{
+		Drozdy_reservoir;
+		Arena_City;
+		Svisloch
+		};;
+
+	//размер
+	=>nrel_size:...(*
+		<-concept_size_in_km2;;
+		=>...(*
+			<-concept_number;;
+			=>nrel_main_idtf:2.1_km2;;
+		*);;
+	*);;
+
+	//улицы
+	=>nrel_street:
+	{
+		Leningrad;
+		Sverdlov;
+		Kirov
+	};;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53o56.51_N_sh._27o27.50_E_d.;;
+	*);;
+
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_hours;;
+		=>nrel_main_idtf:2;;
+	*);;
+*);;

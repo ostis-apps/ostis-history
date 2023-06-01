@@ -1,0 +1,59 @@
+shum_club
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Клуб SHUM] (* <- lang_ru;; *);
+	[SHUM club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб SHUM] (* <- lang_ru;; *);
+	  [SHUM club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/shum_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_shum_club (*
+	-> rrel_key_sc_element: shum_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб SHUM - караоке-клуб на улице Киселева с отличным выбором алкоголя и густой постсоветской атмосферой.] (* <- lang_ru;; *);;
+		-> [SHUM club - a karaoke club on Kiseleva Street with a distinct selection of alcohol and a thick post-Soviet atmosphere.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб SHUM)] (* <- lang_ru;; *);
+		[Def. (SHUM club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		shum_club;
+		minsk;
+		belarus;
+		concept_club;
+		concept_music;
+        concept_atmoshere:
+        concept_karaoke_club;
+		concept_interior_design;
+        concept_decent_alcohol;
+		concept_modern_music;
+        concept_DJ;
+		concept_live_perfomance;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+shum_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 150;
+	=> nrel_average_bill: 30_to_40;
+	=> nrel_coordinates: 53.912557801489484_27.569773984485007;;

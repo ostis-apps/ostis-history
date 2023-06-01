@@ -1,0 +1,87 @@
+fabriq_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Fabriq"] (* <- lang_ru;; *);
+	[Fabriq restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Fabriq"] (* <- lang_ru;; *);
+	[Fabriq restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/fabriq_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_fabriq_restaurant (*
+	-> rrel_key_sc_element: fabriq_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Fabriq" - это модное заведение общественного питания, расположенное в Минске, Беларусь. Своей индустриально-штучной атмосферой ресторан предлагает уникальный и современный опыт обеда. Меню в ресторане "Fabriq" вдохновлено как местной, так и международной кухнями, предлагая фьюжн вкусов и инновационные кулинарные творения. Блюда готовятся из свежих местных ингредиентов, а их подача является художественной и визуально привлекательной. Ресторан "Fabriq" стремится предоставить живую атмосферу, внимательное обслуживание и исключительные гастрономические удовольствия, что делает его популярным местом для любителей кулинарии и собраний в кругу друзей.] (* <- lang_ru;; *);;
+		-> [Fabriq restaurant is a trendy dining establishment located in Minsk, Belarus. With its industrial-chic ambiance, the restaurant offers a unique and contemporary dining experience. The menu at Fabriq restaurant is inspired by both local and international cuisines, featuring a fusion of flavors and innovative culinary creations. The dishes are prepared using fresh, locally sourced ingredients, and the presentation is artistic and visually appealing. Fabriq restaurant aims to provide a vibrant atmosphere, attentive service, and exceptional gastronomic delights, making it a popular destination for food lovers and social gatherings.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Fabriq")] (* <- lang_ru;; *);
+		[Def. (Fabriq restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		fabriq_restaurant;
+		minsk;
+		belarus;
+		concept_ambiance;
+		concept_dining_experience;
+		concept_menu;
+		concept_local_cuisine;
+		concept_international_cuisine;
+		concept_fusion_of_flavors;
+		concept_innovative_culinary_creations;
+		concept_fresh_ingredients;
+		concept_locally_sourced;
+		concept_presentation;
+		concept_vibrant_atmosphere;
+		concept_service;
+		concept_gastronomic_delights;
+		concept_popular_destination;
+		concept_food_lover;
+		concept_social_gathering;
+		nrel_located_in;
+		nrel_offers;
+		nrel_features;
+		nrel_inspired_by;
+		nrel_fusion_of;
+		nrel_prepared_using;
+		nrel_presented_artistically;
+		nrel_aims_to_provide;
+		nrel_makes_it_a_popular_destination
+	};;
+*);;
+
+fabriq_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 50_to_100;
+	=> nrel_coordinates: 53.904909_27.552291;
+	=> nrel_type_of_food: 
+		european;
+		italian;
+		pizza;
+		grill;
+		seafood;
+		dinner;
+		breakfast;
+	=> nrel_type_of_drink: 
+		tea;
+		coffee;
+		champagne;
+		alcohol;
+		cocktail;
+		wine;;

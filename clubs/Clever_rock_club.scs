@@ -1,0 +1,58 @@
+clever_rock_club
+<- concept_club;
+=> nrel_main_idtf:
+	[Клуб Clever Rock] (* <- lang_ru;; *);
+	[Clever Rock club] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Клуб Clever Rock] (* <- lang_ru;; *);
+	  [Clever Rock club] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/clever_rock_club.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_clever_rock_club (*
+	-> rrel_key_sc_element: clever_rock_club;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Клуб Clever Rock - клуб на улице Берсона, специализирющийся на живых рок-выступлениях и крафтовом пиве.] (* <- lang_ru;; *);;
+		-> [Clever Rock club - club on Burson street specializing in live rock performances and craft beer.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Клуб Clever Rock)] (* <- lang_ru;; *);
+		[Def. (Clever Rock club)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		clever_rock_club;
+		minsk;
+		belarus;
+		concept_club;
+		concept_music;
+		concept_good_service;
+        concept_atmoshere:
+        concept_karaoke_club;
+		concept_craft_beer;
+		concept_rock_music;
+		concept_live_perfomance;
+		nrel_offers;
+		nrel_provides;
+        nrel_dancing;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+clever_rock_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 100;
+	=> nrel_average_bill: 30_to_40;
+	=> nrel_coordinates: 53.897634485855995_27.54590316728765;;

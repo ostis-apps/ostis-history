@@ -1,0 +1,97 @@
+prime_time_cafe
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Кафе "Prime Time"] (* <- lang_ru;; *);
+	[Prime Time cafe] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кафе "Prime Time"] (* <- lang_ru;; *);
+	[Prime Time cafe] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/prime_time_cafe.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_prime_time_cafe (*
+	-> rrel_key_sc_element: prime_time_cafe;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кафе "Prime Time" - это стильное и модное заведение, расположенное в Минске, Беларусь. Кафе отражает концепцию нахождения в "прайм-тайме" своего дня, предоставляя приветливое пространство, где посетители могут расслабиться, общаться и наслаждаться вкусной едой и напитками. Меню кафе "Prime Time" предлагает разнообразные варианты, начиная от завтраков и до сытных обедов и изысканных десертов. Гости могут насладиться свежесваренным кофе, ароматными чаями, освежающими смузи и выбранным алкоголем. Кафе гордится использованием высококачественных ингредиентов, закупленных у местных поставщиков, что гарантирует приятный кулинарный опыт для каждого посетителя. Интерьер кафе "Prime Time" выполнен в современном и привлекательном стиле, с комфортными зонами отдыха и изысканным декором, создающим уютную атмосферу. Будь то встреча с друзьями для неформального разговора, работа на ноутбуке или просто расслабление с хорошей книгой, кафе "Prime Time" предоставляет идеальное место для любого случая.] (* <- lang_ru;; *);;
+		-> [Prime Time cafe is a stylish and trendy establishment located in Minsk, Belarus. The cafe embraces the concept of being in the "prime time" of one's day, providing a welcoming space for people to relax, socialize, and enjoy delicious food and beverages. The menu at Prime Time cafe offers a diverse range of options, from breakfast dishes to hearty lunches and delectable desserts. Guests can indulge in freshly brewed coffee, aromatic teas, refreshing smoothies, and a selection of alcoholic beverages. The cafe takes pride in using high-quality ingredients sourced from local suppliers, ensuring a delightful culinary experience for every visitor. The interior of Prime Time cafe is modern and inviting, with comfortable seating areas and tasteful decor that creates a cozy atmosphere. Whether it's meeting friends for a casual chat, working on a laptop, or simply unwinding with a good book, Prime Time cafe provides an ideal setting for any occasion.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кафе "Prime Time")] (* <- lang_ru;; *);
+		[Def. (Prime Time cafe)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		prime_time_cafe;
+		minsk;
+		belarus;
+		concept_stylish;
+		concept_trendy_establishment;
+		concept_embraces_concept_of_prime_time;
+		concept_welcoming_space;
+		concept_relax;
+		concept_socialize;
+		concept_delicious_food_and_beverages;
+		concept_diverse_range_of_options;
+		concept_breakfast_dishes;
+		concept_hearty_lunches;
+		concept_delectable_desserts;
+		concept_freshly_brewed_coffee;
+		concept_aromatic_teas;
+		concept_refreshing_smoothies;
+		concept_selection_of_alcoholic_beverages;
+		concept_high_quality_ingredients;
+		concept_local_suppliers;
+		concept_delightful_culinary_experience;
+		concept_interior_design;
+		concept_modern_and_inviting;
+		concept_comfortable_seating_areas;
+		concept_tasteful_decor;
+		concept_cozy_atmosphere;
+		concept_meeting_friends;
+		concept_casual_chat;
+		concept_working_on_laptop;
+		concept_unwinding_with_a_good_book;
+		concept_setting_for_any_occasion;
+		nrel_provides;
+		nrel_embraces_concept_of;
+		nrel_providing;
+		nrel_offers;
+		nrel_indulge_in;
+		nrel_takes_pride_in;
+		nrel_sourced_from;
+		nrel_ensuring;
+		nrel_created_with;
+		nrel_creates;
+		nrel_provides_setting_for
+	};;
+*);;
+
+prime_time_cafe
+	=> nrel_food_establishment_type: cafe;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 50_plus;
+	=> nrel_average_bill: 11_to_20;
+	=> nrel_coordinates: 53.926447_27.590390;
+	=> nrel_type_of_food: 
+		european;
+		eastern_european;
+		breakfast;
+		lunch;
+		dinner;
+		fast_food;
+	=> nrel_type_of_drink: 
+		coffee;
+		tea;
+		alcohol;;

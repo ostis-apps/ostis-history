@@ -1,0 +1,57 @@
+tsentralnyi_cinema
+<- concept_movie_theater;
+=> nrel_main_idtf:
+	[Кинотеатр "Центральный"] (* <- lang_ru;; *);
+	[Tsentralnyi movie theater] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Кинотеатр "Центральынй"] (* <- lang_ru;; *);
+	[Tsentralnyi movie theater] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/tsentralnyi_cinema.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_tsentralnyi_cinema (*
+	-> rrel_key_sc_element: tsentralnyi_cinema;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> ["Центральынй" - основанный в 1954 году кинотеатр на проспекте Независимости. Дважды реконструировался.] (* <- lang_ru;; *);;
+		-> [Tsentralnyi is a cinema founded in 1954 on Independence Avenue. Renovated twice.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Кинотеатр "Центральный")] (* <- lang_ru;; *);
+		[Def. (Tsentralnyi movie theater)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_movie_theater;
+		tsentralnyi_cinema;
+        concept_fresh_air;
+        concept_good_image_quality;
+		minsk;
+		tsentralnyi;
+        concept_multiplexor;
+		concept_soviet_architecture;
+		concept_low_cost;
+        concept_cinema;
+		nrel_offers;
+		nrel_provides;
+		nrel_combines;
+		nrel_creating
+	};;
+*);;
+
+tsentralnyi_cinema
+	=> nrel_capacity: 166;
+    => nrel_3D: no;
+	=> nrel_ticket_price: 15;
+    => nrel_number_of_halls : 1;
+	=> nrel_coordinates: 53.90550684049567_27.54245674841501;;

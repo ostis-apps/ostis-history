@@ -1,0 +1,128 @@
+Square_of_Edward_Voynilovich
+=> nrel_main_idtf:
+	[Сквер Эдварда Войниловича] (* <- lang_ru;; *);
+	[Square of Edward Voynilovich] (* <- lang_en;; *);;
+definition -> definition_of_Square_of_Edward_Voynilovich (*
+	-> rrel_key_sc_element: Square_of_Edward_Voynilovich;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Небольшой сквер за Красным костелом.] (* <- lang_ru;; *);;
+		-> [Small square behind the Red Church.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Сквер Эдварда Войниловича)] (* <- lang_ru;; *);
+		[Def. (Square of Edward Voynilovich)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_district; // район
+		nrel_center; //центер парка
+        nrel_size; // размеры
+		nrel_visit_price;//цена посещения
+		nrel_street;
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monument;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История сквера имени Эдварда Войниловича.]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[носит имя белорусского и польского общественного и политического деятеля конца XIX - начала XX века Эдварда Войниловича. Он трижды избирался в российскую Государственную Думу. В 1906 году — член Государственного Совета России от Минской губернии.
+			Ранняя смерть его детей, Елены и Симона, стала для него большой трагедией. В память о своих детях он решил соорудить на собственные деньги на тогдашней окраине Минска костёл. Строение костёла святых Симона и Елены в Минске (также известного как красного костёла) завершилось в 1910 году.](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_greenhouse;
+	concept_square;
+	concept_hour;
+	concept_street_in_Minsk;
+	concept_building_in_minsk;
+	concept_monument;
+	concept_minutes;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_visit_price;
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_street;
+	nrel_estimated_duration_of_the_walk;;
+
+concept_park->concept_square;;
+//описание парка
+concept_square->Square_of_Edward_Voynilovich(*
+	
+	=>nrel_district:moscow_district
+	(*
+		<-concept_district_of_Minsk;;
+	*);;//район
+	
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+
+	=>nrel_metro_station:
+		lenin_square(*<-concept_metro_station;;*);;
+	
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:1906;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		Red_church(*<-concept_church;;*);;
+
+	//улицы
+	=>nrel_street:
+		Sverdlov(*<-concept_street_in_Minsk;;*);;
+
+	
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_minutes;;
+		=>nrel_main_idtf:45;;
+	*);;
+
+	//центр парка
+	=>nrel_center:...(*
+		<-concept_coordinates;;
+		=>nrel_definition:53.89767040442315_27.54861067275351;;
+	*);;
+*);;

@@ -1,0 +1,88 @@
+partizan_restaurant
+<- concept_food_establishment;
+=> nrel_main_idtf:
+	[Ресторан "Partizan"] (* <- lang_ru;; *);
+	[Partizan restaurant] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+(*
+ <- illustration;;
+ => nrel_main_idtf:
+  	[Ресторан "Partizan"] (* <- lang_ru;; *);
+	[Partizan restaurant] (* <- lang_en;; *);;
+ <= nrel_sc_text_translation: ...
+ (*
+  -> rrel_example: "file://img/partizan_restaurant.png"
+  (*
+   => nrel_format: format_png;;
+  *);;
+ *);;
+*);;
+
+definition -> definition_of_partizan_restaurant (*
+	-> rrel_key_sc_element: partizan_restaurant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ресторан "Partizan" - это уникальное и атмосферное заведение общественного питания, расположенное в Минске, Беларусь. Ресторан отдает дань богатой истории и героическому духу партизан, которые сражались против оккупации во время Второй мировой войны. Меню в ресторане "Partizan" представляет собой сочетание традиционной белорусской и восточноевропейской кухни, включая сытные блюда и местные специальности. Гости могут насладиться ароматными супами, нежными мясными блюдами и разнообразием домашних десертов. Интерьер ресторана создан для создания погружающего опыта, с рустическим декором и историческими артефактами, которые рассказывают историю партизанского движения. Атмосфера теплая и гостеприимная, вызывающая чувство ностальгии и патриотизма. Благодаря своей вкусной еде, историческому значению и гостеприимной атмосфере, ресторан "Partizan" предлагает незабываемый опыт обеда, который почитает мужество и стойкость партизан.] (* <- lang_ru;; *);;
+		-> [Partizan restaurant is a unique and atmospheric dining establishment located in Minsk, Belarus. The restaurant pays tribute to the rich history and heroic spirit of the Partisans, who fought against the occupation during World War II. The menu at Partizan restaurant showcases a blend of traditional Belarusian and Eastern European cuisine, featuring hearty dishes and regional specialties. Guests can enjoy flavorful soups, tender meat dishes, and a variety of homemade desserts. The interior of the restaurant is designed to create an immersive experience, with rustic decor and historical artifacts that tell the stories of the Partisan movement. The ambiance is warm and inviting, evoking a sense of nostalgia and patriotism. With its delicious food, historical significance, and welcoming atmosphere, Partizan restaurant offers a memorable dining experience that honors the bravery and resilience of the Partisans.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ресторан "Partizan")] (* <- lang_ru;; *);
+		[Def. (Partizan restaurant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_food_establishment;
+		partizan_restaurant;
+		minsk;
+		belarus;
+		concept_atmospheric_dining_establishment;
+		concept_partisans;
+		world_war_two;
+		concept_blend;
+		concept_traditional_Belarusian_cuisine;
+		concept_eastern_european_cuisine;
+		concept_hearty_dishes;
+		concept_regional_specialties;
+		concept_flavorful_soups;
+		concept_tender_meat_dishes;
+		concept_homemade_desserts;
+		concept_immersive_experience;
+		concept_rustic_decor;
+		concept_historical_artifacts;
+		concept_partisan_movement;
+		concept_ambiance;
+		concept_nostalgia;
+		concept_patriotism;
+		concept_delicious_food;
+		concept_historical_significance;
+		concept_welcoming_atmosphere;
+		concept_memorable_dining_experience;
+		concept_bravery;
+		concept_resilience;
+		nrel_located_in;
+		nrel_pays_tribute_to;
+		nrel_showcases;
+		nrel_featuring;
+		nrel_enjoy;
+		nrel_designed_to_create;
+		nrel_evoking;
+		nrel_offers;
+		nrel_honors
+	};;
+*);;
+
+partizan_restaurant
+	=> nrel_food_establishment_type: restaurant;
+	=> nrel_age_restictions: 0_plus;
+	=> nrel_capacity: 30_plus;
+	=> nrel_average_bill: 35_to_50;
+	=> nrel_coordinates: 53.901673_27.489375;
+	=> nrel_type_of_food: 
+		grill;
+		lunch;
+	=> nrel_type_of_drink: 
+		alcohol;
+		vodka;
+		coffee;
+		tea;;

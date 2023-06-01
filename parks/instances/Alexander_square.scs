@@ -1,0 +1,144 @@
+Alexander_square
+=> nrel_main_idtf:
+	[Александровский сквер] (* <- lang_ru;; *);
+	[Alexander Square] (* <- lang_en;; *);;
+definition -> definition_of_Alexander_square (*
+	-> rrel_key_sc_element: Alexander_square;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [ сквер, расположенный в центре Минска. ] (* <- lang_ru;; *);;
+		-> [square located in the center of Minsk.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Александровский сквер)] (* <- lang_ru;; *);
+		[Def. (Alexander Square)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_park;	
+		concept_size;
+		concept_metro_station;
+		concept_coordinates;
+		concept_monument;
+		nrel_number;
+		concept_price_in_rub
+        };;
+*);;
+
+statement->...
+    (*
+        => nrel_main_idtf:
+            [История Александровского сквера]
+            (* <- lang_ru;; *);;
+        
+        =>nrel_using_constants:
+        {
+           	concept_history;
+			concept_park
+        };;
+        
+        ->rrel_key_sc_element:nrel_history;;
+
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Сквер был заложен на месте Нового рынка по инициативе городского главы Леопольда Дельпаца. Своё название сквер получил в честь Александра Невского](*<-lang_ru;;*);;
+        *);;
+    *);;
+
+sc_node_class ->
+	concept_park;	
+	concept_size;
+	concept_metro_station;
+	concept_coordinates;
+	concept_monument;
+	concept_greenhouse;
+	concept_square;
+	concept_hour;
+	concept_street_in_Minsk;
+	concept_building_in_minsk;
+	concept_monument;
+	concept_minutes;
+	concept_price_in_rub;;
+
+
+sc_node_norole_relation ->
+	nrel_metro_station;
+	nrel_district;
+	nrel_year;
+	nrel_center;
+	nrel_main_object;
+	nrel_working_hours;
+	nrel_street;	
+    nrel_size; // размеры
+	nrel_visit_price;//цена посещения
+	nrel_estimated_duration_of_the_walk;;
+
+
+//тип парка
+concept_park->concept_square;;
+
+//описание парка
+concept_square->Alexander_square(*
+	
+	=>nrel_district:sovietsky_district(*
+	<-concept_district_of_Minsk;;
+	*);;//район
+	
+	=>nrel_visit_price:free(*
+		<-concept_price;;
+	*);;
+
+	=>nrel_metro_station:
+	{
+		Kupalovskaya;
+ 		Oktyabrskaya
+ 	};;
+
+	//год основания
+	=>nrel_year:...(*
+		<-concept_number;;
+		=>nrel_main_idtf:2004;;
+	*);;
+
+	//главные места
+	=>nrel_main_object:
+		{
+		Boy_playing_with_a_swan;
+		Yanka_Kupalas_theatre;
+		toilet_in_the_Aleksandrovsky_park
+		};;
+
+	//улицы
+	=>nrel_street:
+	{
+		Independence_Ave.; 
+		Karl_Marx_street;
+		Engels_street;
+		Krasnoarmeyskaya_street
+	};;
+
+	
+	//время работы
+	=>nrel_working_hours:around_the_clock(*
+		<-concept_time;;
+	*);;
+
+	//продолжительность прогулки
+	=>nrel_estimated_duration_of_the_walk:...(*
+		<-concept_minutes;;
+		=>nrel_main_idtf:10;;
+	*);;
+*);;
+
+Boy_playing_with_a_swan<-concept_monument;;
+
+toilet_in_the_Aleksandrovsky_park<-concept_public_toilets;;
+
+concept_metro_station->
+		Kupalovskaya;
+ 		Oktyabrskaya;;
+
+concept_street_in_Minsk->		
+	Karl_Marx_street;
+	Engels_street;
+	Krasnoarmeyskaya_street;;
