@@ -17,9 +17,8 @@ definition -> definition_of_ALMA_moll (*
 		[Def. (Shopping center ALMA Minsk)] (* <- lang_en;; *);;
 		
 	=> nrel_using_constants: {
-		concept_department_stores;
-        concept_malls;
-        concept_shopping_malls;
+		concept_department_store;
+        concept_mall;
         nrel_place;
         nrel_shops_inside;
         nrel_number_of_floors;
@@ -50,12 +49,13 @@ sc_node_norole_relation ->
 	nrel_estimated_duration_of_the_walk;
 	nrel_wifi;
 	nrel_number_of_floors;
+	nrel_working_hours;
 	nrel_main_object;;
 
-concept_mall->concept_department_store;;
+concept_mall->concept_small_mall;;
 
 //описание парка
-concept_department_store->ALMA_moll(*
+concept_small_mall->ALMA_moll(*
 	=>nrel_district:Moskovsky_district(*
 	<-concept_district_of_Minsk;;
 	*);;
