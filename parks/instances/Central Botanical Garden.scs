@@ -27,7 +27,7 @@ definition -> definition_of_central_botanical_garden (*
 		concept_size;
 		concept_metro_station;
 		concept_coordinates;
-		concept_monuments;
+		concept_monument;
 		nrel_number;
 		concept_price_in_rub
         };;
@@ -60,9 +60,9 @@ sc_node_class ->
 	concept_size;
 	concept_metro_station;
 	concept_coordinates;
-	concept_monuments;
+	concept_monument;
 	concept_greenhouse;
-	concept_ecological_zones;
+	concept_ecological_zone;
 	concept_hour;
 	concept_price_in_rub;;
 
@@ -77,9 +77,9 @@ sc_node_norole_relation ->
 	nrel_working_hours;
 	nrel_estimated_duration_of_the_walk;;
 
-concept_park->concept_ecological_zones;;
+concept_park->concept_ecological_zone;;
 //описание парка
-concept_ecological_zones->central_botanical_garden(*
+concept_ecological_zone->central_botanical_garden(*
 	
 	=>nrel_district:pervomaisky_district(*
 	<-concept_district_of_Minsk;;

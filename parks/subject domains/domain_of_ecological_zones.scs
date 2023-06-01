@@ -1,0 +1,67 @@
+    sc_node_struct->section_subject_domain_of_ecological_zone;;
+        
+    section_subject_domain_of_ecological_zone->rrel_key_sc_element:subject_domain_of_ecological_zone(*<-sc_node_struct;;*);
+        concept_ecological_zone(*<-sc_node_class;;*);
+        concept_size;
+	    concept_metro_station;
+	    concept_coordinates;
+	    concept_monument;
+	    concept_hour;
+	    concept_attractions;
+	    concept_price_in_rub;
+        nrel_visit_price;
+	    nrel_metro_station;
+    	nrel_district;
+	    nrel_year;
+    	nrel_center;
+	    nrel_main_object;
+    	nrel_working_hours;
+	    nrel_street;
+    	nrel_estimated_duration_of_the_walk;
+        concept_center(*<-sc_node_class;;*);;
+
+    section_subject_domain_of_ecological_zone=>nrel_main_idtf:[Раздел.Предметная область экологических зон](*<-lang_ru;;*);;
+
+    section_subject_domain_of_ecological_zone=>nrel_main_idtf:[Section.Subject domain of amusement park ecological zones](*<-lang_en;;*);;
+
+    //не максимальный объект    
+	subject_domain_of_ecological_zone->rrel_not_maximum_studied_object_class:
+        concept_size;
+	    concept_metro_station;
+	    concept_coordinates;
+	    concept_monument;
+	    concept_hour;
+	    concept_price_in_rub;
+		concept_greenhouse;
+        subject_domain_of_ecological_zone;;
+    
+    section_subject_domain_of_ecological_zone<-non_atomic_section;;
+
+    subject_domain_of_ecological_zone=>nrel_main_idtf:
+        [Предметная область экологических зон](*<-lang_ru;;*);;
+    
+    subject_domain_of_ecological_zone=>nrel_main_idtf:
+        [Subject domain of ecological zones](*<-lang_en;;*);;
+        
+    subject_domain_of_ecological_zone=>nrel_private_subject_domain:subject_domain_of_park;;
+
+    //максимальный объект
+    subject_domain_of_ecological_zone->rrel_maximum_studied_object_class:concept_ecological_zone;;
+
+    sc_node_struct->section_subject_domain_of_ecological_zone;
+    	section_subject_domain_of_ecological_zone;
+        subject_domain_of_ecological_zone;;
+    
+    subject_domain_of_ecological_zone->rrel_explored_relation:
+        nrel_visit_price;
+	    nrel_metro_station;
+    	nrel_district;
+	    nrel_year;
+    	nrel_center;
+	    nrel_main_object;
+    	nrel_working_hours;
+	    nrel_street;
+    	nrel_estimated_duration_of_the_walk;;
+
+    
+    subject_domain_of_ecological_zone<-subject_domain;;

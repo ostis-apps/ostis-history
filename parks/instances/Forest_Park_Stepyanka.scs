@@ -24,7 +24,7 @@ definition -> definition_of_Forest_Park_Stepyanka (*
 		concept_size;
 		concept_metro_station;
 		concept_coordinates;
-		concept_monuments;
+		concept_monument;
 		nrel_number;
 		concept_price_in_rub
         };;
@@ -55,7 +55,7 @@ sc_node_class ->
 	concept_size;
 	concept_metro_station;
 	concept_coordinates;
-	concept_monuments;
+	concept_monument;
 	concept_greenhouse;
 	concept_forest_park;
 	concept_hour;

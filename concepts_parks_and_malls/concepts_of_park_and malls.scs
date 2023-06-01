@@ -379,7 +379,6 @@ definition -> definition_of_concept_amusement_park (*
 		[Опр. (Парк развлечений)] (* <- lang_ru;; *);
 		[Def. (Amusement park)] (* <- lang_en;; *);;
 *);;
-//21
 
 concept_department_store
 => nrel_main_idtf:
@@ -415,24 +414,6 @@ definition -> definition_of_concept_mall (*
 	=> nrel_main_idtf:
 		[Опр. (Торговый центр)] (* <- lang_ru;; *);
 		[Def. (Mall)] (* <- lang_en;; *);;
-*);;
-
-concept_shopping_mall
-=> nrel_main_idtf:
-	[Специализированный торговый центр] (* <- lang_ru;; *);
-	[Shopping mall] (* <- lang_en;; *);;
-
-definition -> definition_of_concept_shopping_mall (*
-	-> rrel_key_sc_element: concept_shopping_mall;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [это предприятие розничной торговли, предлагающее широкий ассортимент потребительских товаров в различных отделах магазина, каждый из которых специализируется на определенной товарной категории.] (* <- lang_ru;; *);;
-		-> [is a retail establishment offering a wide range of consumer goods in different areas of the store, each area specializing in a product category.] (* <- lang_en;; *);;
-		*);;
-
-	=> nrel_main_idtf:
-		[Опр. (Специализированный торговый центр)] (* <- lang_ru;; *);
-		[Def. (Shopping mall)] (* <- lang_en;; *);;
 *);;
 
 concept_coordinates
@@ -725,4 +706,111 @@ definition -> definition_of_concept_currency_exchange(*
 	=> nrel_main_idtf:
 		[Опр. (Валютный обменник)] (* <- lang_ru;; *);
 		[Def. (Currency exchange)] (* <- lang_en;; *);;
+*);;
+
+concept_flore
+=> nrel_main_idtf:
+	[Этаж] (* <- lang_ru;; *);
+	[Flore] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_flore(*
+	-> rrel_key_sc_element: concept_flore;;
+	<= nrel_sc_text_translation: ... (*
+		-> [часть пространства здания между двумя горизонтальными перекрытиями, где располагаются помещения; уровень здания над уровнем земли.] (* <- lang_ru;; *);;
+		-> [part of the building space between two horizontal ceilings, where the premises are located; building level above ground level.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Этаж)] (* <- lang_ru;; *);
+		[Def. (Flore)] (* <- lang_en;; *);;
+*);;
+
+concept_history
+=> nrel_main_idtf:
+	[История] (* <- lang_ru;; *);
+	[History] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_currency_exchange(*
+	-> rrel_key_sc_element: concept_currency_exchange;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Прошлое, сохраняющееся в памяти человечества.] (* <- lang_ru;; *);;
+		-> [The past, preserved in the memory of mankind.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (История)] (* <- lang_ru;; *);
+		[Def. (History)] (* <- lang_en;; *);;
+*);;
+
+concept_street_in_Minsk
+=> nrel_main_idtf:
+	[Улица в Минске] (* <- lang_ru;; *);
+	[Street in Minsk] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_street_in_Minsk(*
+	-> rrel_key_sc_element: concept_street_in_Minsk;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В населённых пунктах: пространство между двумя рядами домов для прохода и проезда.] (* <- lang_ru;; *);;
+		-> [In settlements: the space between two rows of houses for passage and passage.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Улица в Минске)] (* <- lang_ru;; *);
+		[Def. (Street in Minsk)] (* <- lang_en;; *);;
+*);;
+
+concept_hour
+=> nrel_main_idtf:
+	[Час] (* <- lang_ru;; *);
+	[Hour] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_hour(*
+	-> rrel_key_sc_element: concept_hour;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Промежуток времени в 60 минут.] (* <- lang_ru;; *);;
+		-> [Time span of 60 minutes.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Час)] (* <- lang_ru;; *);
+		[Def. (Hour)] (* <- lang_en;; *);;
+*);;
+
+concept_size
+=> nrel_main_idtf:
+	[Размер] (* <- lang_ru;; *);
+	[Size] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_size(*
+	-> rrel_key_sc_element: concept_size;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Величина чего-н. в каком-н. измерении.] (* <- lang_ru;; *);;
+		-> [The magnitude of something. in some measurement.] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Размер)] (* <- lang_ru;; *);
+		[Def. (Size)] (* <- lang_en;; *);;
+*);;
+
+concept_small_mall
+=> nrel_main_idtf:
+	[Малый торговый центр] (* <- lang_ru;; *);
+	[Small mall] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_small_mall(*
+	-> rrel_key_sc_element: concept_small_mall;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Торговый центр небольших размеров, относительно других] (* <- lang_ru;; *);;
+		-> [Small shopping center compared to others] (* <- lang_en;; *);;
+		*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Малый торговый центр)] (* <- lang_ru;; *);
+		[Def. (Small mall)] (* <- lang_en;; *);;
 *);;

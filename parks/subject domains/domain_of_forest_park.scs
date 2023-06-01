@@ -2,6 +2,19 @@
         
     section_subject_domain_of_forest_park->rrel_key_sc_element:subject_domain_of_forest_park(*<-sc_node_struct;;*);
         concept_forest_park(*<-sc_node_class;;*);
+        concept_size;
+	    concept_metro_station;
+	    concept_coordinates;
+	    concept_monument;
+	    concept_greenhouse;
+	    concept_hour;
+	    concept_church;
+	    cncept_river;
+	    concept_museum;
+	    concept_price_in_rub;
+        concept_district_of_Minsk;
+        concept_size_in_ha;
+        concept_arhitect;
         nrel_visit_price;
 	    nrel_metro_station;
     	nrel_district;
@@ -18,7 +31,21 @@
     section_subject_domain_of_forest_park=>nrel_main_idtf:[Section.Subject domain of forest parks](*<-lang_en;;*);;
 
     //не максимальный объект    
-    concept_quantity_of_trees<-rrel_not_maximum_studied_object_class:subject_domain_of_forest_park;;
+    subject_domain_of_forest_park->rrel_not_maximum_studied_object_class:
+        subject_domain_of_forest_park;	
+	    concept_size;
+	    concept_metro_station;
+	    concept_coordinates;
+	    concept_monument;
+	    concept_greenhouse;
+	    concept_hour;
+	    concept_church;
+	    cncept_river;
+	    concept_museum;
+	    concept_price_in_rub;
+        concept_district_of_Minsk;
+        concept_size_in_ha;
+        concept_arhitect;;
     
     section_subject_domain_of_forest_park<-non_atomic_section;;
 

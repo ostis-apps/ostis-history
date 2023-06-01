@@ -24,7 +24,7 @@ definition -> definition_of_Square_of_Edward_Voynilovich (*
 		concept_size;
 		concept_metro_station;
 		concept_coordinates;
-		concept_monuments;
+		concept_monument;
 		nrel_number;
 		concept_price_in_rub
         };;
@@ -56,7 +56,7 @@ sc_node_class ->
 	concept_size;
 	concept_metro_station;
 	concept_coordinates;
-	concept_monuments;
+	concept_monument;
 	concept_greenhouse;
 	concept_square;
 	concept_hour;

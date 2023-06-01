@@ -17,9 +17,8 @@ definition -> definition_of_department_store_belarus (*
 		[Def. (Department store Belarus, Minsk)] (* <- lang_en;; *);;
 		
 	=> nrel_using_constants: {
-		concept_department_stores;
-        concept_malls;
-        concept_shopping_malls;
+		concept_department_store;
+        concept_mall;
         concept_park;	
 		concept_size;
 		concept_metro_station;
