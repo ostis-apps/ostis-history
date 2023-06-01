@@ -26,9 +26,9 @@
     	nrel_estimated_duration_of_the_walk;
         concept_center(*<-sc_node_class;;*);;
 
-    section_subject_domain_of_forest_park=>nrel_main_idtf:[Раздел.Предметная область лесных парков](*<-lang_ru;;*);;
+    section_subject_domain_of_forest_park=>nrel_main_idtf:[Раздел. Предметная область лесных парков](*<-lang_ru;;*);;
 
-    section_subject_domain_of_forest_park=>nrel_main_idtf:[Section.Subject domain of forest parks](*<-lang_en;;*);;
+    section_subject_domain_of_forest_park=>nrel_main_idtf:[Section. Subject domain of forest parks](*<-lang_en;;*);;
 
     //не максимальный объект    
     subject_domain_of_forest_park->rrel_not_maximum_studied_object_class:

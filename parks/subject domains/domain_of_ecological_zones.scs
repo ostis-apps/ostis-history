@@ -20,9 +20,9 @@
     	nrel_estimated_duration_of_the_walk;
         concept_center(*<-sc_node_class;;*);;
 
-    section_subject_domain_of_ecological_zone=>nrel_main_idtf:[Раздел.Предметная область экологических зон](*<-lang_ru;;*);;
+    section_subject_domain_of_ecological_zone=>nrel_main_idtf:[Раздел. Предметная область экологических зон](*<-lang_ru;;*);;
 
-    section_subject_domain_of_ecological_zone=>nrel_main_idtf:[Section.Subject domain of amusement park ecological zones](*<-lang_en;;*);;
+    section_subject_domain_of_ecological_zone=>nrel_main_idtf:[Section. Subject domain of amusement park ecological zones](*<-lang_en;;*);;
 
     //не максимальный объект    
 	subject_domain_of_ecological_zone->rrel_not_maximum_studied_object_class:

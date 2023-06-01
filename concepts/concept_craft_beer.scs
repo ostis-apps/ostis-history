@@ -1,0 +1,18 @@
+concept_craft_beer
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Крафтовое пиво] (* <- lang_ru;; *);
+	[Craft beer] (* <- lang_en;; *);;
+
+definition -> definition_of_craft_beer (*
+	-> rrel_key_sc_element: concept_craft_beer;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Крафтовое пиво - пиво, создаваемое небольшими, независимыми компаниями, которые придерживаются индивидуальных, непромышленных рецептов.] (* <- lang_ru;; *);;
+		-> [Craft beer is a beer created by small, independent companies that follow individual, non-industrial recipes.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Крафтовое пиво)] (* <- lang_ru;; *);
+		[Def. (Craft beer)] (* <- lang_en;; *);;
+*);;

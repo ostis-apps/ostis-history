@@ -23,11 +23,11 @@
         nrel_metro;;
 
     section_subject_domain_of_department_store => nrel_main_idtf:
-        [Раздел.Предметная область универмагов]
+        [Раздел. Предметная область универмагов]
         (* <- lang_ru;; *);;
 
     section_subject_domain_of_department_store => nrel_main_idtf:
-        [Section.Subject domain of department stores]
+        [Section. Subject domain of department stores]
         (* <- lang_en;; *);;
     
     subject_domain_of_department_store->rrel_not_maximum_studied_object_class:
