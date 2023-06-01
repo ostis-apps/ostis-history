@@ -1,4 +1,3 @@
-
 Stolytsa_mall
 => nrel_main_idtf:
 	[ТЦ Столица г. Минск] (* <- lang_ru;; *);
@@ -17,9 +16,8 @@ definition -> definition_of_Stolytsa_mall (*
 		[Def. (Shopping center Stolitsa Minsk)] (* <- lang_en;; *);;
 		
 	=> nrel_using_constants: {
-		concept_department_stores;
-        concept_malls;
-        concept_shopping_malls;
+		concept_department_store;
+        concept_mall;
         nrel_place;
         nrel_shops_inside;
         nrel_number_of_floors;
