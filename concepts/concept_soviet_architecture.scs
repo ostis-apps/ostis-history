@@ -1,0 +1,24 @@
+concept_soviet_architecture
+<- sc_node_class;;
+concept_soviet_architecture <- concept_architecture;
+=> nrel_main_idtf:
+	[Советская архитектура] (* <- lang_ru;; *);
+	[Soviet architecture] (* <- lang_en;; *);;
+
+definition -> definition_of_concept_soviet_architecture (*
+	-> rrel_key_sc_element: concept_soviet_architecture;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Советская архитектура - это архитектура, характерная для времён Советского Союза.] (* <- lang_ru;; *);;
+		-> [Soviet architecture is architecture characteristic of the times of the Soviet Union.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Советская архитектура)] (* <- lang_ru;; *);
+		[Def. (Soviet architecture)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_USSR;
+        concept_architecture
+	};;
+*);;

@@ -1,48 +1,49 @@
-berlin_club
+re_public_club
 <- concept_food_establishment;
 => nrel_main_idtf:
-	[Клуб Berlin] (* <- lang_ru;; *);
-	[Berlin club] (* <- lang_en;; *);
+	[Клуб RE:PUBLIC] (* <- lang_ru;; *);
+	[RE:PUBLIC club] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
-  	[Клуб Berlin] (* <- lang_ru;; *);
-	  [Berlin club] (* <- lang_en;; *);;
+  	[Клуб RE:PUBLIC] (* <- lang_ru;; *);
+	  [RE:PUBLIC club] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
-  -> rrel_example: "file://img/berlin_club.png"
+  -> rrel_example: "file://img/re_public_club.png"
   (*
    => nrel_format: format_png;;
   *);;
  *);;
 *);;
 
-definition -> definition_of_berlin_club (*
-	-> rrel_key_sc_element: berlin_club;;
+definition -> definition_of_re_public_club (*
+	-> rrel_key_sc_element: re_public_club;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Клуб Berlin - клуб на Фрунзенской, нахоядщийся в подвале заброшенного завода. Несмотря на давнее отсутствие ремонта, посетителям нравится особый шарм и атмосфера.] (* <- lang_ru;; *);;
-		-> [Berlin club - club on Frunzenskaya, located in the basement of an abandoned factory. Despite the lack of renovation for a long time, visitors like the special charm and atmosphere.] (* <- lang_en;; *);;
+		-> [Клуб RE:PUBLIC - клуб и по совместимости крупная концертная площадка на Притыцкого в районе Кунцевщины. Известна выступлением большого числа известных исполнителей.] (* <- lang_ru;; *);;
+		-> [RE:PUBLIC club - club and, by compatibility, a large concert venue on Pritytsky in the Kuntsevshchina region. Known for the performance of a large number of famous performers.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Клуб Berlin)] (* <- lang_ru;; *);
-		[Def. (Berlin club)] (* <- lang_en;; *);;
+		[Опр. (Клуб RE:PUBLIC)] (* <- lang_ru;; *);
+		[Def. (RE:PUBLIC club)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		berlin_club;
+		re_public_club;
 		minsk;
 		belarus;
 		concept_club;
 		concept_music;
-        concept_renovated_infastructure;
+        concept_concert_venue;
         concept_atmoshere:
-        concept_young_people;
 		concept_interior_design;
 		concept_modern_music;
-        concept_DJ;
+        concept_scene;
+        concept_large_building;
+        concept_diverse_music;
 		concept_live_perfomance;
 		nrel_offers;
 		nrel_provides;
@@ -52,8 +53,8 @@ definition -> definition_of_berlin_club (*
 	};;
 *);;
 
-berlin_club
+re_public_club
 	=> nrel_age_restictions: 15_plus;	
-	=> nrel_capacity: 150;
-	=> nrel_average_bill: 10_to_20;
-	=> nrel_coordinates: 53.88962455940514_27.57098276137696;;
+	=> nrel_capacity: 1000;
+	=> nrel_average_bill: 30_to_40;
+	=> nrel_coordinates: 53.90783951391483_27.458683582632414;;

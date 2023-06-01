@@ -1,0 +1,17 @@
+concept_intelligent_guide <- sc_node_class;
+=> nrel_main_idtf:
+	[Интеллектуальный гид по городу Минску] (* <- lang_ru;; *);
+	[Intelligent guide] (* <- lang_en;; *);;
+
+definition -> definition_of_intelligent_guide (*
+	-> rrel_key_sc_element: concept_intelligent_guide;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Интеллектуальный гид по городу Минску - представляет собой проект, заключающийся в релизации гида по городу Минску на базе знаний OSTIS.] (* <- lang_ru;; *);;
+		-> [Intelligent guide around the city of Minsk is a project that consists in the release of a guide around the city of Minsk based on the knowledge of OSTIS.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Интеллектуальный гид по городу Минску)] (* <- lang_ru;; *);
+		[Def. (Intelligent guide)] (* <- lang_en;; *);;
+*);;

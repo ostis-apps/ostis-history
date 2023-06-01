@@ -36,9 +36,9 @@
         nrel_architect;
     	nrel_estimated_duration_of_the_walk;;
 
-    section_subject_domain_of_park=>nrel_main_idtf:[Раздел.Предметная область парков](*<-lang_ru;;*);;
+    section_subject_domain_of_park=>nrel_main_idtf:[Раздел. Предметная область парков](*<-lang_ru;;*);;
 
-    section_subject_domain_of_park=>nrel_main_idtf:[Section.Subject domain of park](*<-lang_en;;*);;
+    section_subject_domain_of_park=>nrel_main_idtf:[Section. Subject domain of park](*<-lang_en;;*);;
     
     subject_domain_of_park->rrel_not_maximum_studied_object_class:
         concept_park;

@@ -1,49 +1,50 @@
-berlin_club
+private_house_club
 <- concept_food_establishment;
 => nrel_main_idtf:
-	[Клуб Berlin] (* <- lang_ru;; *);
-	[Berlin club] (* <- lang_en;; *);
+	[Клуб Private House] (* <- lang_ru;; *);
+	[Private House club] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
-  	[Клуб Berlin] (* <- lang_ru;; *);
-	  [Berlin club] (* <- lang_en;; *);;
+  	[Клуб Private House] (* <- lang_ru;; *);
+	  [Private House club] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
-  -> rrel_example: "file://img/berlin_club.png"
+  -> rrel_example: "file://img/private_house_club.png"
   (*
    => nrel_format: format_png;;
   *);;
  *);;
 *);;
 
-definition -> definition_of_berlin_club (*
-	-> rrel_key_sc_element: berlin_club;;
+definition -> definition_of_private_house_club (*
+	-> rrel_key_sc_element: private_house_club;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Клуб Berlin - клуб на Фрунзенской, нахоядщийся в подвале заброшенного завода. Несмотря на давнее отсутствие ремонта, посетителям нравится особый шарм и атмосфера.] (* <- lang_ru;; *);;
-		-> [Berlin club - club on Frunzenskaya, located in the basement of an abandoned factory. Despite the lack of renovation for a long time, visitors like the special charm and atmosphere.] (* <- lang_en;; *);;
+		-> [Клуб Private House - клуб-бар на Зыбицкой со спокойной атмосферой, качественными напитками и кальяном.] (* <- lang_ru;; *);;
+		-> [Private House club - club-bar on Zybitskaya with a calm atmosphere, quality drinks and hookah.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Клуб Berlin)] (* <- lang_ru;; *);
-		[Def. (Berlin club)] (* <- lang_en;; *);;
+		[Опр. (Клуб Private House)] (* <- lang_ru;; *);
+		[Def. (Private House club)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		berlin_club;
+		private_house_club;
 		minsk;
 		belarus;
 		concept_club;
 		concept_music;
-        concept_renovated_infastructure;
+        upper_city;
         concept_atmoshere:
-        concept_young_people;
+        concept_cozy_and_welcoming_atmosphere;
 		concept_interior_design;
 		concept_modern_music;
+        concept_hookah;
+        concept_decent_alcohol;
         concept_DJ;
-		concept_live_perfomance;
 		nrel_offers;
 		nrel_provides;
         nrel_dancing;
@@ -52,8 +53,8 @@ definition -> definition_of_berlin_club (*
 	};;
 *);;
 
-berlin_club
-	=> nrel_age_restictions: 15_plus;	
-	=> nrel_capacity: 150;
-	=> nrel_average_bill: 10_to_20;
-	=> nrel_coordinates: 53.88962455940514_27.57098276137696;;
+private_house_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 100;
+	=> nrel_average_bill: 40_to_50;
+	=> nrel_coordinates: 53.905700280492276_27.55941069982897;;

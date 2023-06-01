@@ -21,9 +21,9 @@
 	    nrel_street;
     	nrel_estimated_duration_of_the_walk;;
 		
-    section_subject_domain_of_square=>nrel_main_idtf:[Раздел.Предметная область скверов](*<-lang_ru;;*);;
+    section_subject_domain_of_square=>nrel_main_idtf:[Раздел. Предметная область скверов](*<-lang_ru;;*);;
 
-    section_subject_domain_of_square=>nrel_main_idtf:[Section.Subject domain of square](*<-lang_en;;*);;
+    section_subject_domain_of_square=>nrel_main_idtf:[Section. Subject domain of square](*<-lang_en;;*);;
 
     //не максимальный объект    
     subject_domain_of_square->rrel_not_maximum_studied_object_class:

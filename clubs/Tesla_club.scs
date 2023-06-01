@@ -1,49 +1,48 @@
-berlin_club
+tesla_club
 <- concept_food_establishment;
 => nrel_main_idtf:
-	[Клуб Berlin] (* <- lang_ru;; *);
-	[Berlin club] (* <- lang_en;; *);
+	[Клуб Tesla] (* <- lang_ru;; *);
+	[Tesla club] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
-  	[Клуб Berlin] (* <- lang_ru;; *);
-	  [Berlin club] (* <- lang_en;; *);;
+  	[Клуб Tesla] (* <- lang_ru;; *);
+	  [Tesla club] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
-  -> rrel_example: "file://img/berlin_club.png"
+  -> rrel_example: "file://img/tesla_club.png"
   (*
    => nrel_format: format_png;;
   *);;
  *);;
 *);;
 
-definition -> definition_of_berlin_club (*
-	-> rrel_key_sc_element: berlin_club;;
+definition -> definition_of_tesla_club (*
+	-> rrel_key_sc_element: tesla_club;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Клуб Berlin - клуб на Фрунзенской, нахоядщийся в подвале заброшенного завода. Несмотря на давнее отсутствие ремонта, посетителям нравится особый шарм и атмосфера.] (* <- lang_ru;; *);;
-		-> [Berlin club - club on Frunzenskaya, located in the basement of an abandoned factory. Despite the lack of renovation for a long time, visitors like the special charm and atmosphere.] (* <- lang_en;; *);;
+		-> [Клуб Tesla - клуб на Зыбицкой с своременной музыкой, диджеем и стриптиз-танцами.] (* <- lang_ru;; *);;
+		-> [Tesla club - club on Zybitskaya with modern music, DJ and striptease dancing.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Клуб Berlin)] (* <- lang_ru;; *);
-		[Def. (Berlin club)] (* <- lang_en;; *);;
+		[Опр. (Клуб Tesla)] (* <- lang_ru;; *);
+		[Def. (Tesla club)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		berlin_club;
+		tesla_club;
 		minsk;
 		belarus;
 		concept_club;
 		concept_music;
-        concept_renovated_infastructure;
-        concept_atmoshere:
+        concept_striptease;
         concept_young_people;
 		concept_interior_design;
 		concept_modern_music;
+        concept_hookah;
         concept_DJ;
-		concept_live_perfomance;
 		nrel_offers;
 		nrel_provides;
         nrel_dancing;
@@ -52,8 +51,8 @@ definition -> definition_of_berlin_club (*
 	};;
 *);;
 
-berlin_club
-	=> nrel_age_restictions: 15_plus;	
-	=> nrel_capacity: 150;
-	=> nrel_average_bill: 10_to_20;
-	=> nrel_coordinates: 53.88962455940514_27.57098276137696;;
+tesla_club
+	=> nrel_age_restictions: 18_plus;	
+	=> nrel_capacity: 50;
+	=> nrel_average_bill: 40_to_50;
+	=> nrel_coordinates: 53.90632157464279_27.557696511468368;;

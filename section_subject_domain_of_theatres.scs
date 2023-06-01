@@ -11,9 +11,6 @@ section_subject_domain_of_theaters=>nrel_main_idtf:
      (*<-lang_en;;*);;
 
 
-
-concept_theaters<-rrel_maximum_studied_object_class:subject_domain_of_theaters;;
-
 subject_domain_of_theaters->rrel_maximum_studied_object_class:
      concept_theater;;
 
@@ -22,7 +19,10 @@ section_subject_domain_of_theaters->rrel_key_sc_element:subject_domain_of_theate
 
 
 non_atomic_section->section_subject_domain_of_theaters;;	 	
-                    
+
+subject_domain_of_theaters<=nrel_private_subject_domain:
+        concept_culture;
+        concept_history;;                   
           
 subject_domain_of_theaters<=nrel_private_subject_domain:subject_domain_of_the_melody;; 
 

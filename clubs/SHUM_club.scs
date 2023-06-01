@@ -1,46 +1,46 @@
-berlin_club
+shum_club
 <- concept_food_establishment;
 => nrel_main_idtf:
-	[Клуб Berlin] (* <- lang_ru;; *);
-	[Berlin club] (* <- lang_en;; *);
+	[Клуб SHUM] (* <- lang_ru;; *);
+	[SHUM club] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
  <- illustration;;
  => nrel_main_idtf:
-  	[Клуб Berlin] (* <- lang_ru;; *);
-	  [Berlin club] (* <- lang_en;; *);;
+  	[Клуб SHUM] (* <- lang_ru;; *);
+	  [SHUM club] (* <- lang_en;; *);;
  <= nrel_sc_text_translation: ...
  (*
-  -> rrel_example: "file://img/berlin_club.png"
+  -> rrel_example: "file://img/shum_club.png"
   (*
    => nrel_format: format_png;;
   *);;
  *);;
 *);;
 
-definition -> definition_of_berlin_club (*
-	-> rrel_key_sc_element: berlin_club;;
+definition -> definition_of_shum_club (*
+	-> rrel_key_sc_element: shum_club;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Клуб Berlin - клуб на Фрунзенской, нахоядщийся в подвале заброшенного завода. Несмотря на давнее отсутствие ремонта, посетителям нравится особый шарм и атмосфера.] (* <- lang_ru;; *);;
-		-> [Berlin club - club on Frunzenskaya, located in the basement of an abandoned factory. Despite the lack of renovation for a long time, visitors like the special charm and atmosphere.] (* <- lang_en;; *);;
+		-> [Клуб SHUM - караоке-клуб на улице Киселева с отличным выбором алкоголя и густой постсоветской атмосферой.] (* <- lang_ru;; *);;
+		-> [SHUM club - a karaoke club on Kiseleva Street with a distinct selection of alcohol and a thick post-Soviet atmosphere.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Клуб Berlin)] (* <- lang_ru;; *);
-		[Def. (Berlin club)] (* <- lang_en;; *);;
+		[Опр. (Клуб SHUM)] (* <- lang_ru;; *);
+		[Def. (SHUM club)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		berlin_club;
+		shum_club;
 		minsk;
 		belarus;
 		concept_club;
 		concept_music;
-        concept_renovated_infastructure;
         concept_atmoshere:
-        concept_young_people;
+        concept_karaoke_club;
 		concept_interior_design;
+        concept_decent_alcohol;
 		concept_modern_music;
         concept_DJ;
 		concept_live_perfomance;
@@ -52,8 +52,8 @@ definition -> definition_of_berlin_club (*
 	};;
 *);;
 
-berlin_club
-	=> nrel_age_restictions: 15_plus;	
+shum_club
+	=> nrel_age_restictions: 18_plus;	
 	=> nrel_capacity: 150;
-	=> nrel_average_bill: 10_to_20;
-	=> nrel_coordinates: 53.88962455940514_27.57098276137696;;
+	=> nrel_average_bill: 30_to_40;
+	=> nrel_coordinates: 53.912557801489484_27.569773984485007;;

@@ -1,7 +1,7 @@
 sc_node_struct->section_subject_domain_of_museums;;
 
     section_subject_domain_of_museums=>nrel_main_idtf:
-        [Раздел. Предметная область музеи]
+        [Раздел. Предметная область музеев]
         (*<-lang_ru;;*);;
 
     section_subject_domain_of_museums=>nrel_main_idtf:
@@ -31,7 +31,7 @@ sc_node_struct->section_subject_domain_of_museums;;
     section_subject_domain_of_museums<-non_atomic_section;;
 
     subject_domain_of_museums=>nrel_main_idtf:
-        [Предметная область музеи]
+        [Предметная область музеев]
         (*<-lang_ru;;*);;
 
     subject_domain_of_museums=>nrel_main_idtf:
